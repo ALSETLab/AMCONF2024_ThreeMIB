@@ -3,7 +3,8 @@ Models used in the paper "Building Power System Models for Stability and Control
 ## General Information
 
 This repository contains the power system Models used in the paper "Building Power System Models for Stability and Control Design  Analysis using Modelica and the OpenIPSL" by S. Bhattacharjee, L. Vanfretti, and F. Fachini submitted for review to the American Modelica Conference 2024.
-The models were developed and tested with **Dymola 2024X** under MS Windows 11.
+
+The models were developed and tested with **Dymola 2024X** under MS Windows 10.
 
 The models have the following dependencies:
 - [OpenIPSL v.3.0.1](https://github.com/OpenIPSL/OpenIPSL/releases/tag/v3.0.1), please download it from this version's library release, [here](https://github.com/OpenIPSL/OpenIPSL/releases/tag/v3.0.1)
