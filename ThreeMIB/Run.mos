@@ -1,0 +1,6 @@
+// Load OpenIPSL
+openModel("C:\Users\Srijita\Dev\OpenIPSL\OpenIPSL\package.mo")
+// Load the models
+openModel("C:\Users\Srijita\Desktop\AMCONF2024_ThreeMIB\ThreeMIB\package.mo")
+// Change the working directory
+cd("C:\Users\Srijita\Documents\Dymola")
