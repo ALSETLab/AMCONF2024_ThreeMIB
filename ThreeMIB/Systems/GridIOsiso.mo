@@ -40,12 +40,12 @@ equation
           6.74286},{-22,6.74286}},                                                                       color={0,140,72},
       thickness=1));
 
-  connect(zeros.y, GridIO.uPload1) annotation (Line(points={{-39,20},{-34,20},{
-          -34,16.5143},{-22.1,16.5143}}, color={0,0,127}));
+  connect(zeros.y, GridIO.uPload1) annotation (Line(points={{-39,20},{-34,20},{-34,16.5143},{-22.1,16.5143}},
+                                         color={0,0,127}));
   connect(GridIO.uPSS1, zeros.y) annotation (Line(points={{-22,13.6},{-34,13.6},
           {-34,20},{-39,20}}, color={0,0,127}));
-  connect(GridIO.uPm1, zeros.y) annotation (Line(points={{-22,10.1714},{-34,
-          10.1714},{-34,20},{-39,20}}, color={0,0,127}));
+  connect(GridIO.uPm1, zeros.y) annotation (Line(points={{-22,10.1714},{-34,10.1714},{-34,20},{-39,20}},
+                                       color={0,0,127}));
   connect(GridIO.uPSS2, zeros.y) annotation (Line(points={{-22,3.54286},{-34,
           3.54286},{-34,20},{-39,20}}, color={0,0,127}));
   connect(GridIO.uPm2, zeros.y) annotation (Line(points={{-22,0},{-34,0},{-34,
@@ -56,12 +56,12 @@ equation
           -6.17143},{-34,20},{-39,20}}, color={0,0,127}));
   connect(GridIO.uPm3, zeros.y) annotation (Line(points={{-22,-9.37143},{-34,
           -9.37143},{-34,20},{-39,20}}, color={0,0,127}));
-  connect(GridIO.uvs3, zeros.y) annotation (Line(points={{-22,-12.5714},{-34,
-          -12.5714},{-34,20},{-39,20}}, color={0,0,127}));
+  connect(GridIO.uvs3, zeros.y) annotation (Line(points={{-22,-12.5714},{-34,-12.5714},{-34,20},{-39,20}},
+                                        color={0,0,127}));
   connect(GridIO.uPload2, zeros.y) annotation (Line(points={{-22.1,-15.6},{-34,
           -15.6},{-34,20},{-39,20}}, color={0,0,127}));
-  connect(GridIO.uPload3, zeros.y) annotation (Line(points={{-22.1,-18.4571},{
-          -34,-18.4571},{-34,20},{-39,20}}, color={0,0,127}));
+  connect(GridIO.uPload3, zeros.y) annotation (Line(points={{-22.1,-18.4571},{-34,-18.4571},{-34,20},{-39,20}},
+                                            color={0,0,127}));
   connect(GridIO.Vt, Vt)
     annotation (Line(points={{21.6,0},{48,0}}, color={0,0,127}));
   annotation (Icon(coordinateSystem(extent={{-140,-80},{60,80}}),

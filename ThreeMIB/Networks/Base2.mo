@@ -98,7 +98,7 @@ equation
   connect(B1.p, TF1.p) annotation (Line(points={{-102,44},{-69,44}}, color={0,0,255}));
   annotation (Icon(coordinateSystem(preserveAspectRatio=false, extent={{-120,-100},{80,100}}),
                                                                 graphics={
-          Rectangle(extent={{-100,100},{100,-100}}, lineColor={135,135,135})}),
-                                                                 Diagram(
+          Rectangle(extent={{-120,100},{80,-100}},  lineColor={0,0,0},
+          lineThickness=0.5)}),                                  Diagram(
         coordinateSystem(preserveAspectRatio=false, extent={{-120,-100},{80,100}})));
 end Base2;

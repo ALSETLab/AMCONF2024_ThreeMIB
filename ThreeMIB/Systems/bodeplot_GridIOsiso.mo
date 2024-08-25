@@ -14,7 +14,7 @@ algorithm
 
   // linearize and plot
   Modelica_LinearSystems2.ModelAnalysis.TransferFunctions(
-  "OpenIPSL.ThreeMIB.Systems.GridIOsiso", simulationSetup=
+  "ThreeMIB.Systems.GridIOsiso", simulationSetup=
   Modelica_LinearSystems2.Records.SimulationOptionsForLinearization(
   linearizeAtInitial=false,
   t_linearize=tlin));

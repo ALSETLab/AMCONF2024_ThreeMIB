@@ -1,10 +1,14 @@
 within ThreeMIB.Networks;
 partial model Base "Partial ThreeMIB Model with SysData and ext_in load"
   extends ThreeMIB.Utilities.Icons.PartialModel;
-  OpenIPSL.Electrical.Buses.Bus B1(displayPF=true) annotation (Placement(transformation(extent={{-116,34},{-96,54}})));
-  OpenIPSL.Electrical.Buses.Bus B3(displayPF=true) annotation (Placement(transformation(extent={{-116,-54},{-96,-34}})));
-  OpenIPSL.Electrical.Buses.Bus B4(displayPF=true) annotation (Placement(transformation(extent={{-40,34},{-20,54}})));
-  OpenIPSL.Electrical.Buses.Bus B2(displayPF=true) annotation (Placement(transformation(extent={{-116,-10},{-96,10}})));
+  OpenIPSL.Electrical.Buses.Bus B1(displayPF=false)
+                                                   annotation (Placement(transformation(extent={{-116,34},{-96,54}})));
+  OpenIPSL.Electrical.Buses.Bus B3(displayPF=false)
+                                                   annotation (Placement(transformation(extent={{-116,-54},{-96,-34}})));
+  OpenIPSL.Electrical.Buses.Bus B4(displayPF=false)
+                                                   annotation (Placement(transformation(extent={{-40,34},{-20,54}})));
+  OpenIPSL.Electrical.Buses.Bus B2(displayPF=false)
+                                                   annotation (Placement(transformation(extent={{-116,-10},{-96,10}})));
   OpenIPSL.Electrical.Branches.PwLine line2(
     R=0.0010,
     X=0.12,
@@ -15,8 +19,10 @@ partial model Base "Partial ThreeMIB Model with SysData and ext_in load"
         rotation=0,
         origin={4,41})));
   inner OpenIPSL.Electrical.SystemBase SysData annotation (Placement(transformation(extent={{16,86},{100,120}})));
-  OpenIPSL.Electrical.Buses.Bus B5(displayPF=true) annotation (Placement(transformation(extent={{-38,-54},{-18,-34}})));
-  OpenIPSL.Electrical.Buses.Bus B6(displayPF=true) annotation (Placement(transformation(extent={{20,-54},{40,-34}})));
+  OpenIPSL.Electrical.Buses.Bus B5(displayPF=false)
+                                                   annotation (Placement(transformation(extent={{-38,-54},{-18,-34}})));
+  OpenIPSL.Electrical.Buses.Bus B6(displayPF=false)
+                                                   annotation (Placement(transformation(extent={{20,-54},{40,-34}})));
   OpenIPSL.Electrical.Branches.PSSE.TwoWindingTransformer TF1(
     CZ=1,
     R=0.000000,
@@ -64,7 +70,8 @@ partial model Base "Partial ThreeMIB Model with SysData and ext_in load"
     P_0=pf.powerflow.machines.PG4,
     Q_0=pf.powerflow.machines.QG4,
     v_0=pf.powerflow.bus.v6,
-    angle_0=pf.powerflow.bus.A6,                                             displayPF=true) annotation (Placement(transformation(
+    angle_0=pf.powerflow.bus.A6,
+    displayPF=false)                                                                         annotation (Placement(transformation(
         extent={{-10,-10},{10,10}},
         rotation=180,
         origin={76,-44})));
@@ -83,6 +90,9 @@ equation
   connect(line1.n, line2.p) annotation (Line(points={{-14,-3},{-14,-44},{-9,-44}}, color={0,0,255}));
   connect(infiniteBus.pwPin, B6.p) annotation (Line(points={{65,-44},{30,-44}}, color={0,0,255}));
   connect(Load3.p, B6.p) annotation (Line(points={{48,-69},{48,-44},{30,-44}}, color={0,0,255}));
-  annotation (Icon(coordinateSystem(preserveAspectRatio=false)), Diagram(
-        coordinateSystem(preserveAspectRatio=false, extent={{-160,-100},{100,120}})));
+  annotation (Icon(coordinateSystem(preserveAspectRatio=false, extent={{-160,-120},{100,120}}), graphics={Rectangle(
+          extent={{-160,120},{100,-120}},
+          lineColor={0,0,0},
+          lineThickness=0.5)}),                                  Diagram(
+        coordinateSystem(preserveAspectRatio=false, extent={{-160,-120},{100,120}})));
 end Base;

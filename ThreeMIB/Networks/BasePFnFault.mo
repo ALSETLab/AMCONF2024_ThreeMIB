@@ -1,5 +1,5 @@
 within ThreeMIB.Networks;
-model BasePFnFault
+model BasePFnFault "Partial ThreeMIB Model with SysData and ext_in load and power flow and Fault"
   extends Base(
     B1(
       v_0=pf.powerflow.bus.v1,
@@ -57,5 +57,5 @@ model BasePFnFault
         origin={13,-75})));
 equation
   connect(pwFault.p, B6.p) annotation (Line(points={{13,-66.8333},{13,-44},{30,-44}}, color={0,0,255}));
-  annotation (Diagram(coordinateSystem(extent={{-120,-100},{100,120}})), Icon(coordinateSystem(extent={{-120,-100},{100,120}})));
+  annotation (Diagram(coordinateSystem(extent={{-160,-120},{100,120}})), Icon(coordinateSystem(extent={{-160,-120},{100,120}})));
 end BasePFnFault;

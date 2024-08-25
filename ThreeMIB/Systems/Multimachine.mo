@@ -1,5 +1,5 @@
 within ThreeMIB.Systems;
-model Multimachine "3MIB Plant model"
+model Multimachine "3MIB Plant model with no external input to the loads"
   extends Networks.Base2(
     infiniteBus(
       P_0=pf.powerflow.machines.PG4,
@@ -61,6 +61,16 @@ model Multimachine "3MIB Plant model"
         extent={{-7,-7},{7,7}},
         rotation=270,
         origin={13,-77})));
+  GenerationUnits.MachineEXPSS.Generator2EXPSS generator2EXPSS(
+    P_0=pf.powerflow.machines.PG2,
+    Q_0=pf.powerflow.machines.QG2,
+    v_0=pf.powerflow.bus.v2,
+    angle_0=pf.powerflow.bus.A2) annotation (Placement(transformation(extent={{-162,-12},{-136,10}})));
+  GenerationUnits.MachineEXPSS.Generator3EXPSS generator3EXPSS(
+    P_0=pf.powerflow.machines.PG3,
+    Q_0=pf.powerflow.machines.QG3,
+    v_0=pf.powerflow.bus.v3,
+    angle_0=pf.powerflow.bus.A3) annotation (Placement(transformation(extent={{-160,-56},{-134,-34}})));
 equation
   connect(generator1EXPSS.pwPin, B1.p) annotation (Line(points={{-135,44},{-102,44}}, color={0,0,255}));
   connect(generator2EXPSS.pwPin, B2.p) annotation (Line(points={{-135,0},{-102,0}}, color={0,0,255}));

@@ -1,5 +1,5 @@
 within ThreeMIB.Systems;
-model GridIO "Multimachine model with input/output interfaces and modifications for simulation and linearization"
+model GridIO "3MIB model with input/output interfaces and modifications for simulation and linearization"
   extends Networks.Base(
     Load1(
       P_0=pf.powerflow.loads.PL1,
