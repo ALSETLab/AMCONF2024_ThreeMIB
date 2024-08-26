@@ -75,94 +75,329 @@ package LinearAnalysis
 <p><i><b><span style=\"font-family: Arial;\">Usage</span></b></i></p>
 <ol>
 <li><span style=\"font-family: Arial;\">In the Package Browser, right click on the function and select &quot;Call function...&quot;. This will open the function&apos;s window.</span></li>
-<p><img src=\"modelica://Example1/Resources/Images/linsimple (Small).png\"/></p>
 <li><span style=\"font-family: Arial;\">Leave the default parameters on first use. Alternatively, modify the tlin and tsim parameters, note that tsim should be greater or equal to tlin.</span></li>
 <li><span style=\"font-family: Arial;\">Go to the bottom of the window and click on &quot;Execute&quot;, if successful, messages/results are displayed in the command window.</span></li>
 <li><span style=\"font-family: Arial;\">Go back to the function&apos;s own window and click on &quot;Close&quot;.</span> </li>
 </ol>
 <p><br><i><b>Sample Output</b></i></p>
 <p>Executing the function gives the following results in the &quot;Commands&quot; window.</p>
-<p style=\"margin-left: 30px;\"><span style=\"font-family: Courier New; font-size: 10pt;\">Example1.Analysis.LinearAnalysis.CustomFunctions.LinearizeSimple();</span></p>
-<p style=\"margin-left: 30px;\"><span style=\"font-family: Courier New; font-size: 10pt;\">DAE&nbsp;Mode&nbsp;is&nbsp;turned&nbsp;off.</span></p>
-<p style=\"margin-left: 30px;\"><span style=\"font-family: Courier New; font-size: 10pt;\">Global&nbsp;optimization&nbsp;is&nbsp;disabled.</span></p>
-<p style=\"margin-left: 30px;\"><span style=\"font-family: Courier New; font-size: 10pt;\">Sparse&nbsp;options&nbsp;disabled.</span></p>
-<p style=\"margin-left: 30px;\"><span style=\"font-family: Courier New; font-size: 10pt;\">Linearization&nbsp;and&nbsp;Nonlinear&nbsp;Model&nbsp;Comparison&nbsp;is&nbsp;starting...</span></p>
-<p style=\"margin-left: 30px;\"><span style=\"font-family: Courier New; font-size: 10pt;\">Linearized&nbsp;Model</span></p>
-<p style=\"margin-left: 30px;\"><span style=\"font-family: Courier New; font-size: 10pt;\">Number&nbsp;of&nbsp;states:&nbsp;12</span></p>
-<p style=\"margin-left: 30px;\"><span style=\"font-family: Courier New; font-size: 10pt;\">Simulating&nbsp;nonlinear&nbsp;model</span></p>
-<p style=\"margin-left: 30px;\"><span style=\"font-family: Courier New; font-size: 10pt;\">&nbsp;=&nbsp;true</span></p>
-<p style=\"margin-left: 30px;\"><span style=\"font-family: Courier New; font-size: 10pt;\">Redeclaring&nbsp;variable:&nbsp;Real&nbsp;y0&nbsp;[7,&nbsp;1012];</span></p>
-<p style=\"margin-left: 30px;\"><span style=\"font-family: Courier New; font-size: 10pt;\">&nbsp;=&nbsp;true</span></p>
-<p style=\"margin-left: 30px;\"><span style=\"font-family: Courier New; font-size: 10pt;\">Declaring&nbsp;variable:&nbsp;Real&nbsp;y0out&nbsp;[7];</span></p>
-<p style=\"margin-left: 30px;\"><span style=\"font-family: Courier New; font-size: 10pt;\">y0&nbsp;=&nbsp;</span></p>
-<p style=\"margin-left: 30px;\"><span style=\"font-family: Courier New; font-size: 10pt;\">&nbsp;=&nbsp;&quot;</span></p>
-<p style=\"margin-left: 30px;\"><span style=\"font-family: Courier New; font-size: 10pt;\">y0&nbsp;=&nbsp;&nbsp;=&nbsp;</span></p>
-<p style=\"margin-left: 30px;\"><span style=\"font-family: Courier New; font-size: 10pt;\">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;1.000024318695068359375&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span></p>
-<p style=\"margin-left: 30px;\"><span style=\"font-family: Courier New; font-size: 10pt;\">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;0.196186602115631103515625&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span></p>
-<p style=\"margin-left: 30px;\"><span style=\"font-family: Courier New; font-size: 10pt;\">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;0.900009691715240478515625&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span></p>
-<p style=\"margin-left: 30px;\"><span style=\"font-family: Courier New; font-size: 10pt;\">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;1&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span></p>
-<p style=\"margin-left: 30px;\"><span style=\"font-family: Courier New; font-size: 10pt;\">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;1.28431034088134765625&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span></p>
-<p style=\"margin-left: 30px;\"><span style=\"font-family: Courier New; font-size: 10pt;\">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;2.50904435006304993294179e-07&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span></p>
-<p style=\"margin-left: 30px;\"><span style=\"font-family: Courier New; font-size: 10pt;\">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;2.120034694671630859375&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span></p>
-<p style=\"margin-left: 30px;\"><span style=\"font-family: Courier New; font-size: 10pt;\">&quot;</span></p>
-<p style=\"margin-left: 30px;\"><span style=\"font-family: Courier New; font-size: 10pt;\">&nbsp;=&nbsp;</span></p>
-<p style=\"margin-left: 30px;\"><span style=\"font-family: Courier New; font-size: 10pt;\">[0.0,&nbsp;376.9911183891212,&nbsp;0.0,&nbsp;0.0,&nbsp;0.0,&nbsp;0.0,&nbsp;0.0,&nbsp;0.0,&nbsp;0.0,&nbsp;0.0,&nbsp;0.0,&nbsp;0.0;</span></p>
-<p style=\"margin-left: 30px;\"><span style=\"font-family: Courier New; font-size: 10pt;\">-0.17610876763748942,&nbsp;0.0,&nbsp;0.0,&nbsp;0.0,&nbsp;-0.19586150145880193,&nbsp;0.05515410219837237,&nbsp;</span></p>
-<p style=\"margin-left: 30px;\"><span style=\"font-family: Courier New; font-size: 10pt;\">&nbsp;&nbsp;0.0,&nbsp;0.0,&nbsp;0.0,&nbsp;0.0,&nbsp;0.0,&nbsp;0.0;</span></p>
-<p style=\"margin-left: 30px;\"><span style=\"font-family: Courier New; font-size: 10pt;\">-0.25587785362300375,&nbsp;0.0,&nbsp;-0.12499999997574654,&nbsp;0.0,&nbsp;-0.2667630481888344,&nbsp;</span></p>
-<p style=\"margin-left: 30px;\"><span style=\"font-family: Courier New; font-size: 10pt;\">&nbsp;&nbsp;-0.001159492170868593,&nbsp;0.0,&nbsp;0.0,&nbsp;0.12499999999488744,&nbsp;0.0,&nbsp;0.0,&nbsp;0.0;</span></p>
-<p style=\"margin-left: 30px;\"><span style=\"font-family: Courier New; font-size: 10pt;\">0.4265899899207167,&nbsp;0.0,&nbsp;0.0,&nbsp;-1.0000000000939857,&nbsp;0.007883244407403102,&nbsp;</span></p>
-<p style=\"margin-left: 30px;\"><span style=\"font-family: Courier New; font-size: 10pt;\">&nbsp;&nbsp;-1.4901043751184482,&nbsp;0.0,&nbsp;0.0,&nbsp;0.0,&nbsp;0.0,&nbsp;0.0,&nbsp;0.0;</span></p>
-<p style=\"margin-left: 30px;\"><span style=\"font-family: Courier New; font-size: 10pt;\">-3.3690289136967633,&nbsp;0.0,&nbsp;33.3333333351218,&nbsp;0.0,&nbsp;-36.84568272027127,&nbsp;</span></p>
-<p style=\"margin-left: 30px;\"><span style=\"font-family: Courier New; font-size: 10pt;\">&nbsp;&nbsp;-0.015266513308270566,&nbsp;0.0,&nbsp;0.0,&nbsp;0.0,&nbsp;0.0,&nbsp;0.0,&nbsp;0.0;</span></p>
-<p style=\"margin-left: 30px;\"><span style=\"font-family: Courier New; font-size: 10pt;\">2.4254614215865864,&nbsp;0.0,&nbsp;0.0,&nbsp;14.285714287056937,&nbsp;0.04482173884230768,&nbsp;</span></p>
-<p style=\"margin-left: 30px;\"><span style=\"font-family: Courier New; font-size: 10pt;\">&nbsp;&nbsp;-22.75799624545071,&nbsp;0.0,&nbsp;0.0,&nbsp;0.0,&nbsp;0.0,&nbsp;0.0,&nbsp;0.0;</span></p>
-<p style=\"margin-left: 30px;\"><span style=\"font-family: Courier New; font-size: 10pt;\">-8.934890956417721,&nbsp;0.0,&nbsp;0.0,&nbsp;0.0,&nbsp;29.303251383490004,&nbsp;33.12307890942945,&nbsp;</span></p>
-<p style=\"margin-left: 30px;\"><span style=\"font-family: Courier New; font-size: 10pt;\">&nbsp;&nbsp;-66.66666667217629,&nbsp;0.0,&nbsp;0.0,&nbsp;0.0,&nbsp;0.0,&nbsp;0.0;</span></p>
-<p style=\"margin-left: 30px;\"><span style=\"font-family: Courier New; font-size: 10pt;\">0.0,&nbsp;0.0,&nbsp;0.0,&nbsp;0.0,&nbsp;0.0,&nbsp;0.0,&nbsp;0.0,&nbsp;-1.0,&nbsp;0.0,&nbsp;0.0,&nbsp;0.0,&nbsp;0.0;</span></p>
-<p style=\"margin-left: 30px;\"><span style=\"font-family: Courier New; font-size: 10pt;\">0.0,&nbsp;18999999.999786172,&nbsp;0.0,&nbsp;0.0,&nbsp;0.0,&nbsp;0.0,&nbsp;-2000000.0001652886,&nbsp;</span></p>
-<p style=\"margin-left: 30px;\"><span style=\"font-family: Courier New; font-size: 10pt;\">&nbsp;&nbsp;10000.00082740371,&nbsp;-9999.999999590995,&nbsp;0.0,&nbsp;0.0,&nbsp;-18999999.99980534;</span></p>
-<p style=\"margin-left: 30px;\"><span style=\"font-family: Courier New; font-size: 10pt;\">0.0,&nbsp;0.009499999999893087,&nbsp;0.0,&nbsp;0.0,&nbsp;0.0,&nbsp;0.0,&nbsp;0.0,&nbsp;0.0,&nbsp;0.0,&nbsp;-0.001,&nbsp;0.0,&nbsp;</span></p>
-<p style=\"margin-left: 30px;\"><span style=\"font-family: Courier New; font-size: 10pt;\">&nbsp;&nbsp;-0.009499999999902671;</span></p>
-<p style=\"margin-left: 30px;\"><span style=\"font-family: Courier New; font-size: 10pt;\">0.0,&nbsp;0.009499999999893087,&nbsp;0.0,&nbsp;0.0,&nbsp;0.0,&nbsp;0.0,&nbsp;0.0,&nbsp;0.0,&nbsp;0.0,&nbsp;0.0,&nbsp;-0.001,&nbsp;</span></p>
-<p style=\"margin-left: 30px;\"><span style=\"font-family: Courier New; font-size: 10pt;\">&nbsp;&nbsp;-0.009499999999902671;</span></p>
-<p style=\"margin-left: 30px;\"><span style=\"font-family: Courier New; font-size: 10pt;\">0.0,&nbsp;0.7092198580776662,&nbsp;0.0,&nbsp;0.0,&nbsp;0.0,&nbsp;0.0,&nbsp;0.0,&nbsp;0.0,&nbsp;0.0,&nbsp;0.0,&nbsp;0.0,&nbsp;</span></p>
-<p style=\"margin-left: 30px;\"><span style=\"font-family: Courier New; font-size: 10pt;\">&nbsp;&nbsp;-0.7092198581570424],&nbsp;</span></p>
-<p style=\"margin-left: 30px;\"><span style=\"font-family: Courier New; font-size: 10pt;\">[0.0,&nbsp;0.0,&nbsp;0.0,&nbsp;0.0;</span></p>
-<p style=\"margin-left: 30px;\"><span style=\"font-family: Courier New; font-size: 10pt;\">0.0,&nbsp;0.14285715467719584,&nbsp;-0.03160725649463204,&nbsp;0.0;</span></p>
-<p style=\"margin-left: 30px;\"><span style=\"font-family: Courier New; font-size: 10pt;\">0.0,&nbsp;0.0,&nbsp;-0.04042882695287631,&nbsp;0.0;</span></p>
-<p style=\"margin-left: 30px;\"><span style=\"font-family: Courier New; font-size: 10pt;\">0.0,&nbsp;0.0,&nbsp;0.10093337277083947,&nbsp;0.0;</span></p>
-<p style=\"margin-left: 30px;\"><span style=\"font-family: Courier New; font-size: 10pt;\">0.0,&nbsp;0.0,&nbsp;-0.532308225276168,&nbsp;0.0;</span></p>
-<p style=\"margin-left: 30px;\"><span style=\"font-family: Courier New; font-size: 10pt;\">0.0,&nbsp;0.0,&nbsp;0.5738762639698587,&nbsp;0.0;</span></p>
-<p style=\"margin-left: 30px;\"><span style=\"font-family: Courier New; font-size: 10pt;\">0.0,&nbsp;0.0,&nbsp;-1.0247506547026812,&nbsp;0.0;</span></p>
-<p style=\"margin-left: 30px;\"><span style=\"font-family: Courier New; font-size: 10pt;\">0.0,&nbsp;0.0,&nbsp;0.0,&nbsp;0.0;</span></p>
-<p style=\"margin-left: 30px;\"><span style=\"font-family: Courier New; font-size: 10pt;\">19000001.57206705,&nbsp;0.0,&nbsp;0.0,&nbsp;2000000.1654807418;</span></p>
-<p style=\"margin-left: 30px;\"><span style=\"font-family: Courier New; font-size: 10pt;\">0.009500000786033523,&nbsp;0.0,&nbsp;0.0,&nbsp;0.0;</span></p>
-<p style=\"margin-left: 30px;\"><span style=\"font-family: Courier New; font-size: 10pt;\">0.009500000786033523,&nbsp;0.0,&nbsp;0.0,&nbsp;0.0;</span></p>
-<p style=\"margin-left: 30px;\"><span style=\"font-family: Courier New; font-size: 10pt;\">0.7092199168371426,&nbsp;0.0,&nbsp;0.0,&nbsp;0.0],&nbsp;</span></p>
-<p style=\"margin-left: 30px;\"><span style=\"font-family: Courier New; font-size: 10pt;\">[-0.13402336434626583,&nbsp;0.0,&nbsp;0.0,&nbsp;0.0,&nbsp;0.43954877075235005,&nbsp;0.4968461836414418,&nbsp;</span></p>
-<p style=\"margin-left: 30px;\"><span style=\"font-family: Courier New; font-size: 10pt;\">&nbsp;&nbsp;0.0,&nbsp;0.0,&nbsp;0.0,&nbsp;0.0,&nbsp;0.0,&nbsp;0.0;</span></p>
-<p style=\"margin-left: 30px;\"><span style=\"font-family: Courier New; font-size: 10pt;\">0.3043068141629995,&nbsp;0.0,&nbsp;0.0,&nbsp;0.0,&nbsp;1.4537261850177308,&nbsp;0.7665888604391177,&nbsp;0.0,&nbsp;</span></p>
-<p style=\"margin-left: 30px;\"><span style=\"font-family: Courier New; font-size: 10pt;\">&nbsp;&nbsp;0.0,&nbsp;0.0,&nbsp;0.0,&nbsp;0.0,&nbsp;0.0;</span></p>
-<p style=\"margin-left: 30px;\"><span style=\"font-family: Courier New; font-size: 10pt;\">1.2253264601006595,&nbsp;0.0,&nbsp;0.0,&nbsp;0.0,&nbsp;1.3643245623264468,&nbsp;-0.38254244268485077,&nbsp;0.0,</span></p>
-<p style=\"margin-left: 30px;\"><span style=\"font-family: Courier New; font-size: 10pt;\">&nbsp;&nbsp;&nbsp;0.0,&nbsp;0.0,&nbsp;0.0,&nbsp;0.0,&nbsp;0.0;</span></p>
-<p style=\"margin-left: 30px;\"><span style=\"font-family: Courier New; font-size: 10pt;\">0.0,&nbsp;0.9999999998895094,&nbsp;0.0,&nbsp;0.0,&nbsp;0.0,&nbsp;0.0,&nbsp;0.0,&nbsp;0.0,&nbsp;0.0,&nbsp;0.0,&nbsp;0.0,&nbsp;0.0;</span></p>
-<p style=\"margin-left: 30px;\"><span style=\"font-family: Courier New; font-size: 10pt;\">1.0000000001010991,&nbsp;0.0,&nbsp;0.0,&nbsp;0.0,&nbsp;0.0,&nbsp;0.0,&nbsp;0.0,&nbsp;0.0,&nbsp;0.0,&nbsp;0.0,&nbsp;0.0,&nbsp;0.0;</span></p>
-<p style=\"margin-left: 30px;\"><span style=\"font-family: Courier New; font-size: 10pt;\">0.0,&nbsp;9.499999999893086,&nbsp;0.0,&nbsp;0.0,&nbsp;0.0,&nbsp;0.0,&nbsp;0.0,&nbsp;0.0,&nbsp;0.0,&nbsp;0.0,&nbsp;0.0,&nbsp;</span></p>
-<p style=\"margin-left: 30px;\"><span style=\"font-family: Courier New; font-size: 10pt;\">&nbsp;&nbsp;-9.49999999990267;</span></p>
-<p style=\"margin-left: 30px;\"><span style=\"font-family: Courier New; font-size: 10pt;\">0.0,&nbsp;0.0,&nbsp;0.0,&nbsp;0.0,&nbsp;0.0,&nbsp;0.0,&nbsp;0.0,&nbsp;0.0,&nbsp;0.9999999999590995,&nbsp;0.0,&nbsp;0.0,&nbsp;0.0],&nbsp;</span></p>
-<p style=\"margin-left: 30px;\"><span style=\"font-family: Courier New; font-size: 10pt;\">[0.0,&nbsp;0.0,&nbsp;-0.015371259820540216,&nbsp;0.0;</span></p>
-<p style=\"margin-left: 30px;\"><span style=\"font-family: Courier New; font-size: 10pt;\">0.0,&nbsp;0.0,&nbsp;0.02120334463562301,&nbsp;0.0;</span></p>
-<p style=\"margin-left: 30px;\"><span style=\"font-family: Courier New; font-size: 10pt;\">0.0,&nbsp;0.0,&nbsp;0.21999579935538804,&nbsp;0.0;</span></p>
-<p style=\"margin-left: 30px;\"><span style=\"font-family: Courier New; font-size: 10pt;\">0.0,&nbsp;0.0,&nbsp;0.0,&nbsp;0.0;</span></p>
-<p style=\"margin-left: 30px;\"><span style=\"font-family: Courier New; font-size: 10pt;\">0.0,&nbsp;0.0,&nbsp;0.0,&nbsp;0.0;</span></p>
-<p style=\"margin-left: 30px;\"><span style=\"font-family: Courier New; font-size: 10pt;\">9.500000786033524,&nbsp;0.0,&nbsp;0.0,&nbsp;1.0;</span></p>
-<p style=\"margin-left: 30px;\"><span style=\"font-family: Courier New; font-size: 10pt;\">0.0,&nbsp;0.0,&nbsp;0.0,&nbsp;0.0],&nbsp;{&quot;uPSS&quot;,&nbsp;&quot;uPm&quot;,&nbsp;&quot;uPload&quot;,&nbsp;&quot;uvsAVR&quot;},&nbsp;{&quot;Vt&quot;,&nbsp;&quot;Q&quot;,&nbsp;&quot;P&quot;,&nbsp;&quot;w&quot;,&nbsp;</span></p>
-<p style=\"margin-left: 30px;\"><span style=\"font-family: Courier New; font-size: 10pt;\">&nbsp;&nbsp;&quot;delta&quot;,&nbsp;&quot;AVRin&quot;,&nbsp;&quot;AVRout&quot;},&nbsp;{&quot;Plant.G1.machine.delta&quot;,&nbsp;&quot;Plant.G1.machine.w&quot;,&nbsp;</span></p>
-<p style=\"margin-left: 30px;\"><span style=\"font-family: Courier New; font-size: 10pt;\">&nbsp;&nbsp;&quot;Plant.G1.machine.e1q&quot;,&nbsp;&quot;Plant.G1.machine.e1d&quot;,&nbsp;&quot;Plant.G1.machine.e2q&quot;,&nbsp;</span></p>
-<p style=\"margin-left: 30px;\"><span style=\"font-family: Courier New; font-size: 10pt;\">&nbsp;&nbsp;&quot;Plant.G1.machine.e2d&quot;,&nbsp;&quot;Plant.G1.avr.vm&quot;,&nbsp;&quot;Plant.G1.avr.vr&quot;,&nbsp;&quot;Plant.G1.avr.vf1&quot;,</span></p>
-<p style=\"margin-left: 30px;\"><span style=\"font-family: Courier New; font-size: 10pt;\">&nbsp;&nbsp;&nbsp;&quot;Plant.G1.pss.imLeadLag.TF.x_scaled[1]&quot;,&nbsp;&quot;Plant.G1.pss.imLeadLag1.TF.x_scaled[1]&quot;,</span></p>
-<p style=\"margin-left: 30px;\"><span style=\"font-family: Courier New; font-size: 10pt;\">&nbsp;&nbsp;&nbsp;&quot;Plant.G1.pss.derivativeLag.TF.x_scaled[1]&quot;}</span></p>
+<p><b><span style=\"font-family: Courier New; font-size: 10pt;\">ThreeMIB.Analysis.LinearAnalysis.CustomFunctions.LinearizeSimple();</span></b></p>
+<p><span style=\"font-family: Courier New; font-size: 10pt;\">DAE&nbsp;Mode&nbsp;is&nbsp;turned&nbsp;off.</span></p>
+<p><span style=\"font-family: Courier New; font-size: 10pt;\">Global&nbsp;optimization&nbsp;is&nbsp;disabled.</span></p>
+<p><span style=\"font-family: Courier New; font-size: 10pt;\">Warning: Script using obsolete flag Advanced.SparseActivate. Flag is now called Advanced.Translation.SparseActivate.</span></p>
+<p><span style=\"font-family: Courier New; font-size: 10pt;\">Sparse&nbsp;options&nbsp;disabled.</span></p>
+<p><span style=\"font-family: Courier New; font-size: 10pt;\">Linearization&nbsp;and&nbsp;Nonlinear&nbsp;Model&nbsp;Comparison&nbsp;is&nbsp;starting...</span></p>
+<p><span style=\"font-family: Courier New; font-size: 10pt;\">Linearized&nbsp;Model</span></p>
+<p><span style=\"font-family: Courier New; font-size: 10pt;\">Declaring&nbsp;variable:&nbsp;Integer&nbsp;nx&nbsp;;</span></p>
+<p><span style=\"font-family: Courier New; font-size: 10pt;\">Number&nbsp;of&nbsp;states:&nbsp;37</span></p>
+<p><span style=\"font-family: Courier New; font-size: 10pt;\">Simulating&nbsp;nonlinear&nbsp;model</span></p>
+<p><span style=\"font-family: Courier New; font-size: 10pt;\">&nbsp;=&nbsp;true</span></p>
+<p><span style=\"font-family: Courier New; font-size: 10pt;\">Declaring&nbsp;variable:&nbsp;Integer&nbsp;ylen&nbsp;;</span></p>
+<p><span style=\"font-family: Courier New; font-size: 10pt;\">Declaring&nbsp;variable:&nbsp;Integer&nbsp;ny&nbsp;;</span></p>
+<p><span style=\"font-family: Courier New; font-size: 10pt;\">Declaring&nbsp;variable:&nbsp;Real&nbsp;y0&nbsp;[5,&nbsp;1004];</span></p>
+<p><span style=\"font-family: Courier New; font-size: 10pt;\">&nbsp;=&nbsp;true</span></p>
+<p><span style=\"font-family: Courier New; font-size: 10pt;\">Declaring&nbsp;variable:&nbsp;Real&nbsp;y0out&nbsp;[5];</span></p>
+<p><span style=\"font-family: Courier New; font-size: 10pt;\">y0&nbsp;=&nbsp;</span></p>
+<p><span style=\"font-family: Courier New; font-size: 10pt;\">&nbsp;=&nbsp;&quot;</span></p>
+<p><span style=\"font-family: Courier New; font-size: 10pt;\">y0&nbsp;=&nbsp;&nbsp;=&nbsp;</span></p>
+<p><span style=\"font-family: Courier New; font-size: 10pt;\">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;1.04010999202728271484375&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span></p>
+<p><span style=\"font-family: Courier New; font-size: 10pt;\">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;1.01289199250231831683777e-08&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span></p>
+<p><span style=\"font-family: Courier New; font-size: 10pt;\">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;1.69924986362457275390625&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span></p>
+<p><span style=\"font-family: Courier New; font-size: 10pt;\">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;1.65143496100306208518305e-10&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span></p>
+<p><span style=\"font-family: Courier New; font-size: 10pt;\">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;0.278906673192977905273438&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span></p>
+<p><span style=\"font-family: Courier New; font-size: 10pt;\">&quot;</span></p>
+<p><span style=\"font-family: Courier New; font-size: 10pt;\">&nbsp;=&nbsp;</span></p>
+<p><span style=\"font-family: Courier New; font-size: 10pt;\">[0.0,&nbsp;0.0,&nbsp;0.0,&nbsp;0.0,&nbsp;0.0,&nbsp;0.0,&nbsp;0.0,&nbsp;0.0,&nbsp;0.0,&nbsp;0.0,&nbsp;0.0,&nbsp;0.0,&nbsp;0.0,&nbsp;0.0,&nbsp;0.0,&nbsp;0.0,</span></p>
+<p><span style=\"font-family: Courier New; font-size: 10pt;\">&nbsp;&nbsp;&nbsp;0.0,&nbsp;0.0,&nbsp;0.0,&nbsp;0.0,&nbsp;0.0,&nbsp;0.0,&nbsp;0.0,&nbsp;0.0,&nbsp;0.0,&nbsp;0.0,&nbsp;0.0,&nbsp;0.0,&nbsp;0.0,&nbsp;0.0,&nbsp;0.0,&nbsp;</span></p>
+<p><span style=\"font-family: Courier New; font-size: 10pt;\">&nbsp;&nbsp;0.0,&nbsp;0.0,&nbsp;0.0,&nbsp;0.0,&nbsp;0.0,&nbsp;0.0;</span></p>
+<p><span style=\"font-family: Courier New; font-size: 10pt;\">0.0,&nbsp;0.0,&nbsp;0.0,&nbsp;0.0,&nbsp;0.0,&nbsp;0.0,&nbsp;0.0,&nbsp;0.0,&nbsp;0.0,&nbsp;0.0,&nbsp;0.0,&nbsp;0.0,&nbsp;0.0,&nbsp;0.0,&nbsp;0.0,&nbsp;0.0,&nbsp;</span></p>
+<p><span style=\"font-family: Courier New; font-size: 10pt;\">&nbsp;&nbsp;0.0,&nbsp;0.0,&nbsp;0.0,&nbsp;0.0,&nbsp;0.0,&nbsp;0.0,&nbsp;0.0,&nbsp;0.0,&nbsp;0.0,&nbsp;0.0,&nbsp;0.0,&nbsp;0.0,&nbsp;0.0,&nbsp;0.0,&nbsp;0.0,&nbsp;0.0,</span></p>
+<p><span style=\"font-family: Courier New; font-size: 10pt;\">&nbsp;&nbsp;&nbsp;0.0,&nbsp;0.0,&nbsp;0.0,&nbsp;0.0,&nbsp;0.0;</span></p>
+<p><span style=\"font-family: Courier New; font-size: 10pt;\">0.0,&nbsp;0.0,&nbsp;0.0,&nbsp;0.0,&nbsp;0.0,&nbsp;0.0,&nbsp;0.0,&nbsp;0.0,&nbsp;0.0,&nbsp;0.0,&nbsp;0.0,&nbsp;0.0,&nbsp;0.0,&nbsp;0.0,&nbsp;0.0,&nbsp;0.0,&nbsp;</span></p>
+<p><span style=\"font-family: Courier New; font-size: 10pt;\">&nbsp;&nbsp;0.0,&nbsp;0.0,&nbsp;0.0,&nbsp;0.0,&nbsp;0.0,&nbsp;0.0,&nbsp;0.0,&nbsp;0.0,&nbsp;0.0,&nbsp;0.0,&nbsp;0.0,&nbsp;0.0,&nbsp;0.0,&nbsp;0.0,&nbsp;0.0,&nbsp;0.0,</span></p>
+<p><span style=\"font-family: Courier New; font-size: 10pt;\">&nbsp;&nbsp;&nbsp;0.0,&nbsp;0.0,&nbsp;0.0,&nbsp;0.0,&nbsp;0.0;</span></p>
+<p><span style=\"font-family: Courier New; font-size: 10pt;\">0.0018522008424100133,&nbsp;0.0,&nbsp;-0.010667194751376403,&nbsp;-0.10017324122069504,&nbsp;</span></p>
+<p><span style=\"font-family: Courier New; font-size: 10pt;\">&nbsp;&nbsp;-0.17089256581647125,&nbsp;-0.015159942341530225,&nbsp;-0.1061195962471122,&nbsp;</span></p>
+<p><span style=\"font-family: Courier New; font-size: 10pt;\">&nbsp;&nbsp;0.1276904257692333,&nbsp;0.0,&nbsp;0.0,&nbsp;0.0,&nbsp;0.0,&nbsp;0.0,&nbsp;0.0,&nbsp;0.0,&nbsp;0.1465419304189624,&nbsp;</span></p>
+<p><span style=\"font-family: Courier New; font-size: 10pt;\">&nbsp;&nbsp;0.0025283655600312712,&nbsp;0.01769855900610642,&nbsp;-0.12625673399290213,&nbsp;0.0,&nbsp;0.0,&nbsp;</span></p>
+<p><span style=\"font-family: Courier New; font-size: 10pt;\">&nbsp;&nbsp;0.0,&nbsp;0.0,&nbsp;0.0,&nbsp;0.0,&nbsp;0.0,&nbsp;0.022498434728774507,&nbsp;-0.0029950027077677408,&nbsp;</span></p>
+<p><span style=\"font-family: Courier New; font-size: 10pt;\">&nbsp;&nbsp;-0.004591119808084861,&nbsp;-0.009764212542951947,&nbsp;-0.01953079162183833,&nbsp;0.0,&nbsp;0.0,&nbsp;</span></p>
+<p><span style=\"font-family: Courier New; font-size: 10pt;\">&nbsp;&nbsp;0.0,&nbsp;0.0,&nbsp;0.0,&nbsp;0.0;</span></p>
+<p><span style=\"font-family: Courier New; font-size: 10pt;\">0.0,&nbsp;0.0,&nbsp;0.0,&nbsp;314.15926535897927,&nbsp;0.0,&nbsp;0.0,&nbsp;0.0,&nbsp;0.0,&nbsp;0.0,&nbsp;0.0,&nbsp;0.0,&nbsp;0.0,&nbsp;0.0,&nbsp;</span></p>
+<p><span style=\"font-family: Courier New; font-size: 10pt;\">&nbsp;&nbsp;0.0,&nbsp;0.0,&nbsp;0.0,&nbsp;0.0,&nbsp;0.0,&nbsp;0.0,&nbsp;0.0,&nbsp;0.0,&nbsp;0.0,&nbsp;0.0,&nbsp;0.0,&nbsp;0.0,&nbsp;0.0,&nbsp;0.0,&nbsp;0.0,&nbsp;0.0,</span></p>
+<p><span style=\"font-family: Courier New; font-size: 10pt;\">&nbsp;&nbsp;&nbsp;0.0,&nbsp;0.0,&nbsp;0.0,&nbsp;0.0,&nbsp;0.0,&nbsp;0.0,&nbsp;0.0,&nbsp;0.0;</span></p>
+<p><span style=\"font-family: Courier New; font-size: 10pt;\">0.0017233864279171968,&nbsp;0.0,&nbsp;0.00023080298419404145,&nbsp;0.0,&nbsp;-0.010951723199558115,&nbsp;</span></p>
+<p><span style=\"font-family: Courier New; font-size: 10pt;\">&nbsp;&nbsp;-1.3673104612770817,&nbsp;0.8945130456437131,&nbsp;-0.045806324491108094,&nbsp;0.0,&nbsp;</span></p>
+<p><span style=\"font-family: Courier New; font-size: 10pt;\">&nbsp;&nbsp;0.19607843139653255,&nbsp;0.0,&nbsp;0.0,&nbsp;0.0,&nbsp;0.0,&nbsp;0.0,&nbsp;0.0052270633642785645,&nbsp;</span></p>
+<p><span style=\"font-family: Courier New; font-size: 10pt;\">&nbsp;&nbsp;0.0018873336265140717,&nbsp;0.013211335167105143,&nbsp;-0.001626905716792271,&nbsp;0.0,&nbsp;0.0,&nbsp;</span></p>
+<p><span style=\"font-family: Courier New; font-size: 10pt;\">&nbsp;&nbsp;0.0,&nbsp;0.0,&nbsp;0.0,&nbsp;0.0,&nbsp;0.0,&nbsp;0.004001273218937416,&nbsp;-0.0003301098304959462,&nbsp;</span></p>
+<p><span style=\"font-family: Courier New; font-size: 10pt;\">&nbsp;&nbsp;0.001102892290693528,&nbsp;0.002345587790855513,&nbsp;-0.0021526907562014,&nbsp;0.0,&nbsp;0.0,&nbsp;0.0,</span></p>
+<p><span style=\"font-family: Courier New; font-size: 10pt;\">&nbsp;&nbsp;&nbsp;0.0,&nbsp;0.0,&nbsp;0.0;</span></p>
+<p><span style=\"font-family: Courier New; font-size: 10pt;\">0.17689098859771069,&nbsp;0.0,&nbsp;0.023689968316140477,&nbsp;0.0,&nbsp;-1.1241013843577579,&nbsp;</span></p>
+<p><span style=\"font-family: Courier New; font-size: 10pt;\">&nbsp;&nbsp;16.433040768783922,&nbsp;-18.302047953470716,&nbsp;-0.18364372743036406,&nbsp;0.0,&nbsp;0.0,&nbsp;0.0,&nbsp;</span></p>
+<p><span style=\"font-family: Courier New; font-size: 10pt;\">&nbsp;&nbsp;0.0,&nbsp;0.0,&nbsp;0.0,&nbsp;0.0,&nbsp;0.5365136738699301,&nbsp;0.19371876965494278,&nbsp;1.3560313850800294,</span></p>
+<p><span style=\"font-family: Courier New; font-size: 10pt;\">&nbsp;&nbsp;&nbsp;-0.1669880701408694,&nbsp;0.0,&nbsp;0.0,&nbsp;0.0,&nbsp;0.0,&nbsp;0.0,&nbsp;0.0,&nbsp;0.0,&nbsp;0.4106967228080221,&nbsp;</span></p>
+<p><span style=\"font-family: Courier New; font-size: 10pt;\">&nbsp;&nbsp;-0.033883011588873226,&nbsp;0.11320252905430424,&nbsp;0.2407546736381073,&nbsp;</span></p>
+<p><span style=\"font-family: Courier New; font-size: 10pt;\">&nbsp;&nbsp;-0.22095543260089906,&nbsp;0.0,&nbsp;0.0,&nbsp;0.0,&nbsp;0.0,&nbsp;0.0,&nbsp;0.0;</span></p>
+<p><span style=\"font-family: Courier New; font-size: 10pt;\">0.04613862785197092,&nbsp;0.0,&nbsp;0.35001008016101404,&nbsp;0.0,&nbsp;4.719160383154787,&nbsp;</span></p>
+<p><span style=\"font-family: Courier New; font-size: 10pt;\">&nbsp;&nbsp;-0.1450384645653808,&nbsp;-1.015269253523192,&nbsp;-18.45177991264146,&nbsp;0.0,&nbsp;0.0,&nbsp;0.0,&nbsp;</span></p>
+<p><span style=\"font-family: Courier New; font-size: 10pt;\">&nbsp;&nbsp;0.0,&nbsp;0.0,&nbsp;0.0,&nbsp;0.0,&nbsp;-4.299180562906219,&nbsp;0.03477895583908227,&nbsp;0.24345268695230576,</span></p>
+<p><span style=\"font-family: Courier New; font-size: 10pt;\">&nbsp;&nbsp;&nbsp;3.8784609740218645,&nbsp;0.0,&nbsp;0.0,&nbsp;0.0,&nbsp;0.0,&nbsp;0.0,&nbsp;0.0,&nbsp;0.0,&nbsp;-0.46611845266480906,&nbsp;</span></p>
+<p><span style=\"font-family: Courier New; font-size: 10pt;\">&nbsp;&nbsp;0.07432930984181439,&nbsp;0.211485163094187,&nbsp;0.4497783036669626,&nbsp;0.48471078523579714,</span></p>
+<p><span style=\"font-family: Courier New; font-size: 10pt;\">&nbsp;&nbsp;&nbsp;0.0,&nbsp;0.0,&nbsp;0.0,&nbsp;0.0,&nbsp;0.0,&nbsp;0.0;</span></p>
+<p><span style=\"font-family: Courier New; font-size: 10pt;\">-3.6628012996999604E-05,&nbsp;0.0,&nbsp;-1.50275968345167E-05,&nbsp;0.39147678141987874,&nbsp;</span></p>
+<p><span style=\"font-family: Courier New; font-size: 10pt;\">&nbsp;&nbsp;8.520102833040585E-05,&nbsp;-6.888083527270883E-05,&nbsp;-0.00048216584614484267,&nbsp;</span></p>
+<p><span style=\"font-family: Courier New; font-size: 10pt;\">&nbsp;&nbsp;-0.00018601375139655686,&nbsp;-0.0009999999998466444,&nbsp;0.0,&nbsp;-0.023566512711367685,&nbsp;</span></p>
+<p><span style=\"font-family: Courier New; font-size: 10pt;\">&nbsp;&nbsp;-0.0022863034695914494,&nbsp;-0.39147678141977155,&nbsp;0.0007543640899297687,&nbsp;0.0,&nbsp;</span></p>
+<p><span style=\"font-family: Courier New; font-size: 10pt;\">&nbsp;&nbsp;1.959214750542203E-05,&nbsp;-3.964882583232441E-05,&nbsp;-0.0002775417803547215,&nbsp;</span></p>
+<p><span style=\"font-family: Courier New; font-size: 10pt;\">&nbsp;&nbsp;-8.088486040000423E-05,&nbsp;0.0,&nbsp;0.0,&nbsp;0.0,&nbsp;0.0,&nbsp;0.0,&nbsp;0.0,&nbsp;0.0,&nbsp;-6.816516366989835E-05,</span></p>
+<p><span style=\"font-family: Courier New; font-size: 10pt;\">&nbsp;&nbsp;&nbsp;4.5676069971613555E-06,&nbsp;-2.879710427053156E-05,&nbsp;-6.124454589959452E-05,&nbsp;</span></p>
+<p><span style=\"font-family: Courier New; font-size: 10pt;\">&nbsp;&nbsp;2.9785922042335492E-05,&nbsp;0.0,&nbsp;0.0,&nbsp;0.0,&nbsp;0.0,&nbsp;0.0,&nbsp;0.0;</span></p>
+<p><span style=\"font-family: Courier New; font-size: 10pt;\">-73.25602599399943,&nbsp;0.0,&nbsp;-30.05519366903436,&nbsp;782953.5628425331,&nbsp;170.4020566608094,</span></p>
+<p><span style=\"font-family: Courier New; font-size: 10pt;\">&nbsp;&nbsp;&nbsp;-137.7616705454181,&nbsp;-964.331692289685,&nbsp;-372.0275027931165,&nbsp;0.0,&nbsp;</span></p>
+<p><span style=\"font-family: Courier New; font-size: 10pt;\">&nbsp;&nbsp;-20.000000002446317,&nbsp;-47133.02541995887,&nbsp;-4572.606938628757,&nbsp;-782953.5628417634,</span></p>
+<p><span style=\"font-family: Courier New; font-size: 10pt;\">&nbsp;&nbsp;&nbsp;1508.728179581574,&nbsp;0.0,&nbsp;39.184295010845375,&nbsp;-79.29765166464851,&nbsp;</span></p>
+<p><span style=\"font-family: Courier New; font-size: 10pt;\">&nbsp;&nbsp;-555.0835607094435,&nbsp;-161.76972080001076,&nbsp;0.0,&nbsp;0.0,&nbsp;0.0,&nbsp;0.0,&nbsp;0.0,&nbsp;0.0,&nbsp;0.0,&nbsp;</span></p>
+<p><span style=\"font-family: Courier New; font-size: 10pt;\">&nbsp;&nbsp;-136.33032733980014,&nbsp;9.13521399433497,&nbsp;-57.594208541062855,&nbsp;-122.48909179918871,</span></p>
+<p><span style=\"font-family: Courier New; font-size: 10pt;\">&nbsp;&nbsp;&nbsp;59.571844084669046,&nbsp;0.0,&nbsp;0.0,&nbsp;0.0,&nbsp;0.0,&nbsp;0.0,&nbsp;0.0;</span></p>
+<p><span style=\"font-family: Courier New; font-size: 10pt;\">0.0,&nbsp;0.0,&nbsp;0.0,&nbsp;1153.8461538461538,&nbsp;0.0,&nbsp;0.0,&nbsp;0.0,&nbsp;0.0,&nbsp;0.0,&nbsp;0.0,&nbsp;</span></p>
+<p><span style=\"font-family: Courier New; font-size: 10pt;\">&nbsp;&nbsp;-76.92307692307693,&nbsp;0.0,&nbsp;-1153.8461538461538,&nbsp;0.0,&nbsp;0.0,&nbsp;0.0,&nbsp;0.0,&nbsp;0.0,&nbsp;0.0,&nbsp;</span></p>
+<p><span style=\"font-family: Courier New; font-size: 10pt;\">&nbsp;&nbsp;0.0,&nbsp;0.0,&nbsp;0.0,&nbsp;0.0,&nbsp;0.0,&nbsp;0.0,&nbsp;0.0,&nbsp;0.0,&nbsp;0.0,&nbsp;0.0,&nbsp;0.0,&nbsp;0.0,&nbsp;0.0,&nbsp;0.0,&nbsp;0.0,&nbsp;0.0,</span></p>
+<p><span style=\"font-family: Courier New; font-size: 10pt;\">&nbsp;&nbsp;&nbsp;0.0,&nbsp;0.0;</span></p>
+<p><span style=\"font-family: Courier New; font-size: 10pt;\">0.0,&nbsp;0.0,&nbsp;0.0,&nbsp;11893.491124260358,&nbsp;0.0,&nbsp;0.0,&nbsp;0.0,&nbsp;0.0,&nbsp;0.0,&nbsp;0.0,&nbsp;</span></p>
+<p><span style=\"font-family: Courier New; font-size: 10pt;\">&nbsp;&nbsp;-715.9763313609473,&nbsp;-76.92307692307699,&nbsp;-11893.491124260356,&nbsp;0.0,&nbsp;0.0,&nbsp;0.0,&nbsp;</span></p>
+<p><span style=\"font-family: Courier New; font-size: 10pt;\">&nbsp;&nbsp;0.0,&nbsp;0.0,&nbsp;0.0,&nbsp;0.0,&nbsp;0.0,&nbsp;0.0,&nbsp;0.0,&nbsp;0.0,&nbsp;0.0,&nbsp;0.0,&nbsp;0.0,&nbsp;0.0,&nbsp;0.0,&nbsp;0.0,&nbsp;0.0,&nbsp;0.0,</span></p>
+<p><span style=\"font-family: Courier New; font-size: 10pt;\">&nbsp;&nbsp;&nbsp;0.0,&nbsp;0.0,&nbsp;0.0,&nbsp;0.0,&nbsp;0.0;</span></p>
+<p><span style=\"font-family: Courier New; font-size: 10pt;\">0.0,&nbsp;0.0,&nbsp;0.0,&nbsp;0.33333333333333326,&nbsp;0.0,&nbsp;0.0,&nbsp;0.0,&nbsp;0.0,&nbsp;0.0,&nbsp;0.0,&nbsp;0.0,&nbsp;0.0,&nbsp;</span></p>
+<p><span style=\"font-family: Courier New; font-size: 10pt;\">&nbsp;&nbsp;-0.3333333333333333,&nbsp;0.0,&nbsp;0.0,&nbsp;0.0,&nbsp;0.0,&nbsp;0.0,&nbsp;0.0,&nbsp;0.0,&nbsp;0.0,&nbsp;0.0,&nbsp;0.0,&nbsp;0.0,&nbsp;</span></p>
+<p><span style=\"font-family: Courier New; font-size: 10pt;\">&nbsp;&nbsp;0.0,&nbsp;0.0,&nbsp;0.0,&nbsp;0.0,&nbsp;0.0,&nbsp;0.0,&nbsp;0.0,&nbsp;0.0,&nbsp;0.0,&nbsp;0.0,&nbsp;0.0,&nbsp;0.0,&nbsp;0.0;</span></p>
+<p><span style=\"font-family: Courier New; font-size: 10pt;\">0.0,&nbsp;0.0,&nbsp;0.0,&nbsp;1987.1917838539748,&nbsp;0.0,&nbsp;0.0,&nbsp;0.0,&nbsp;0.0,&nbsp;0.0,&nbsp;0.0,&nbsp;</span></p>
+<p><span style=\"font-family: Courier New; font-size: 10pt;\">&nbsp;&nbsp;-119.6269680827518,&nbsp;-11.605601381162492,&nbsp;-1987.1917838539746,&nbsp;-1.2468827930174573,</span></p>
+<p><span style=\"font-family: Courier New; font-size: 10pt;\">&nbsp;&nbsp;&nbsp;0.0,&nbsp;0.0,&nbsp;0.0,&nbsp;0.0,&nbsp;0.0,&nbsp;0.0,&nbsp;0.0,&nbsp;0.0,&nbsp;0.0,&nbsp;0.0,&nbsp;0.0,&nbsp;0.0,&nbsp;0.0,&nbsp;0.0,&nbsp;0.0,&nbsp;</span></p>
+<p><span style=\"font-family: Courier New; font-size: 10pt;\">&nbsp;&nbsp;0.0,&nbsp;0.0,&nbsp;0.0,&nbsp;0.0,&nbsp;0.0,&nbsp;0.0,&nbsp;0.0,&nbsp;0.0;</span></p>
+<p><span style=\"font-family: Courier New; font-size: 10pt;\">0.0018522008550070268,&nbsp;0.0,&nbsp;-0.010667194751376403,&nbsp;0.0,&nbsp;0.1465419304599377,&nbsp;</span></p>
+<p><span style=\"font-family: Courier New; font-size: 10pt;\">&nbsp;&nbsp;0.002528365570598926,&nbsp;0.017698558951017507,&nbsp;-0.12625673410208346,&nbsp;0.0,&nbsp;0.0,&nbsp;</span></p>
+<p><span style=\"font-family: Courier New; font-size: 10pt;\">&nbsp;&nbsp;0.0,&nbsp;0.0,&nbsp;0.0,&nbsp;0.0,&nbsp;-0.10017324122069307,&nbsp;-0.1708925657754888,&nbsp;</span></p>
+<p><span style=\"font-family: Courier New; font-size: 10pt;\">&nbsp;&nbsp;-0.015159942309828119,&nbsp;-0.10611959625814078,&nbsp;0.1276904257692113,&nbsp;0.0,&nbsp;0.0,&nbsp;0.0,</span></p>
+<p><span style=\"font-family: Courier New; font-size: 10pt;\">&nbsp;&nbsp;&nbsp;0.0,&nbsp;0.0,&nbsp;0.0,&nbsp;0.0,&nbsp;0.022498434416687575,&nbsp;-0.002995002927510571,&nbsp;</span></p>
+<p><span style=\"font-family: Courier New; font-size: 10pt;\">&nbsp;&nbsp;-0.004591119789444499,&nbsp;-0.00976421253204411,&nbsp;-0.01953079162183833,&nbsp;0.0,&nbsp;0.0,&nbsp;</span></p>
+<p><span style=\"font-family: Courier New; font-size: 10pt;\">&nbsp;&nbsp;0.0,&nbsp;0.0,&nbsp;0.0,&nbsp;0.0;</span></p>
+<p><span style=\"font-family: Courier New; font-size: 10pt;\">0.0,&nbsp;0.0,&nbsp;0.0,&nbsp;0.0,&nbsp;0.0,&nbsp;0.0,&nbsp;0.0,&nbsp;0.0,&nbsp;0.0,&nbsp;0.0,&nbsp;0.0,&nbsp;0.0,&nbsp;0.0,&nbsp;0.0,&nbsp;</span></p>
+<p><span style=\"font-family: Courier New; font-size: 10pt;\">&nbsp;&nbsp;314.1592653589793,&nbsp;0.0,&nbsp;0.0,&nbsp;0.0,&nbsp;0.0,&nbsp;0.0,&nbsp;0.0,&nbsp;0.0,&nbsp;0.0,&nbsp;0.0,&nbsp;0.0,&nbsp;0.0,&nbsp;0.0,</span></p>
+<p><span style=\"font-family: Courier New; font-size: 10pt;\">&nbsp;&nbsp;&nbsp;0.0,&nbsp;0.0,&nbsp;0.0,&nbsp;0.0,&nbsp;0.0,&nbsp;0.0,&nbsp;0.0,&nbsp;0.0,&nbsp;0.0,&nbsp;0.0;</span></p>
+<p><span style=\"font-family: Courier New; font-size: 10pt;\">0.001723386427917197,&nbsp;0.0,&nbsp;0.00023080302750306815,&nbsp;0.0,&nbsp;0.005227063364280099,&nbsp;</span></p>
+<p><span style=\"font-family: Courier New; font-size: 10pt;\">&nbsp;&nbsp;0.0018873336265138587,&nbsp;0.013211335167103756,&nbsp;-0.0016269059094271047,&nbsp;0.0,&nbsp;0.0,</span></p>
+<p><span style=\"font-family: Courier New; font-size: 10pt;\">&nbsp;&nbsp;&nbsp;0.0,&nbsp;0.0,&nbsp;0.0,&nbsp;0.0,&nbsp;0.0,&nbsp;-0.0109517231995549,&nbsp;-1.3673104612399376,&nbsp;</span></p>
+<p><span style=\"font-family: Courier New; font-size: 10pt;\">&nbsp;&nbsp;0.8945130455660372,&nbsp;-0.045806323913196535,&nbsp;0.0,&nbsp;0.19607843139657907,&nbsp;0.0,&nbsp;0.0,</span></p>
+<p><span style=\"font-family: Courier New; font-size: 10pt;\">&nbsp;&nbsp;&nbsp;0.0,&nbsp;0.0,&nbsp;0.0,&nbsp;0.004001272943566596,&nbsp;-0.00033010905493301694,&nbsp;</span></p>
+<p><span style=\"font-family: Courier New; font-size: 10pt;\">&nbsp;&nbsp;0.001102892290693528,&nbsp;0.002345587790855513,&nbsp;-0.0021526907562014,&nbsp;0.0,&nbsp;0.0,&nbsp;0.0,</span></p>
+<p><span style=\"font-family: Courier New; font-size: 10pt;\">&nbsp;&nbsp;&nbsp;0.0,&nbsp;0.0,&nbsp;0.0;</span></p>
+<p><span style=\"font-family: Courier New; font-size: 10pt;\">0.1768909884796137,&nbsp;0.0,&nbsp;0.02368996831614048,&nbsp;0.0,&nbsp;0.5365136738700876,&nbsp;</span></p>
+<p><span style=\"font-family: Courier New; font-size: 10pt;\">&nbsp;&nbsp;0.19371876866417645,&nbsp;1.3560313842535807,&nbsp;-0.1669880737226969,&nbsp;0.0,&nbsp;0.0,&nbsp;0.0,&nbsp;</span></p>
+<p><span style=\"font-family: Courier New; font-size: 10pt;\">&nbsp;&nbsp;0.0,&nbsp;0.0,&nbsp;0.0,&nbsp;0.0,&nbsp;-1.1241013862761289,&nbsp;16.433040767993184,&nbsp;-18.30204795409237,</span></p>
+<p><span style=\"font-family: Courier New; font-size: 10pt;\">&nbsp;&nbsp;&nbsp;-0.18364372743033242,&nbsp;0.0,&nbsp;0.0,&nbsp;0.0,&nbsp;0.0,&nbsp;0.0,&nbsp;0.0,&nbsp;0.0,&nbsp;0.41069672207656843,</span></p>
+<p><span style=\"font-family: Courier New; font-size: 10pt;\">&nbsp;&nbsp;&nbsp;-0.033883007468695145,&nbsp;0.11320252879217416,&nbsp;0.24075467466071704,&nbsp;</span></p>
+<p><span style=\"font-family: Courier New; font-size: 10pt;\">&nbsp;&nbsp;-0.22095543260089906,&nbsp;0.0,&nbsp;0.0,&nbsp;0.0,&nbsp;0.0,&nbsp;0.0,&nbsp;0.0;</span></p>
+<p><span style=\"font-family: Courier New; font-size: 10pt;\">0.0461386272489224,&nbsp;0.0,&nbsp;0.350010080161014,&nbsp;0.0,&nbsp;-4.299180564867006,&nbsp;</span></p>
+<p><span style=\"font-family: Courier New; font-size: 10pt;\">&nbsp;&nbsp;0.034778955839078335,&nbsp;0.24345268800713857,&nbsp;3.878460974022533,&nbsp;0.0,&nbsp;0.0,&nbsp;0.0,&nbsp;</span></p>
+<p><span style=\"font-family: Courier New; font-size: 10pt;\">&nbsp;&nbsp;0.0,&nbsp;0.0,&nbsp;0.0,&nbsp;0.0,&nbsp;4.719160381193877,&nbsp;-0.14503846510292875,&nbsp;-1.0152692543474071,</span></p>
+<p><span style=\"font-family: Courier New; font-size: 10pt;\">&nbsp;&nbsp;&nbsp;-18.451779909862115,&nbsp;0.0,&nbsp;0.0,&nbsp;0.0,&nbsp;0.0,&nbsp;0.0,&nbsp;0.0,&nbsp;0.0,&nbsp;-0.4661184451946433,&nbsp;</span></p>
+<p><span style=\"font-family: Courier New; font-size: 10pt;\">&nbsp;&nbsp;0.07432930984181439,&nbsp;0.211485163094187,&nbsp;0.44977830471133,&nbsp;0.4847107869657624,&nbsp;</span></p>
+<p><span style=\"font-family: Courier New; font-size: 10pt;\">&nbsp;&nbsp;0.0,&nbsp;0.0,&nbsp;0.0,&nbsp;0.0,&nbsp;0.0,&nbsp;0.0;</span></p>
+<p><span style=\"font-family: Courier New; font-size: 10pt;\">-3.6628013223745465E-05,&nbsp;0.0,&nbsp;-1.50275968345167E-05,&nbsp;0.0,&nbsp;1.9592148978993223E-05,</span></p>
+<p><span style=\"font-family: Courier New; font-size: 10pt;\">&nbsp;&nbsp;&nbsp;-3.96488252616514E-05,&nbsp;-0.00027754177975975245,&nbsp;-8.088485941758361E-05,&nbsp;0.0,&nbsp;</span></p>
+<p><span style=\"font-family: Courier New; font-size: 10pt;\">&nbsp;&nbsp;0.0,&nbsp;0.0,&nbsp;0.0,&nbsp;0.0,&nbsp;0.0,&nbsp;0.39147678141640185,&nbsp;8.52010298039408E-05,&nbsp;</span></p>
+<p><span style=\"font-family: Courier New; font-size: 10pt;\">&nbsp;&nbsp;-6.888083527271661E-05,&nbsp;-0.0004821658463432068,&nbsp;-0.00018601375139652482,&nbsp;</span></p>
+<p><span style=\"font-family: Courier New; font-size: 10pt;\">&nbsp;&nbsp;-0.0009999999998466461,&nbsp;0.0,&nbsp;-0.023566512714835685,&nbsp;-0.0022863034730613314,&nbsp;</span></p>
+<p><span style=\"font-family: Courier New; font-size: 10pt;\">&nbsp;&nbsp;-0.3914767814163088,&nbsp;0.0007543640899297374,&nbsp;0.0,&nbsp;-6.816516647868116E-05,&nbsp;</span></p>
+<p><span style=\"font-family: Courier New; font-size: 10pt;\">&nbsp;&nbsp;4.567599086432894E-06,&nbsp;-2.8797104270530933E-05,&nbsp;-6.124454570325377E-05,&nbsp;</span></p>
+<p><span style=\"font-family: Courier New; font-size: 10pt;\">&nbsp;&nbsp;2.978592139186723E-05,&nbsp;0.0,&nbsp;0.0,&nbsp;0.0,&nbsp;0.0,&nbsp;0.0,&nbsp;0.0;</span></p>
+<p><span style=\"font-family: Courier New; font-size: 10pt;\">-73.25602644749192,&nbsp;0.0,&nbsp;-30.05519366903436,&nbsp;0.0,&nbsp;39.18429795798179,&nbsp;</span></p>
+<p><span style=\"font-family: Courier New; font-size: 10pt;\">&nbsp;&nbsp;-79.29765052330195,&nbsp;-555.083559519505,&nbsp;-161.76971883516617,&nbsp;0.0,&nbsp;0.0,&nbsp;0.0,&nbsp;0.0,</span></p>
+<p><span style=\"font-family: Courier New; font-size: 10pt;\">&nbsp;&nbsp;&nbsp;0.0,&nbsp;0.0,&nbsp;782953.562833636,&nbsp;170.40205960788427,&nbsp;-137.76167054543367,&nbsp;</span></p>
+<p><span style=\"font-family: Courier New; font-size: 10pt;\">&nbsp;&nbsp;-964.3316926864131,&nbsp;-372.02750279305246,&nbsp;0.0,&nbsp;-20.00000000245106,&nbsp;</span></p>
+<p><span style=\"font-family: Courier New; font-size: 10pt;\">&nbsp;&nbsp;-47133.02542883824,&nbsp;-4572.606947510247,&nbsp;-782953.5628328946,&nbsp;1508.7281795815113,</span></p>
+<p><span style=\"font-family: Courier New; font-size: 10pt;\">&nbsp;&nbsp;&nbsp;0.0,&nbsp;-136.33033295736485,&nbsp;9.135198172851172,&nbsp;-57.594208541062855,&nbsp;</span></p>
+<p><span style=\"font-family: Courier New; font-size: 10pt;\">&nbsp;&nbsp;-122.48909140650656,&nbsp;59.57184278373516,&nbsp;0.0,&nbsp;0.0,&nbsp;0.0,&nbsp;0.0,&nbsp;0.0,&nbsp;0.0;</span></p>
+<p><span style=\"font-family: Courier New; font-size: 10pt;\">0.0,&nbsp;0.0,&nbsp;0.0,&nbsp;0.0,&nbsp;0.0,&nbsp;0.0,&nbsp;0.0,&nbsp;0.0,&nbsp;0.0,&nbsp;0.0,&nbsp;0.0,&nbsp;0.0,&nbsp;0.0,&nbsp;0.0,&nbsp;</span></p>
+<p><span style=\"font-family: Courier New; font-size: 10pt;\">&nbsp;&nbsp;1153.8461538461534,&nbsp;0.0,&nbsp;0.0,&nbsp;0.0,&nbsp;0.0,&nbsp;0.0,&nbsp;0.0,&nbsp;-76.92307692307693,&nbsp;0.0,&nbsp;</span></p>
+<p><span style=\"font-family: Courier New; font-size: 10pt;\">&nbsp;&nbsp;-1153.8461538461538,&nbsp;0.0,&nbsp;0.0,&nbsp;0.0,&nbsp;0.0,&nbsp;0.0,&nbsp;0.0,&nbsp;0.0,&nbsp;0.0,&nbsp;0.0,&nbsp;0.0,&nbsp;0.0,&nbsp;</span></p>
+<p><span style=\"font-family: Courier New; font-size: 10pt;\">&nbsp;&nbsp;0.0,&nbsp;0.0;</span></p>
+<p><span style=\"font-family: Courier New; font-size: 10pt;\">0.0,&nbsp;0.0,&nbsp;0.0,&nbsp;0.0,&nbsp;0.0,&nbsp;0.0,&nbsp;0.0,&nbsp;0.0,&nbsp;0.0,&nbsp;0.0,&nbsp;0.0,&nbsp;0.0,&nbsp;0.0,&nbsp;0.0,&nbsp;</span></p>
+<p><span style=\"font-family: Courier New; font-size: 10pt;\">&nbsp;&nbsp;11893.491124260354,&nbsp;0.0,&nbsp;0.0,&nbsp;0.0,&nbsp;0.0,&nbsp;0.0,&nbsp;0.0,&nbsp;-715.9763313609475,&nbsp;</span></p>
+<p><span style=\"font-family: Courier New; font-size: 10pt;\">&nbsp;&nbsp;-76.92307692307695,&nbsp;-11893.491124260358,&nbsp;0.0,&nbsp;0.0,&nbsp;0.0,&nbsp;0.0,&nbsp;0.0,&nbsp;0.0,&nbsp;0.0,&nbsp;</span></p>
+<p><span style=\"font-family: Courier New; font-size: 10pt;\">&nbsp;&nbsp;0.0,&nbsp;0.0,&nbsp;0.0,&nbsp;0.0,&nbsp;0.0,&nbsp;0.0;</span></p>
+<p><span style=\"font-family: Courier New; font-size: 10pt;\">0.0,&nbsp;0.0,&nbsp;0.0,&nbsp;0.0,&nbsp;0.0,&nbsp;0.0,&nbsp;0.0,&nbsp;0.0,&nbsp;0.0,&nbsp;0.0,&nbsp;0.0,&nbsp;0.0,&nbsp;0.0,&nbsp;0.0,&nbsp;</span></p>
+<p><span style=\"font-family: Courier New; font-size: 10pt;\">&nbsp;&nbsp;0.33333333333333326,&nbsp;0.0,&nbsp;0.0,&nbsp;0.0,&nbsp;0.0,&nbsp;0.0,&nbsp;0.0,&nbsp;0.0,&nbsp;0.0,&nbsp;-0.3333333333333333,</span></p>
+<p><span style=\"font-family: Courier New; font-size: 10pt;\">&nbsp;&nbsp;&nbsp;0.0,&nbsp;0.0,&nbsp;0.0,&nbsp;0.0,&nbsp;0.0,&nbsp;0.0,&nbsp;0.0,&nbsp;0.0,&nbsp;0.0,&nbsp;0.0,&nbsp;0.0,&nbsp;0.0,&nbsp;0.0;</span></p>
+<p><span style=\"font-family: Courier New; font-size: 10pt;\">0.0,&nbsp;0.0,&nbsp;0.0,&nbsp;0.0,&nbsp;0.0,&nbsp;0.0,&nbsp;0.0,&nbsp;0.0,&nbsp;0.0,&nbsp;0.0,&nbsp;0.0,&nbsp;0.0,&nbsp;0.0,&nbsp;0.0,&nbsp;</span></p>
+<p><span style=\"font-family: Courier New; font-size: 10pt;\">&nbsp;&nbsp;1987.1917838539744,&nbsp;0.0,&nbsp;0.0,&nbsp;0.0,&nbsp;0.0,&nbsp;0.0,&nbsp;0.0,&nbsp;-119.62696808275183,&nbsp;</span></p>
+<p><span style=\"font-family: Courier New; font-size: 10pt;\">&nbsp;&nbsp;-11.605601381162469,&nbsp;-1987.1917838539748,&nbsp;-1.246882793017455,&nbsp;0.0,&nbsp;0.0,&nbsp;0.0,&nbsp;</span></p>
+<p><span style=\"font-family: Courier New; font-size: 10pt;\">&nbsp;&nbsp;0.0,&nbsp;0.0,&nbsp;0.0,&nbsp;0.0,&nbsp;0.0,&nbsp;0.0,&nbsp;0.0,&nbsp;0.0,&nbsp;0.0;</span></p>
+<p><span style=\"font-family: Courier New; font-size: 10pt;\">0.04214933451273178,&nbsp;0.0,&nbsp;-0.0303372350007868,&nbsp;0.0,&nbsp;0.06767465574148963,&nbsp;</span></p>
+<p><span style=\"font-family: Courier New; font-size: 10pt;\">&nbsp;&nbsp;0.004965237105531911,&nbsp;0.03475665952099592,&nbsp;-0.05222810506397486,&nbsp;0.0,&nbsp;0.0,&nbsp;0.0,</span></p>
+<p><span style=\"font-family: Courier New; font-size: 10pt;\">&nbsp;&nbsp;&nbsp;0.0,&nbsp;0.0,&nbsp;0.0,&nbsp;0.0,&nbsp;0.06767465564600705,&nbsp;0.004965237130179133,&nbsp;</span></p>
+<p><span style=\"font-family: Courier New; font-size: 10pt;\">&nbsp;&nbsp;0.034756659610931794,&nbsp;-0.052228105191257417,&nbsp;0.0,&nbsp;0.0,&nbsp;0.0,&nbsp;0.0,&nbsp;0.0,&nbsp;0.0,&nbsp;</span></p>
+<p><span style=\"font-family: Courier New; font-size: 10pt;\">&nbsp;&nbsp;-0.11646494761715402,&nbsp;-0.17749864604131832,&nbsp;0.015279517517127583,&nbsp;</span></p>
+<p><span style=\"font-family: Courier New; font-size: 10pt;\">&nbsp;&nbsp;-0.04290110163540943,&nbsp;-0.09124037115997022,&nbsp;0.09963966776572583,&nbsp;0.0,&nbsp;0.0,&nbsp;0.0,</span></p>
+<p><span style=\"font-family: Courier New; font-size: 10pt;\">&nbsp;&nbsp;&nbsp;0.0,&nbsp;0.0,&nbsp;0.0;</span></p>
+<p><span style=\"font-family: Courier New; font-size: 10pt;\">0.0,&nbsp;0.0,&nbsp;0.0,&nbsp;0.0,&nbsp;0.0,&nbsp;0.0,&nbsp;0.0,&nbsp;0.0,&nbsp;0.0,&nbsp;0.0,&nbsp;0.0,&nbsp;0.0,&nbsp;0.0,&nbsp;0.0,&nbsp;0.0,&nbsp;0.0,&nbsp;</span></p>
+<p><span style=\"font-family: Courier New; font-size: 10pt;\">&nbsp;&nbsp;0.0,&nbsp;0.0,&nbsp;0.0,&nbsp;0.0,&nbsp;0.0,&nbsp;0.0,&nbsp;0.0,&nbsp;0.0,&nbsp;0.0,&nbsp;314.1592653589793,&nbsp;0.0,&nbsp;0.0,&nbsp;0.0,</span></p>
+<p><span style=\"font-family: Courier New; font-size: 10pt;\">&nbsp;&nbsp;&nbsp;0.0,&nbsp;0.0,&nbsp;0.0,&nbsp;0.0,&nbsp;0.0,&nbsp;0.0,&nbsp;0.0,&nbsp;0.0;</span></p>
+<p><span style=\"font-family: Courier New; font-size: 10pt;\">-0.031526158701099635,&nbsp;0.0,&nbsp;0.047330120188631974,&nbsp;0.0,&nbsp;-0.0786451900727682,&nbsp;</span></p>
+<p><span style=\"font-family: Courier New; font-size: 10pt;\">&nbsp;&nbsp;-0.0025053884877752606,&nbsp;-0.017537718968758546,&nbsp;0.06592034940949157,&nbsp;0.0,&nbsp;0.0,&nbsp;</span></p>
+<p><span style=\"font-family: Courier New; font-size: 10pt;\">&nbsp;&nbsp;0.0,&nbsp;0.0,&nbsp;0.0,&nbsp;0.0,&nbsp;0.0,&nbsp;-0.0786451900727451,&nbsp;-0.002505388335597199,&nbsp;</span></p>
+<p><span style=\"font-family: Courier New; font-size: 10pt;\">&nbsp;&nbsp;-0.017537719127411092,&nbsp;0.06592034901650572,&nbsp;0.0,&nbsp;0.0,&nbsp;0.0,&nbsp;0.0,&nbsp;0.0,&nbsp;0.0,&nbsp;0.0,</span></p>
+<p><span style=\"font-family: Courier New; font-size: 10pt;\">&nbsp;&nbsp;&nbsp;0.1888165395179117,&nbsp;-4.417105172096734,&nbsp;-1.9231460283787938,&nbsp;-4.090071130690461,</span></p>
+<p><span style=\"font-family: Courier New; font-size: 10pt;\">&nbsp;&nbsp;&nbsp;-1.1959569543606567,&nbsp;0.0,&nbsp;0.0,&nbsp;0.0,&nbsp;0.0,&nbsp;0.0,&nbsp;0.0;</span></p>
+<p><span style=\"font-family: Courier New; font-size: 10pt;\">0.03058470237160829,&nbsp;0.0,&nbsp;0.016578952064260716,&nbsp;0.0,&nbsp;0.005207337288488181,&nbsp;</span></p>
+<p><span style=\"font-family: Courier New; font-size: 10pt;\">&nbsp;&nbsp;0.005495691801891701,&nbsp;0.03846984277019302,&nbsp;0.004166336295567079,&nbsp;0.0,&nbsp;0.0,&nbsp;0.0,</span></p>
+<p><span style=\"font-family: Courier New; font-size: 10pt;\">&nbsp;&nbsp;&nbsp;0.0,&nbsp;0.0,&nbsp;0.0,&nbsp;0.0,&nbsp;0.005207337288486652,&nbsp;0.005495691801892322,&nbsp;</span></p>
+<p><span style=\"font-family: Courier New; font-size: 10pt;\">&nbsp;&nbsp;0.03846984277019706,&nbsp;0.004166336295566362,&nbsp;0.0,&nbsp;0.0,&nbsp;0.0,&nbsp;0.0,&nbsp;0.0,&nbsp;0.0,&nbsp;0.0,&nbsp;</span></p>
+<p><span style=\"font-family: Courier New; font-size: 10pt;\">&nbsp;&nbsp;-0.04099937535188583,&nbsp;-0.10021508441116066,&nbsp;-1.9370249587599504,&nbsp;</span></p>
+<p><span style=\"font-family: Courier New; font-size: 10pt;\">&nbsp;&nbsp;-1.4914140113794023,&nbsp;-0.6535152367377465,&nbsp;0.0,&nbsp;0.1886792452614397,&nbsp;0.0,&nbsp;0.0,&nbsp;</span></p>
+<p><span style=\"font-family: Courier New; font-size: 10pt;\">&nbsp;&nbsp;0.0,&nbsp;0.0;</span></p>
+<p><span style=\"font-family: Courier New; font-size: 10pt;\">1.9027239385809525,&nbsp;0.0,&nbsp;1.0314034990884224,&nbsp;0.0,&nbsp;0.3239568655877369,&nbsp;</span></p>
+<p><span style=\"font-family: Courier New; font-size: 10pt;\">&nbsp;&nbsp;0.34189590303326106,&nbsp;2.3932713183760095,&nbsp;0.25919450109614733,&nbsp;0.0,&nbsp;0.0,&nbsp;0.0,&nbsp;</span></p>
+<p><span style=\"font-family: Courier New; font-size: 10pt;\">&nbsp;&nbsp;0.0,&nbsp;0.0,&nbsp;0.0,&nbsp;0.0,&nbsp;0.3239568713437452,&nbsp;0.3418959045194163,&nbsp;2.393271319925584,</span></p>
+<p><span style=\"font-family: Courier New; font-size: 10pt;\">&nbsp;&nbsp;&nbsp;0.2591944959792473,&nbsp;0.0,&nbsp;0.0,&nbsp;0.0,&nbsp;0.0,&nbsp;0.0,&nbsp;0.0,&nbsp;0.0,&nbsp;-2.550637675199632,&nbsp;</span></p>
+<p><span style=\"font-family: Courier New; font-size: 10pt;\">&nbsp;&nbsp;-0.17661930260865508,&nbsp;19.07466726468525,&nbsp;-24.57359497433762,&nbsp;-1.1517569837765282,</span></p>
+<p><span style=\"font-family: Courier New; font-size: 10pt;\">&nbsp;&nbsp;&nbsp;0.0,&nbsp;0.0,&nbsp;0.0,&nbsp;0.0,&nbsp;0.0,&nbsp;0.0;</span></p>
+<p><span style=\"font-family: Courier New; font-size: 10pt;\">-1.3640881238188471,&nbsp;0.0,&nbsp;2.047901104766663,&nbsp;0.0,&nbsp;-3.4028557485350275,&nbsp;</span></p>
+<p><span style=\"font-family: Courier New; font-size: 10pt;\">&nbsp;&nbsp;-0.10840428371264056,&nbsp;-0.7588299774340104,&nbsp;2.8522715548967454,&nbsp;0.0,&nbsp;0.0,&nbsp;0.0,&nbsp;</span></p>
+<p><span style=\"font-family: Courier New; font-size: 10pt;\">&nbsp;&nbsp;0.0,&nbsp;0.0,&nbsp;0.0,&nbsp;0.0,&nbsp;-3.402855742952353,&nbsp;-0.10840428515373562,&nbsp;-0.7588299811900253,</span></p>
+<p><span style=\"font-family: Courier New; font-size: 10pt;\">&nbsp;&nbsp;&nbsp;2.8522715586176037,&nbsp;0.0,&nbsp;0.0,&nbsp;0.0,&nbsp;0.0,&nbsp;0.0,&nbsp;0.0,&nbsp;0.0,&nbsp;8.169799629342247,&nbsp;</span></p>
+<p><span style=\"font-family: Courier New; font-size: 10pt;\">&nbsp;&nbsp;13.488852697923182,&nbsp;0.3074887995115382,&nbsp;0.6539550546875682,&nbsp;-25.99394768193609,</span></p>
+<p><span style=\"font-family: Courier New; font-size: 10pt;\">&nbsp;&nbsp;&nbsp;0.0,&nbsp;0.0,&nbsp;0.0,&nbsp;0.0,&nbsp;0.0,&nbsp;0.0;</span></p>
+<p><span style=\"font-family: Courier New; font-size: 10pt;\">-9.530122776061512E-05,&nbsp;0.0,&nbsp;-0.00010655272285093912,&nbsp;0.0,&nbsp;4.621536511802614E-05,</span></p>
+<p><span style=\"font-family: Courier New; font-size: 10pt;\">&nbsp;&nbsp;&nbsp;-1.9816699281185113E-05,&nbsp;-0.00013871689430342205,&nbsp;-7.281378430880555E-05,&nbsp;0.0,</span></p>
+<p><span style=\"font-family: Courier New; font-size: 10pt;\">&nbsp;&nbsp;&nbsp;0.0,&nbsp;0.0,&nbsp;0.0,&nbsp;0.0,&nbsp;0.0,&nbsp;0.0,&nbsp;4.6215364381240835E-05,&nbsp;-1.9816699281187352E-05,</span></p>
+<p><span style=\"font-family: Courier New; font-size: 10pt;\">&nbsp;&nbsp;&nbsp;-0.00013871689430343663,&nbsp;-7.281378430879301E-05,&nbsp;0.0,&nbsp;0.0,&nbsp;0.0,&nbsp;0.0,&nbsp;0.0,&nbsp;0.0,</span></p>
+<p><span style=\"font-family: Courier New; font-size: 10pt;\">&nbsp;&nbsp;&nbsp;0.3914767814173548,&nbsp;2.8704969281476185E-06,&nbsp;-1.8781679460690547E-05,&nbsp;</span></p>
+<p><span style=\"font-family: Courier New; font-size: 10pt;\">&nbsp;&nbsp;-0.00017495152177946817,&nbsp;-0.00037207999681924356,&nbsp;-0.00012247768575392268,&nbsp;</span></p>
+<p><span style=\"font-family: Courier New; font-size: 10pt;\">&nbsp;&nbsp;-0.0010000000000796004,&nbsp;0.0,&nbsp;-0.02356651271243895,&nbsp;-0.002286303472674415,&nbsp;</span></p>
+<p><span style=\"font-family: Courier New; font-size: 10pt;\">&nbsp;&nbsp;-0.3914767814184195,&nbsp;0.0007543640894193767;</span></p>
+<p><span style=\"font-family: Courier New; font-size: 10pt;\">-285.9036832818363,&nbsp;0.0,&nbsp;-319.6581685616487,&nbsp;0.0,&nbsp;138.6460953835576,&nbsp;</span></p>
+<p><span style=\"font-family: Courier New; font-size: 10pt;\">&nbsp;&nbsp;-59.450097835945066,&nbsp;-416.1506829102663,&nbsp;-218.44135288714168,&nbsp;0.0,&nbsp;0.0,&nbsp;0.0,&nbsp;</span></p>
+<p><span style=\"font-family: Courier New; font-size: 10pt;\">&nbsp;&nbsp;0.0,&nbsp;0.0,&nbsp;0.0,&nbsp;0.0,&nbsp;138.64609314370196,&nbsp;-59.450097851169616,&nbsp;-416.1506829103101,</span></p>
+<p><span style=\"font-family: Courier New; font-size: 10pt;\">&nbsp;&nbsp;&nbsp;-218.44135288710405,&nbsp;0.0,&nbsp;0.0,&nbsp;0.0,&nbsp;0.0,&nbsp;0.0,&nbsp;0.0,&nbsp;1174430.3442651068,&nbsp;</span></p>
+<p><span style=\"font-family: Courier New; font-size: 10pt;\">&nbsp;&nbsp;8.611490784418748,&nbsp;-56.34503854041662,&nbsp;-524.8545653451064,&nbsp;-1116.2399904577212,</span></p>
+<p><span style=\"font-family: Courier New; font-size: 10pt;\">&nbsp;&nbsp;&nbsp;-367.4330572357634,&nbsp;0.0,&nbsp;-19.999999997712607,&nbsp;-70699.53814579226,&nbsp;</span></p>
+<p><span style=\"font-family: Courier New; font-size: 10pt;\">&nbsp;&nbsp;-6858.910421755459,&nbsp;-1174430.3442562488,&nbsp;2263.0922689585263;</span></p>
+<p><span style=\"font-family: Courier New; font-size: 10pt;\">0.0,&nbsp;0.0,&nbsp;0.0,&nbsp;0.0,&nbsp;0.0,&nbsp;0.0,&nbsp;0.0,&nbsp;0.0,&nbsp;0.0,&nbsp;0.0,&nbsp;0.0,&nbsp;0.0,&nbsp;0.0,&nbsp;0.0,&nbsp;0.0,&nbsp;0.0,&nbsp;</span></p>
+<p><span style=\"font-family: Courier New; font-size: 10pt;\">&nbsp;&nbsp;0.0,&nbsp;0.0,&nbsp;0.0,&nbsp;0.0,&nbsp;0.0,&nbsp;0.0,&nbsp;0.0,&nbsp;0.0,&nbsp;0.0,&nbsp;1153.8461538461536,&nbsp;0.0,&nbsp;0.0,&nbsp;0.0,</span></p>
+<p><span style=\"font-family: Courier New; font-size: 10pt;\">&nbsp;&nbsp;&nbsp;0.0,&nbsp;0.0,&nbsp;0.0,&nbsp;0.0,&nbsp;-76.92307692307689,&nbsp;0.0,&nbsp;-1153.846153846154,&nbsp;0.0;</span></p>
+<p><span style=\"font-family: Courier New; font-size: 10pt;\">0.0,&nbsp;0.0,&nbsp;0.0,&nbsp;0.0,&nbsp;0.0,&nbsp;0.0,&nbsp;0.0,&nbsp;0.0,&nbsp;0.0,&nbsp;0.0,&nbsp;0.0,&nbsp;0.0,&nbsp;0.0,&nbsp;0.0,&nbsp;0.0,&nbsp;0.0,&nbsp;</span></p>
+<p><span style=\"font-family: Courier New; font-size: 10pt;\">&nbsp;&nbsp;0.0,&nbsp;0.0,&nbsp;0.0,&nbsp;0.0,&nbsp;0.0,&nbsp;0.0,&nbsp;0.0,&nbsp;0.0,&nbsp;0.0,&nbsp;11893.491124260354,&nbsp;0.0,&nbsp;0.0,&nbsp;0.0,</span></p>
+<p><span style=\"font-family: Courier New; font-size: 10pt;\">&nbsp;&nbsp;&nbsp;0.0,&nbsp;0.0,&nbsp;0.0,&nbsp;0.0,&nbsp;-715.9763313609462,&nbsp;-76.92307692307693,&nbsp;-11893.491124260356,</span></p>
+<p><span style=\"font-family: Courier New; font-size: 10pt;\">&nbsp;&nbsp;&nbsp;0.0;</span></p>
+<p><span style=\"font-family: Courier New; font-size: 10pt;\">0.0,&nbsp;0.0,&nbsp;0.0,&nbsp;0.0,&nbsp;0.0,&nbsp;0.0,&nbsp;0.0,&nbsp;0.0,&nbsp;0.0,&nbsp;0.0,&nbsp;0.0,&nbsp;0.0,&nbsp;0.0,&nbsp;0.0,&nbsp;0.0,&nbsp;0.0,&nbsp;</span></p>
+<p><span style=\"font-family: Courier New; font-size: 10pt;\">&nbsp;&nbsp;0.0,&nbsp;0.0,&nbsp;0.0,&nbsp;0.0,&nbsp;0.0,&nbsp;0.0,&nbsp;0.0,&nbsp;0.0,&nbsp;0.0,&nbsp;0.3333333333333333,&nbsp;0.0,&nbsp;0.0,&nbsp;0.0,</span></p>
+<p><span style=\"font-family: Courier New; font-size: 10pt;\">&nbsp;&nbsp;&nbsp;0.0,&nbsp;0.0,&nbsp;0.0,&nbsp;0.0,&nbsp;0.0,&nbsp;0.0,&nbsp;-0.3333333333333333,&nbsp;0.0;</span></p>
+<p><span style=\"font-family: Courier New; font-size: 10pt;\">0.0,&nbsp;0.0,&nbsp;0.0,&nbsp;0.0,&nbsp;0.0,&nbsp;0.0,&nbsp;0.0,&nbsp;0.0,&nbsp;0.0,&nbsp;0.0,&nbsp;0.0,&nbsp;0.0,&nbsp;0.0,&nbsp;0.0,&nbsp;0.0,&nbsp;0.0,&nbsp;</span></p>
+<p><span style=\"font-family: Courier New; font-size: 10pt;\">&nbsp;&nbsp;0.0,&nbsp;0.0,&nbsp;0.0,&nbsp;0.0,&nbsp;0.0,&nbsp;0.0,&nbsp;0.0,&nbsp;0.0,&nbsp;0.0,&nbsp;1987.1917838539741,&nbsp;0.0,&nbsp;0.0,&nbsp;0.0,</span></p>
+<p><span style=\"font-family: Courier New; font-size: 10pt;\">&nbsp;&nbsp;&nbsp;0.0,&nbsp;0.0,&nbsp;0.0,&nbsp;0.0,&nbsp;-119.6269680827516,&nbsp;-11.605601381162481,&nbsp;-1987.1917838539748,</span></p>
+<p><span style=\"font-family: Courier New; font-size: 10pt;\">&nbsp;&nbsp;&nbsp;-1.2468827930174557],&nbsp;</span></p>
+<p><span style=\"font-family: Courier New; font-size: 10pt;\">[0.0,&nbsp;0.0,&nbsp;0.0,&nbsp;0.0,&nbsp;0.0,&nbsp;0.0,&nbsp;0.0,&nbsp;0.0,&nbsp;0.0,&nbsp;0.0,&nbsp;0.0,&nbsp;0.0;</span></p>
+<p><span style=\"font-family: Courier New; font-size: 10pt;\">0.0,&nbsp;0.0,&nbsp;0.0,&nbsp;0.0,&nbsp;0.0,&nbsp;0.0,&nbsp;0.0,&nbsp;0.0,&nbsp;0.0,&nbsp;0.0,&nbsp;0.0,&nbsp;0.0;</span></p>
+<p><span style=\"font-family: Courier New; font-size: 10pt;\">0.0,&nbsp;0.0,&nbsp;0.0,&nbsp;0.0,&nbsp;0.0,&nbsp;0.0,&nbsp;0.0,&nbsp;0.0,&nbsp;0.0,&nbsp;0.0,&nbsp;0.0,&nbsp;0.0;</span></p>
+<p><span style=\"font-family: Courier New; font-size: 10pt;\">0.0,&nbsp;0.11111112030448567,&nbsp;0.0,&nbsp;0.0,&nbsp;0.0,&nbsp;0.0,&nbsp;0.0,&nbsp;0.0,&nbsp;0.0,&nbsp;-0.0029538347076949224,</span></p>
+<p><span style=\"font-family: Courier New; font-size: 10pt;\">&nbsp;&nbsp;&nbsp;-0.0005497824417943775,&nbsp;-3.0839528461845806E-07;</span></p>
+<p><span style=\"font-family: Courier New; font-size: 10pt;\">0.0,&nbsp;0.0,&nbsp;0.0,&nbsp;0.0,&nbsp;0.0,&nbsp;0.0,&nbsp;0.0,&nbsp;0.0,&nbsp;0.0,&nbsp;0.0,&nbsp;0.0,&nbsp;0.0;</span></p>
+<p><span style=\"font-family: Courier New; font-size: 10pt;\">0.0,&nbsp;0.0,&nbsp;0.0,&nbsp;0.0,&nbsp;0.0,&nbsp;0.0,&nbsp;0.0,&nbsp;0.0,&nbsp;0.0,&nbsp;-0.00021538326677728037,&nbsp;</span></p>
+<p><span style=\"font-family: Courier New; font-size: 10pt;\">&nbsp;&nbsp;-0.00020018844969528135,&nbsp;-3.483052627531991E-07;</span></p>
+<p><span style=\"font-family: Courier New; font-size: 10pt;\">0.0,&nbsp;0.0,&nbsp;0.0,&nbsp;0.0,&nbsp;0.0,&nbsp;0.0,&nbsp;0.0,&nbsp;0.0,&nbsp;0.0,&nbsp;-0.02210615949553118,&nbsp;</span></p>
+<p><span style=\"font-family: Courier New; font-size: 10pt;\">&nbsp;&nbsp;-0.020547452628250085,&nbsp;-3.527271067826401E-05;</span></p>
+<p><span style=\"font-family: Courier New; font-size: 10pt;\">0.0,&nbsp;0.0,&nbsp;0.0,&nbsp;0.0,&nbsp;0.0,&nbsp;0.0,&nbsp;0.0,&nbsp;0.0,&nbsp;0.0,&nbsp;0.07998861620343233,&nbsp;</span></p>
+<p><span style=\"font-family: Courier New; font-size: 10pt;\">&nbsp;&nbsp;0.005182025021854164,&nbsp;-1.0629794916642538E-05;</span></p>
+<p><span style=\"font-family: Courier New; font-size: 10pt;\">0.3914767814222619,&nbsp;0.0,&nbsp;0.0009999999994733926,&nbsp;0.0,&nbsp;0.0,&nbsp;0.0,&nbsp;0.0,&nbsp;0.0,&nbsp;0.0,&nbsp;</span></p>
+<p><span style=\"font-family: Courier New; font-size: 10pt;\">&nbsp;&nbsp;2.0525803277086137E-06,&nbsp;3.944400361570619E-06,&nbsp;7.327471922821363E-09;</span></p>
+<p><span style=\"font-family: Courier New; font-size: 10pt;\">782953.5628411932,&nbsp;0.0,&nbsp;2000.0000011677341,&nbsp;0.0,&nbsp;0.0,&nbsp;0.0,&nbsp;0.0,&nbsp;0.0,&nbsp;0.0,&nbsp;</span></p>
+<p><span style=\"font-family: Courier New; font-size: 10pt;\">&nbsp;&nbsp;4.105160655853979,&nbsp;7.888800723776511,&nbsp;0.014654943925052065;</span></p>
+<p><span style=\"font-family: Courier New; font-size: 10pt;\">1153.846153846154,&nbsp;0.0,&nbsp;0.0,&nbsp;0.0,&nbsp;0.0,&nbsp;0.0,&nbsp;0.0,&nbsp;0.0,&nbsp;0.0,&nbsp;0.0,&nbsp;0.0,&nbsp;0.0;</span></p>
+<p><span style=\"font-family: Courier New; font-size: 10pt;\">11893.491124260358,&nbsp;0.0,&nbsp;0.0,&nbsp;0.0,&nbsp;0.0,&nbsp;0.0,&nbsp;0.0,&nbsp;0.0,&nbsp;0.0,&nbsp;0.0,&nbsp;0.0,&nbsp;0.0;</span></p>
+<p><span style=\"font-family: Courier New; font-size: 10pt;\">0.33333333333333326,&nbsp;0.0,&nbsp;0.0,&nbsp;0.0,&nbsp;0.0,&nbsp;0.0,&nbsp;0.0,&nbsp;0.0,&nbsp;0.0,&nbsp;0.0,&nbsp;0.0,&nbsp;0.0;</span></p>
+<p><span style=\"font-family: Courier New; font-size: 10pt;\">1987.1917838539748,&nbsp;0.0,&nbsp;0.0,&nbsp;0.0,&nbsp;0.0,&nbsp;0.0,&nbsp;0.0,&nbsp;0.0,&nbsp;0.0,&nbsp;0.0,&nbsp;0.0,&nbsp;0.0;</span></p>
+<p><span style=\"font-family: Courier New; font-size: 10pt;\">0.0,&nbsp;0.0,&nbsp;0.0,&nbsp;0.0,&nbsp;0.11111112030448567,&nbsp;0.0,&nbsp;0.0,&nbsp;0.0,&nbsp;0.0,&nbsp;-0.0029538347076949224,</span></p>
+<p><span style=\"font-family: Courier New; font-size: 10pt;\">&nbsp;&nbsp;&nbsp;-0.000549794777605762,&nbsp;-3.3306690738754696E-07;</span></p>
+<p><span style=\"font-family: Courier New; font-size: 10pt;\">0.0,&nbsp;0.0,&nbsp;0.0,&nbsp;0.0,&nbsp;0.0,&nbsp;0.0,&nbsp;0.0,&nbsp;0.0,&nbsp;0.0,&nbsp;0.0,&nbsp;0.0,&nbsp;0.0;</span></p>
+<p><span style=\"font-family: Courier New; font-size: 10pt;\">0.0,&nbsp;0.0,&nbsp;0.0,&nbsp;0.0,&nbsp;0.0,&nbsp;0.0,&nbsp;0.0,&nbsp;0.0,&nbsp;0.0,&nbsp;-0.00021538326677728037,&nbsp;</span></p>
+<p><span style=\"font-family: Courier New; font-size: 10pt;\">&nbsp;&nbsp;-0.00020018844969507457,&nbsp;-3.4830526254640395E-07;</span></p>
+<p><span style=\"font-family: Courier New; font-size: 10pt;\">0.0,&nbsp;0.0,&nbsp;0.0,&nbsp;0.0,&nbsp;0.0,&nbsp;0.0,&nbsp;0.0,&nbsp;0.0,&nbsp;0.0,&nbsp;-0.022106159495530974,&nbsp;</span></p>
+<p><span style=\"font-family: Courier New; font-size: 10pt;\">&nbsp;&nbsp;-0.020547452628250085,&nbsp;-3.527271067826401E-05;</span></p>
+<p><span style=\"font-family: Courier New; font-size: 10pt;\">0.0,&nbsp;0.0,&nbsp;0.0,&nbsp;0.0,&nbsp;0.0,&nbsp;0.0,&nbsp;0.0,&nbsp;0.0,&nbsp;0.0,&nbsp;0.07998861620343233,&nbsp;</span></p>
+<p><span style=\"font-family: Courier New; font-size: 10pt;\">&nbsp;&nbsp;0.005182025021854164,&nbsp;-1.0629794916642538E-05;</span></p>
+<p><span style=\"font-family: Courier New; font-size: 10pt;\">0.0,&nbsp;0.0,&nbsp;0.0,&nbsp;0.39147678141879266,&nbsp;0.0,&nbsp;0.0010000000029434153,&nbsp;0.0,&nbsp;0.0,&nbsp;0.0,&nbsp;</span></p>
+<p><span style=\"font-family: Courier New; font-size: 10pt;\">&nbsp;&nbsp;2.0525803285357943E-06,&nbsp;3.944178317342888E-06,&nbsp;7.327471922821363E-09;</span></p>
+<p><span style=\"font-family: Courier New; font-size: 10pt;\">0.0,&nbsp;0.0,&nbsp;0.0,&nbsp;782953.5628367523,&nbsp;0.0,&nbsp;2000.0000056086262,&nbsp;0.0,&nbsp;0.0,&nbsp;0.0,&nbsp;</span></p>
+<p><span style=\"font-family: Courier New; font-size: 10pt;\">&nbsp;&nbsp;4.105160655853979,&nbsp;7.888356634566661,&nbsp;0.014654943925052065;</span></p>
+<p><span style=\"font-family: Courier New; font-size: 10pt;\">0.0,&nbsp;0.0,&nbsp;0.0,&nbsp;1153.8461538461538,&nbsp;0.0,&nbsp;0.0,&nbsp;0.0,&nbsp;0.0,&nbsp;0.0,&nbsp;0.0,&nbsp;0.0,&nbsp;0.0;</span></p>
+<p><span style=\"font-family: Courier New; font-size: 10pt;\">0.0,&nbsp;0.0,&nbsp;0.0,&nbsp;11893.491124260354,&nbsp;0.0,&nbsp;0.0,&nbsp;0.0,&nbsp;0.0,&nbsp;0.0,&nbsp;0.0,&nbsp;0.0,&nbsp;0.0;</span></p>
+<p><span style=\"font-family: Courier New; font-size: 10pt;\">0.0,&nbsp;0.0,&nbsp;0.0,&nbsp;0.33333333333333337,&nbsp;0.0,&nbsp;0.0,&nbsp;0.0,&nbsp;0.0,&nbsp;0.0,&nbsp;0.0,&nbsp;0.0,&nbsp;0.0;</span></p>
+<p><span style=\"font-family: Courier New; font-size: 10pt;\">0.0,&nbsp;0.0,&nbsp;0.0,&nbsp;1987.1917838539744,&nbsp;0.0,&nbsp;0.0,&nbsp;0.0,&nbsp;0.0,&nbsp;0.0,&nbsp;0.0,&nbsp;0.0,&nbsp;0.0;</span></p>
+<p><span style=\"font-family: Courier New; font-size: 10pt;\">0.0,&nbsp;0.0,&nbsp;0.0,&nbsp;0.0,&nbsp;0.0,&nbsp;0.0,&nbsp;0.0,&nbsp;0.12956725612080472,&nbsp;0.0,&nbsp;-0.0015965893201110488,</span></p>
+<p><span style=\"font-family: Courier New; font-size: 10pt;\">&nbsp;&nbsp;&nbsp;-0.0059991170132388414,&nbsp;-8.285675851050595E-06;</span></p>
+<p><span style=\"font-family: Courier New; font-size: 10pt;\">0.0,&nbsp;0.0,&nbsp;0.0,&nbsp;0.0,&nbsp;0.0,&nbsp;0.0,&nbsp;0.0,&nbsp;0.0,&nbsp;0.0,&nbsp;0.0,&nbsp;0.0,&nbsp;0.0;</span></p>
+<p><span style=\"font-family: Courier New; font-size: 10pt;\">0.0,&nbsp;0.0,&nbsp;0.0,&nbsp;0.0,&nbsp;0.0,&nbsp;0.0,&nbsp;0.0,&nbsp;0.0,&nbsp;0.0,&nbsp;0.0016555645743210334,&nbsp;</span></p>
+<p><span style=\"font-family: Courier New; font-size: 10pt;\">&nbsp;&nbsp;0.005242650757964094,&nbsp;6.039613254209005E-06;</span></p>
+<p><span style=\"font-family: Courier New; font-size: 10pt;\">0.0,&nbsp;0.0,&nbsp;0.0,&nbsp;0.0,&nbsp;0.0,&nbsp;0.0,&nbsp;0.0,&nbsp;0.0,&nbsp;0.0,&nbsp;-0.0004358777489887465,&nbsp;</span></p>
+<p><span style=\"font-family: Courier New; font-size: 10pt;\">&nbsp;&nbsp;-0.00316995905415984,&nbsp;-6.032910020339302E-06;</span></p>
+<p><span style=\"font-family: Courier New; font-size: 10pt;\">0.0,&nbsp;0.0,&nbsp;0.0,&nbsp;0.0,&nbsp;0.0,&nbsp;0.0,&nbsp;0.0,&nbsp;0.0,&nbsp;0.0,&nbsp;-0.027116619135310927,&nbsp;</span></p>
+<p><span style=\"font-family: Courier New; font-size: 10pt;\">&nbsp;&nbsp;-0.19720856891947136,&nbsp;-0.00038337388819087437;</span></p>
+<p><span style=\"font-family: Courier New; font-size: 10pt;\">0.0,&nbsp;0.0,&nbsp;0.0,&nbsp;0.0,&nbsp;0.0,&nbsp;0.0,&nbsp;0.0,&nbsp;0.0,&nbsp;0.0,&nbsp;0.07163377635174221,&nbsp;</span></p>
+<p><span style=\"font-family: Courier New; font-size: 10pt;\">&nbsp;&nbsp;0.22683454441384948,&nbsp;0.00026409850737266563;</span></p>
+<p><span style=\"font-family: Courier New; font-size: 10pt;\">0.0,&nbsp;0.0,&nbsp;0.0,&nbsp;0.0,&nbsp;0.0,&nbsp;0.0,&nbsp;0.3914767814187902,&nbsp;0.0,&nbsp;0.0009999999994717383,&nbsp;</span></p>
+<p><span style=\"font-family: Courier New; font-size: 10pt;\">&nbsp;&nbsp;3.3040237334605645E-07,&nbsp;8.194778186769167E-06,&nbsp;1.9317883381334802E-08;</span></p>
+<p><span style=\"font-family: Courier New; font-size: 10pt;\">0.0,&nbsp;0.0,&nbsp;0.0,&nbsp;0.0,&nbsp;0.0,&nbsp;0.0,&nbsp;1174430.3442462466,&nbsp;0.0,&nbsp;2999.9999995311555,&nbsp;</span></p>
+<p><span style=\"font-family: Courier New; font-size: 10pt;\">&nbsp;&nbsp;0.9912071163853396,&nbsp;24.584334568089616,&nbsp;0.057962523669630166;</span></p>
+<p><span style=\"font-family: Courier New; font-size: 10pt;\">0.0,&nbsp;0.0,&nbsp;0.0,&nbsp;0.0,&nbsp;0.0,&nbsp;0.0,&nbsp;1153.8461538461538,&nbsp;0.0,&nbsp;0.0,&nbsp;0.0,&nbsp;0.0,&nbsp;0.0;</span></p>
+<p><span style=\"font-family: Courier New; font-size: 10pt;\">0.0,&nbsp;0.0,&nbsp;0.0,&nbsp;0.0,&nbsp;0.0,&nbsp;0.0,&nbsp;11893.491124260356,&nbsp;0.0,&nbsp;0.0,&nbsp;0.0,&nbsp;0.0,&nbsp;0.0;</span></p>
+<p><span style=\"font-family: Courier New; font-size: 10pt;\">0.0,&nbsp;0.0,&nbsp;0.0,&nbsp;0.0,&nbsp;0.0,&nbsp;0.0,&nbsp;0.3333333333333333,&nbsp;0.0,&nbsp;0.0,&nbsp;0.0,&nbsp;0.0,&nbsp;0.0;</span></p>
+<p><span style=\"font-family: Courier New; font-size: 10pt;\">0.0,&nbsp;0.0,&nbsp;0.0,&nbsp;0.0,&nbsp;0.0,&nbsp;0.0,&nbsp;1987.191783853974,&nbsp;0.0,&nbsp;0.0,&nbsp;0.0,&nbsp;0.0,&nbsp;0.0],&nbsp;</span></p>
+<p><span style=\"font-family: Courier New; font-size: 10pt;\">[0.03662801299699971,&nbsp;0.0,&nbsp;0.01502759683451718,&nbsp;0.0,&nbsp;-0.08520102833040469,&nbsp;</span></p>
+<p><span style=\"font-family: Courier New; font-size: 10pt;\">&nbsp;&nbsp;0.06888083527270905,&nbsp;0.4821658461448425,&nbsp;0.18601375139655826,&nbsp;0.0,&nbsp;0.0,&nbsp;0.0,&nbsp;</span></p>
+<p><span style=\"font-family: Courier New; font-size: 10pt;\">&nbsp;&nbsp;0.0,&nbsp;0.0,&nbsp;0.0,&nbsp;0.0,&nbsp;-0.019592147505422687,&nbsp;0.03964882583232426,&nbsp;</span></p>
+<p><span style=\"font-family: Courier New; font-size: 10pt;\">&nbsp;&nbsp;0.27754178035472177,&nbsp;0.08088486040000538,&nbsp;0.0,&nbsp;0.0,&nbsp;0.0,&nbsp;0.0,&nbsp;0.0,&nbsp;0.0,&nbsp;0.0,&nbsp;</span></p>
+<p><span style=\"font-family: Courier New; font-size: 10pt;\">&nbsp;&nbsp;0.06816516366990007,&nbsp;-0.004567606997167485,&nbsp;0.028797104270531428,&nbsp;</span></p>
+<p><span style=\"font-family: Courier New; font-size: 10pt;\">&nbsp;&nbsp;0.061244545899594355,&nbsp;-0.02978592204233452,&nbsp;0.0,&nbsp;0.0,&nbsp;0.0,&nbsp;0.0,&nbsp;0.0,&nbsp;0.0;</span></p>
+<p><span style=\"font-family: Courier New; font-size: 10pt;\">0.0,&nbsp;0.0,&nbsp;0.0,&nbsp;391.476781419233,&nbsp;0.0,&nbsp;0.0,&nbsp;0.0,&nbsp;0.0,&nbsp;0.0,&nbsp;0.0,&nbsp;-23.566512712302103,</span></p>
+<p><span style=\"font-family: Courier New; font-size: 10pt;\">&nbsp;&nbsp;&nbsp;-2.2863034720890103,&nbsp;-391.47678141923296,&nbsp;0.7543640897755622,&nbsp;0.0,&nbsp;0.0,&nbsp;0.0,&nbsp;</span></p>
+<p><span style=\"font-family: Courier New; font-size: 10pt;\">&nbsp;&nbsp;0.0,&nbsp;0.0,&nbsp;0.0,&nbsp;0.0,&nbsp;0.0,&nbsp;0.0,&nbsp;0.0,&nbsp;0.0,&nbsp;0.0,&nbsp;0.0,&nbsp;0.0,&nbsp;0.0,&nbsp;0.0,&nbsp;0.0,&nbsp;0.0,&nbsp;0.0,</span></p>
+<p><span style=\"font-family: Courier New; font-size: 10pt;\">&nbsp;&nbsp;&nbsp;0.0,&nbsp;0.0,&nbsp;0.0,&nbsp;0.0;</span></p>
+<p><span style=\"font-family: Courier New; font-size: 10pt;\">0.0,&nbsp;0.0,&nbsp;0.0,&nbsp;0.0,&nbsp;0.0,&nbsp;0.0,&nbsp;0.0,&nbsp;0.0,&nbsp;0.0,&nbsp;1.000000000122316,&nbsp;0.0,&nbsp;0.0,&nbsp;0.0,&nbsp;</span></p>
+<p><span style=\"font-family: Courier New; font-size: 10pt;\">&nbsp;&nbsp;0.0,&nbsp;0.0,&nbsp;0.0,&nbsp;0.0,&nbsp;0.0,&nbsp;0.0,&nbsp;0.0,&nbsp;0.0,&nbsp;0.0,&nbsp;0.0,&nbsp;0.0,&nbsp;0.0,&nbsp;0.0,&nbsp;0.0,&nbsp;0.0,&nbsp;0.0,</span></p>
+<p><span style=\"font-family: Courier New; font-size: 10pt;\">&nbsp;&nbsp;&nbsp;0.0,&nbsp;0.0,&nbsp;0.0,&nbsp;0.0,&nbsp;0.0,&nbsp;0.0,&nbsp;0.0,&nbsp;0.0;</span></p>
+<p><span style=\"font-family: Courier New; font-size: 10pt;\">0.0,&nbsp;0.0,&nbsp;0.0,&nbsp;1.0,&nbsp;0.0,&nbsp;0.0,&nbsp;0.0,&nbsp;0.0,&nbsp;0.0,&nbsp;0.0,&nbsp;0.0,&nbsp;0.0,&nbsp;0.0,&nbsp;0.0,&nbsp;0.0,&nbsp;0.0,&nbsp;</span></p>
+<p><span style=\"font-family: Courier New; font-size: 10pt;\">&nbsp;&nbsp;0.0,&nbsp;0.0,&nbsp;0.0,&nbsp;0.0,&nbsp;0.0,&nbsp;0.0,&nbsp;0.0,&nbsp;0.0,&nbsp;0.0,&nbsp;0.0,&nbsp;0.0,&nbsp;0.0,&nbsp;0.0,&nbsp;0.0,&nbsp;0.0,&nbsp;0.0,</span></p>
+<p><span style=\"font-family: Courier New; font-size: 10pt;\">&nbsp;&nbsp;&nbsp;0.0,&nbsp;0.0,&nbsp;0.0,&nbsp;0.0,&nbsp;0.0;</span></p>
+<p><span style=\"font-family: Courier New; font-size: 10pt;\">0.0,&nbsp;0.0,&nbsp;0.0,&nbsp;0.0,&nbsp;0.9999999998475839,&nbsp;0.0,&nbsp;0.0,&nbsp;0.0,&nbsp;0.0,&nbsp;0.0,&nbsp;0.0,&nbsp;0.0,&nbsp;0.0,&nbsp;</span></p>
+<p><span style=\"font-family: Courier New; font-size: 10pt;\">&nbsp;&nbsp;0.0,&nbsp;0.0,&nbsp;0.0,&nbsp;0.0,&nbsp;0.0,&nbsp;0.0,&nbsp;0.0,&nbsp;0.0,&nbsp;0.0,&nbsp;0.0,&nbsp;0.0,&nbsp;0.0,&nbsp;0.0,&nbsp;0.0,&nbsp;0.0,&nbsp;0.0,</span></p>
+<p><span style=\"font-family: Courier New; font-size: 10pt;\">&nbsp;&nbsp;&nbsp;0.0,&nbsp;0.0,&nbsp;0.0,&nbsp;0.0,&nbsp;0.0,&nbsp;0.0,&nbsp;0.0,&nbsp;0.0],&nbsp;</span></p>
+<p><span style=\"font-family: Courier New; font-size: 10pt;\">[0.0,&nbsp;0.0,&nbsp;0.0,&nbsp;0.0,&nbsp;0.0,&nbsp;0.0,&nbsp;0.0,&nbsp;0.0,&nbsp;0.0,&nbsp;-0.0020525803279269894,&nbsp;</span></p>
+<p><span style=\"font-family: Courier New; font-size: 10pt;\">&nbsp;&nbsp;-0.003944400361888256,&nbsp;-7.327471962526032E-06;</span></p>
+<p><span style=\"font-family: Courier New; font-size: 10pt;\">391.476781419233,&nbsp;0.0,&nbsp;0.999999999999999,&nbsp;0.0,&nbsp;0.0,&nbsp;0.0,&nbsp;0.0,&nbsp;0.0,&nbsp;0.0,&nbsp;0.0,&nbsp;0.0,</span></p>
+<p><span style=\"font-family: Courier New; font-size: 10pt;\">&nbsp;&nbsp;&nbsp;0.0;</span></p>
+<p><span style=\"font-family: Courier New; font-size: 10pt;\">0.0,&nbsp;0.0,&nbsp;0.0,&nbsp;0.0,&nbsp;0.0,&nbsp;0.0,&nbsp;0.0,&nbsp;0.0,&nbsp;0.0,&nbsp;0.0,&nbsp;0.0,&nbsp;0.0;</span></p>
+<p><span style=\"font-family: Courier New; font-size: 10pt;\">0.0,&nbsp;0.0,&nbsp;0.0,&nbsp;0.0,&nbsp;0.0,&nbsp;0.0,&nbsp;0.0,&nbsp;0.0,&nbsp;0.0,&nbsp;0.0,&nbsp;0.0,&nbsp;0.0;</span></p>
+<p><span style=\"font-family: Courier New; font-size: 10pt;\">0.0,&nbsp;0.0,&nbsp;0.0,&nbsp;0.0,&nbsp;0.0,&nbsp;0.0,&nbsp;0.0,&nbsp;0.0,&nbsp;0.0,&nbsp;0.0,&nbsp;0.0,&nbsp;0.0],&nbsp;{&quot;uPSS1&quot;,&nbsp;&quot;uPm1&quot;,&nbsp;</span></p>
+<p><span style=\"font-family: Courier New; font-size: 10pt;\">&nbsp;&nbsp;&quot;uvs1&quot;,&nbsp;&quot;uPSS2&quot;,&nbsp;&quot;uPm2&quot;,&nbsp;&quot;uvs2&quot;,&nbsp;&quot;uPSS3&quot;,&nbsp;&quot;uPm3&quot;,&nbsp;&quot;uvs3&quot;,&nbsp;&quot;uPload1&quot;,&nbsp;&quot;uPload2&quot;,</span></p>
+<p><span style=\"font-family: Courier New; font-size: 10pt;\">&nbsp;&nbsp;&nbsp;&quot;uPload3&quot;},&nbsp;{&quot;Vt&quot;,&nbsp;&quot;SCRXin&quot;,&nbsp;&quot;SCRXout&quot;,&nbsp;&quot;SPEED&quot;,&nbsp;&quot;ANGLE&quot;},&nbsp;{&quot;Plant.infiniteBus.gENCLS.delta&quot;,</span></p>
+<p><span style=\"font-family: Courier New; font-size: 10pt;\">&nbsp;&nbsp;&nbsp;&quot;Plant.infiniteBus.gENCLS.omega&quot;,&nbsp;&quot;Plant.infiniteBus.gENCLS.eq&quot;,&nbsp;</span></p>
+<p><span style=\"font-family: Courier New; font-size: 10pt;\">&nbsp;&nbsp;&quot;Plant.G1.gENSAE.w&quot;,&nbsp;&quot;Plant.G1.gENSAE.delta&quot;,&nbsp;&quot;Plant.G1.gENSAE.Epq&quot;,&nbsp;</span></p>
+<p><span style=\"font-family: Courier New; font-size: 10pt;\">&nbsp;&nbsp;&quot;Plant.G1.gENSAE.PSIkd&quot;,&nbsp;&quot;Plant.G1.gENSAE.PSIppq&quot;,&nbsp;&quot;Plant.G1.sCRX.imLeadLag.TF.x_scaled[1]&quot;,</span></p>
+<p><span style=\"font-family: Courier New; font-size: 10pt;\">&nbsp;&nbsp;&nbsp;&quot;Plant.G1.sCRX.simpleLagLim.state&quot;,&nbsp;&quot;Plant.G1.pSSTypeIIExtraLeadLag.imLeadLag1.TF.x_scaled[1]&quot;,</span></p>
+<p><span style=\"font-family: Courier New; font-size: 10pt;\">&nbsp;&nbsp;&nbsp;&quot;Plant.G1.pSSTypeIIExtraLeadLag.imLeadLag2.TF.x_scaled[1]&quot;,&nbsp;&quot;Plant.G1.pSSTypeIIExtraLeadLag.derivativeLag.TF.x_scaled[1]&quot;,</span></p>
+<p><span style=\"font-family: Courier New; font-size: 10pt;\">&nbsp;&nbsp;&nbsp;&quot;Plant.G1.pSSTypeIIExtraLeadLag.imleadLag3.TF.x_scaled[1]&quot;,&nbsp;&quot;Plant.G2.gENSAE.w&quot;,</span></p>
+<p><span style=\"font-family: Courier New; font-size: 10pt;\">&nbsp;&nbsp;&nbsp;&quot;Plant.G2.gENSAE.delta&quot;,&nbsp;&quot;Plant.G2.gENSAE.Epq&quot;,&nbsp;&quot;Plant.G2.gENSAE.PSIkd&quot;,&nbsp;</span></p>
+<p><span style=\"font-family: Courier New; font-size: 10pt;\">&nbsp;&nbsp;&quot;Plant.G2.gENSAE.PSIppq&quot;,&nbsp;&quot;Plant.G2.sCRX.imLeadLag.TF.x_scaled[1]&quot;,&nbsp;</span></p>
+<p><span style=\"font-family: Courier New; font-size: 10pt;\">&nbsp;&nbsp;&quot;Plant.G2.sCRX.simpleLagLim.state&quot;,&nbsp;&quot;Plant.G2.pSSTypeIIExtraLeadLag.imLeadLag1.TF.x_scaled[1]&quot;,</span></p>
+<p><span style=\"font-family: Courier New; font-size: 10pt;\">&nbsp;&nbsp;&nbsp;&quot;Plant.G2.pSSTypeIIExtraLeadLag.imLeadLag2.TF.x_scaled[1]&quot;,&nbsp;&quot;Plant.G2.pSSTypeIIExtraLeadLag.derivativeLag.TF.x_scaled[1]&quot;,</span></p>
+<p><span style=\"font-family: Courier New; font-size: 10pt;\">&nbsp;&nbsp;&nbsp;&quot;Plant.G2.pSSTypeIIExtraLeadLag.imleadLag3.TF.x_scaled[1]&quot;,&nbsp;&quot;Plant.G3.gENROE.w&quot;,</span></p>
+<p><span style=\"font-family: Courier New; font-size: 10pt;\">&nbsp;&nbsp;&nbsp;&quot;Plant.G3.gENROE.delta&quot;,&nbsp;&quot;Plant.G3.gENROE.Epd&quot;,&nbsp;&quot;Plant.G3.gENROE.Epq&quot;,&nbsp;</span></p>
+<p><span style=\"font-family: Courier New; font-size: 10pt;\">&nbsp;&nbsp;&quot;Plant.G3.gENROE.PSIkd&quot;,&nbsp;&quot;Plant.G3.gENROE.PSIkq&quot;,&nbsp;&quot;Plant.G3.sCRX.imLeadLag.TF.x_scaled[1]&quot;,</span></p>
+<p><span style=\"font-family: Courier New; font-size: 10pt;\">&nbsp;&nbsp;&nbsp;&quot;Plant.G3.sCRX.simpleLagLim.state&quot;,&nbsp;&quot;Plant.G3.pSSTypeIIExtraLeadLag.imLeadLag1.TF.x_scaled[1]&quot;,</span></p>
+<p><span style=\"font-family: Courier New; font-size: 10pt;\">&nbsp;&nbsp;&nbsp;&quot;Plant.G3.pSSTypeIIExtraLeadLag.imLeadLag2.TF.x_scaled[1]&quot;,&nbsp;&quot;Plant.G3.pSSTypeIIExtraLeadLag.derivativeLag.TF.x_scaled[1]&quot;,</span></p>
+<p><span style=\"font-family: Courier New; font-size: 10pt;\">&nbsp;&nbsp;&nbsp;&quot;Plant.G3.pSSTypeIIExtraLeadLag.imleadLag3.TF.x_scaled[1]&quot;}</span></p>
 </html>"),    preferredView = "info");
     end LinearizeSimple;
 
@@ -293,9 +528,9 @@ package LinearAnalysis
 <p>The response of both models is then plotted/compared to check the quality of the linear model.</p>
 <p>The function uses the following models:</p>
 <ul>
-<li>Non-linear model for linearization: <span style=\"font-family: Courier New;\">Example1.Analysis.LinearAnalysis.NonlinModel_for_Linearization</span></li>
-<li>Non-linear model for simulation: <span style=\"font-family: Courier New;\">Example1.Analysis.LinearAnalysis.NonlinModel_for_NonlinExperiment</span></li>
-<li>Linear model for simualtion: <span style=\"font-family: Courier New;\">Example1.Analysis.LinearAnalysis.LinearModelGeneral</span></li>
+<li>Non-linear model for linearization: <span style=\"font-family: Courier New;\">ThreeMIB.Analysis.LinearAnalysis.NonlinModel_for_Linearization</span></li>
+<li>Non-linear model for simulation: <span style=\"font-family: Courier New;\">ThreeMIB.Analysis.LinearAnalysis.NonlinModel_for_NonlinExperiment</span></li>
+<li>Linear model for simualtion: <span style=\"font-family: Courier New;\">ThreeMIB.Analysis.LinearAnalysis.LinearModelGeneral</span></li>
 </ul>
 <p>After executing the function the results are displayed in the command window. </p>
 <p><br>For post-processing, the follwing <span style=\"font-family: Courier New;\">.mat</span> files are generated with time simulation responses are produced:</p>
@@ -314,108 +549,332 @@ package LinearAnalysis
 <p><i><b><span style=\"font-family: Arial;\">Usage</span></b></i></p>
 <ol>
 <li><span style=\"font-family: Arial;\">In the Package Browser, right click on the function and select &quot;Call function...&quot;. This will open the function&apos;s window.</span></li>
-<p><img src=\"modelica://Example1/Resources/Images/lincompare (Small).png\"/></p>
 <li><span style=\"font-family: Arial;\">Leave the default parameters on first use. Alternatively, modify the tlin and tsim parameters, note that tsim should be greater or equal to tlin.</span></li>
 <li><span style=\"font-family: Arial;\">Go to the bottom of the window and click on &quot;Execute&quot;, if successful, messages/results are displayed in the command window.</span></li>
 <li><span style=\"font-family: Arial;\">Go back to the function&apos;s own window and click on &quot;Close&quot;.</span> </li>
 </ol>
 <p><br><i><b>Sample Output</b></i></p>
 <p>Executing the function gives the following plot is produced in the &quot;Simulation&quot; window and the following results in the &quot;Commands&quot; window.</p>
-<p><img src=\"modelica://Example1/Resources/Images/LinearizeAndCompare.png\"/></p>
-<p style=\"margin-left: 30px;\"><br><span style=\"font-family: Courier New; font-size: 10pt;\">Example1.Analysis.LinearAnalysis.CustomFunctions.LinearizeAndCompare();</span></p>
-<p style=\"margin-left: 30px;\"><span style=\"font-family: Courier New; font-size: 10pt;\">DAE&nbsp;Mode&nbsp;is&nbsp;turned&nbsp;off.</span></p>
-<p style=\"margin-left: 30px;\"><span style=\"font-family: Courier New; font-size: 10pt;\">Global&nbsp;optimization&nbsp;is&nbsp;disabled.</span></p>
-<p style=\"margin-left: 30px;\"><span style=\"font-family: Courier New; font-size: 10pt;\">Sparse&nbsp;options&nbsp;disabled.</span></p>
-<p style=\"margin-left: 30px;\"><span style=\"font-family: Courier New; font-size: 10pt;\">Linearization&nbsp;and&nbsp;Nonlinear&nbsp;Model&nbsp;Comparison&nbsp;is&nbsp;starting...</span></p>
-<p style=\"margin-left: 30px;\"><span style=\"font-family: Courier New; font-size: 10pt;\">&nbsp;=&nbsp;true</span></p>
-<p style=\"margin-left: 30px;\"><span style=\"font-family: Courier New; font-size: 10pt;\">&nbsp;=&nbsp;true</span></p>
-<p style=\"margin-left: 30px;\"><span style=\"font-family: Courier New; font-size: 10pt;\">Simulating&nbsp;nonlinear&nbsp;model</span></p>
-<p style=\"margin-left: 30px;\"><span style=\"font-family: Courier New; font-size: 10pt;\">&nbsp;=&nbsp;true</span></p>
-<p style=\"margin-left: 30px;\"><span style=\"font-family: Courier New; font-size: 10pt;\">&nbsp;=&nbsp;true</span></p>
-<p style=\"margin-left: 30px;\"><span style=\"font-family: Courier New; font-size: 10pt;\">&nbsp;=&nbsp;true</span></p>
-<p style=\"margin-left: 30px;\"><span style=\"font-family: Courier New; font-size: 10pt;\">y0&nbsp;before&nbsp;disturbance&nbsp;=</span></p>
-<p style=\"margin-left: 30px;\"><span style=\"font-family: Courier New; font-size: 10pt;\">&nbsp;=&nbsp;&quot;</span></p>
-<p style=\"margin-left: 30px;\"><span style=\"font-family: Courier New; font-size: 10pt;\">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;0.998271&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span></p>
-<p style=\"margin-left: 30px;\"><span style=\"font-family: Courier New; font-size: 10pt;\">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;0.203063&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span></p>
-<p style=\"margin-left: 30px;\"><span style=\"font-family: Courier New; font-size: 10pt;\">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;0.921617&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span></p>
-<p style=\"margin-left: 30px;\"><span style=\"font-family: Courier New; font-size: 10pt;\">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;1&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span></p>
-<p style=\"margin-left: 30px;\"><span style=\"font-family: Courier New; font-size: 10pt;\">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;1.29897&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span></p>
-<p style=\"margin-left: 30px;\"><span style=\"font-family: Courier New; font-size: 10pt;\">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;-3.55698e-11&nbsp;&nbsp;&nbsp;</span></p>
-<p style=\"margin-left: 30px;\"><span style=\"font-family: Courier New; font-size: 10pt;\">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;2.12495&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span></p>
-<p style=\"margin-left: 30px;\"><span style=\"font-family: Courier New; font-size: 10pt;\">&quot;</span></p>
-<p style=\"margin-left: 30px;\"><span style=\"font-family: Courier New; font-size: 10pt;\">Simulating&nbsp;linear&nbsp;model</span></p>
-<p style=\"margin-left: 30px;\"><span style=\"font-family: Courier New; font-size: 10pt;\">&nbsp;=&nbsp;true</span></p>
-<p style=\"margin-left: 30px;\"><span style=\"font-family: Courier New; font-size: 10pt;\">&nbsp;=&nbsp;true</span></p>
-<p style=\"margin-left: 30px;\"><span style=\"font-family: Courier New; font-size: 10pt;\">&nbsp;=&nbsp;1</span></p>
-<p style=\"margin-left: 30px;\"><span style=\"font-family: Courier New; font-size: 10pt;\">&nbsp;=&nbsp;1</span></p>
-<p style=\"margin-left: 30px;\"><span style=\"font-family: Courier New; font-size: 10pt;\">&nbsp;=&nbsp;1</span></p>
-<p style=\"margin-left: 30px;\"><span style=\"font-family: Courier New; font-size: 10pt;\">&nbsp;=&nbsp;1</span></p>
-<p style=\"margin-left: 30px;\"><span style=\"font-family: Courier New; font-size: 10pt;\">&nbsp;=&nbsp;1</span></p>
-<p style=\"margin-left: 30px;\"><span style=\"font-family: Courier New; font-size: 10pt;\">&nbsp;=&nbsp;1</span></p>
-<p style=\"margin-left: 30px;\"><span style=\"font-family: Courier New; font-size: 10pt;\">&nbsp;=&nbsp;1</span></p>
-<p style=\"margin-left: 30px;\"><span style=\"font-family: Courier New; font-size: 10pt;\">&nbsp;=&nbsp;1</span></p>
-<p style=\"margin-left: 30px;\"><span style=\"font-family: Courier New; font-size: 10pt;\">&nbsp;=&nbsp;1</span></p>
-<p style=\"margin-left: 30px;\"><span style=\"font-family: Courier New; font-size: 10pt;\">&nbsp;=&nbsp;1</span></p>
-<p style=\"margin-left: 30px;\"><span style=\"font-family: Courier New; font-size: 10pt;\">&nbsp;=&nbsp;</span></p>
-<p style=\"margin-left: 30px;\"><span style=\"font-family: Courier New; font-size: 10pt;\">[0.0,&nbsp;376.99111838906373,&nbsp;0.0,&nbsp;0.0,&nbsp;0.0,&nbsp;0.0,&nbsp;0.0,&nbsp;0.0,&nbsp;0.0,&nbsp;0.0,&nbsp;0.0,&nbsp;0.0;</span></p>
-<p style=\"margin-left: 30px;\"><span style=\"font-family: Courier New; font-size: 10pt;\">-0.17610876767279915,&nbsp;0.0,&nbsp;0.0,&nbsp;0.0,&nbsp;-0.19586150142483613,&nbsp;0.05515410219997556,&nbsp;</span></p>
-<p style=\"margin-left: 30px;\"><span style=\"font-family: Courier New; font-size: 10pt;\">&nbsp;&nbsp;0.0,&nbsp;0.0,&nbsp;0.0,&nbsp;0.0,&nbsp;0.0,&nbsp;0.0;</span></p>
-<p style=\"margin-left: 30px;\"><span style=\"font-family: Courier New; font-size: 10pt;\">-0.25587785359503384,&nbsp;0.0,&nbsp;-0.12500000002903436,&nbsp;0.0,&nbsp;-0.2667630481021101,&nbsp;</span></p>
-<p style=\"margin-left: 30px;\"><span style=\"font-family: Courier New; font-size: 10pt;\">&nbsp;&nbsp;-0.001159492170902296,&nbsp;0.0,&nbsp;0.0,&nbsp;0.12500000001466172,&nbsp;0.0,&nbsp;0.0,&nbsp;0.0;</span></p>
-<p style=\"margin-left: 30px;\"><span style=\"font-family: Courier New; font-size: 10pt;\">0.42658999050935953,&nbsp;0.0,&nbsp;0.0,&nbsp;-0.9999999998908723,&nbsp;0.007883244274318683,&nbsp;</span></p>
-<p style=\"margin-left: 30px;\"><span style=\"font-family: Courier New; font-size: 10pt;\">&nbsp;&nbsp;-1.4901043751617613,&nbsp;0.0,&nbsp;0.0,&nbsp;0.0,&nbsp;0.0,&nbsp;0.0,&nbsp;0.0;</span></p>
-<p style=\"margin-left: 30px;\"><span style=\"font-family: Courier New; font-size: 10pt;\">-3.369028913176898,&nbsp;0.0,&nbsp;33.33333333281978,&nbsp;0.0,&nbsp;-36.84568271688989,&nbsp;</span></p>
-<p style=\"margin-left: 30px;\"><span style=\"font-family: Courier New; font-size: 10pt;\">&nbsp;&nbsp;-0.015266512953637873,&nbsp;0.0,&nbsp;0.0,&nbsp;0.0,&nbsp;0.0,&nbsp;0.0,&nbsp;0.0;</span></p>
-<p style=\"margin-left: 30px;\"><span style=\"font-family: Courier New; font-size: 10pt;\">2.425461424825778,&nbsp;0.0,&nbsp;0.0,&nbsp;14.285714284155317,&nbsp;0.0448217383657263,&nbsp;</span></p>
-<p style=\"margin-left: 30px;\"><span style=\"font-family: Courier New; font-size: 10pt;\">&nbsp;&nbsp;-22.75799624611222,&nbsp;0.0,&nbsp;0.0,&nbsp;0.0,&nbsp;0.0,&nbsp;0.0,&nbsp;0.0;</span></p>
-<p style=\"margin-left: 30px;\"><span style=\"font-family: Courier New; font-size: 10pt;\">-8.934890939628422,&nbsp;0.0,&nbsp;0.0,&nbsp;0.0,&nbsp;29.303251372407868,&nbsp;33.1230788990298,&nbsp;</span></p>
-<p style=\"margin-left: 30px;\"><span style=\"font-family: Courier New; font-size: 10pt;\">&nbsp;&nbsp;-66.66666667021094,&nbsp;0.0,&nbsp;0.0,&nbsp;0.0,&nbsp;0.0,&nbsp;0.0;</span></p>
-<p style=\"margin-left: 30px;\"><span style=\"font-family: Courier New; font-size: 10pt;\">0.0,&nbsp;0.0,&nbsp;0.0,&nbsp;0.0,&nbsp;0.0,&nbsp;0.0,&nbsp;0.0,&nbsp;-1.0,&nbsp;0.0,&nbsp;0.0,&nbsp;0.0,&nbsp;0.0;</span></p>
-<p style=\"margin-left: 30px;\"><span style=\"font-family: Courier New; font-size: 10pt;\">0.0,&nbsp;18999999.999783278,&nbsp;0.0,&nbsp;0.0,&nbsp;0.0,&nbsp;0.0,&nbsp;-2000000.0001063284,&nbsp;</span></p>
-<p style=\"margin-left: 30px;\"><span style=\"font-family: Courier New; font-size: 10pt;\">&nbsp;&nbsp;10000.00082740371,&nbsp;-10000.000001172937,&nbsp;0.0,&nbsp;0.0,&nbsp;-18999999.996308953;</span></p>
-<p style=\"margin-left: 30px;\"><span style=\"font-family: Courier New; font-size: 10pt;\">0.0,&nbsp;0.00949999999989164,&nbsp;0.0,&nbsp;0.0,&nbsp;0.0,&nbsp;0.0,&nbsp;0.0,&nbsp;0.0,&nbsp;0.0,&nbsp;-0.001,&nbsp;0.0,&nbsp;</span></p>
-<p style=\"margin-left: 30px;\"><span style=\"font-family: Courier New; font-size: 10pt;\">&nbsp;&nbsp;-0.009499999998154478;</span></p>
-<p style=\"margin-left: 30px;\"><span style=\"font-family: Courier New; font-size: 10pt;\">0.0,&nbsp;0.00949999999989164,&nbsp;0.0,&nbsp;0.0,&nbsp;0.0,&nbsp;0.0,&nbsp;0.0,&nbsp;0.0,&nbsp;0.0,&nbsp;0.0,&nbsp;-0.001,&nbsp;</span></p>
-<p style=\"margin-left: 30px;\"><span style=\"font-family: Courier New; font-size: 10pt;\">&nbsp;&nbsp;-0.009499999998154478;</span></p>
-<p style=\"margin-left: 30px;\"><span style=\"font-family: Courier New; font-size: 10pt;\">0.0,&nbsp;0.7092198580775582,&nbsp;0.0,&nbsp;0.0,&nbsp;0.0,&nbsp;0.0,&nbsp;0.0,&nbsp;0.0,&nbsp;0.0,&nbsp;0.0,&nbsp;0.0,&nbsp;</span></p>
-<p style=\"margin-left: 30px;\"><span style=\"font-family: Courier New; font-size: 10pt;\">&nbsp;&nbsp;-0.7092198580803518],&nbsp;</span></p>
-<p style=\"margin-left: 30px;\"><span style=\"font-family: Courier New; font-size: 10pt;\">[0.0,&nbsp;0.0,&nbsp;0.0,&nbsp;0.0;</span></p>
-<p style=\"margin-left: 30px;\"><span style=\"font-family: Courier New; font-size: 10pt;\">0.0,&nbsp;0.14285715467719584,&nbsp;-0.03160719305331635,&nbsp;0.0;</span></p>
-<p style=\"margin-left: 30px;\"><span style=\"font-family: Courier New; font-size: 10pt;\">0.0,&nbsp;0.0,&nbsp;-0.040428715930573844,&nbsp;0.0;</span></p>
-<p style=\"margin-left: 30px;\"><span style=\"font-family: Courier New; font-size: 10pt;\">0.0,&nbsp;0.0,&nbsp;0.10093331725968824,&nbsp;0.0;</span></p>
-<p style=\"margin-left: 30px;\"><span style=\"font-family: Courier New; font-size: 10pt;\">0.0,&nbsp;0.0,&nbsp;-0.5323070687938507,&nbsp;0.0;</span></p>
-<p style=\"margin-left: 30px;\"><span style=\"font-family: Courier New; font-size: 10pt;\">0.0,&nbsp;0.0,&nbsp;0.5738766604780818,&nbsp;0.0;</span></p>
-<p style=\"margin-left: 30px;\"><span style=\"font-family: Courier New; font-size: 10pt;\">0.0,&nbsp;0.0,&nbsp;-1.024765457676343,&nbsp;0.0;</span></p>
-<p style=\"margin-left: 30px;\"><span style=\"font-family: Courier New; font-size: 10pt;\">0.0,&nbsp;0.0,&nbsp;0.0,&nbsp;0.0;</span></p>
-<p style=\"margin-left: 30px;\"><span style=\"font-family: Courier New; font-size: 10pt;\">19000001.57206705,&nbsp;0.0,&nbsp;0.0,&nbsp;2000000.1654807418;</span></p>
-<p style=\"margin-left: 30px;\"><span style=\"font-family: Courier New; font-size: 10pt;\">0.009500000786033523,&nbsp;0.0,&nbsp;0.0,&nbsp;0.0;</span></p>
-<p style=\"margin-left: 30px;\"><span style=\"font-family: Courier New; font-size: 10pt;\">0.009500000786033523,&nbsp;0.0,&nbsp;0.0,&nbsp;0.0;</span></p>
-<p style=\"margin-left: 30px;\"><span style=\"font-family: Courier New; font-size: 10pt;\">0.7092199168371426,&nbsp;0.0,&nbsp;0.0,&nbsp;0.0],&nbsp;</span></p>
-<p style=\"margin-left: 30px;\"><span style=\"font-family: Courier New; font-size: 10pt;\">[-0.1340233640944263,&nbsp;0.0,&nbsp;0.0,&nbsp;0.0,&nbsp;0.43954877058611797,&nbsp;0.496846183485447,&nbsp;0.0,</span></p>
-<p style=\"margin-left: 30px;\"><span style=\"font-family: Courier New; font-size: 10pt;\">&nbsp;&nbsp;&nbsp;0.0,&nbsp;0.0,&nbsp;0.0,&nbsp;0.0,&nbsp;0.0;</span></p>
-<p style=\"margin-left: 30px;\"><span style=\"font-family: Courier New; font-size: 10pt;\">0.3043068137697762,&nbsp;0.0,&nbsp;0.0,&nbsp;0.0,&nbsp;1.4537261847736198,&nbsp;0.7665888603335728,&nbsp;0.0,&nbsp;</span></p>
-<p style=\"margin-left: 30px;\"><span style=\"font-family: Courier New; font-size: 10pt;\">&nbsp;&nbsp;0.0,&nbsp;0.0,&nbsp;0.0,&nbsp;0.0,&nbsp;0.0;</span></p>
-<p style=\"margin-left: 30px;\"><span style=\"font-family: Courier New; font-size: 10pt;\">1.2253264605206322,&nbsp;0.0,&nbsp;0.0,&nbsp;0.0,&nbsp;1.364324561691764,&nbsp;-0.38254244286640693,&nbsp;0.0,</span></p>
-<p style=\"margin-left: 30px;\"><span style=\"font-family: Courier New; font-size: 10pt;\">&nbsp;&nbsp;&nbsp;0.0,&nbsp;0.0,&nbsp;0.0,&nbsp;0.0,&nbsp;0.0;</span></p>
-<p style=\"margin-left: 30px;\"><span style=\"font-family: Courier New; font-size: 10pt;\">0.0,&nbsp;0.9999999998893571,&nbsp;0.0,&nbsp;0.0,&nbsp;0.0,&nbsp;0.0,&nbsp;0.0,&nbsp;0.0,&nbsp;0.0,&nbsp;0.0,&nbsp;0.0,&nbsp;0.0;</span></p>
-<p style=\"margin-left: 30px;\"><span style=\"font-family: Courier New; font-size: 10pt;\">1.0000000001610603,&nbsp;0.0,&nbsp;0.0,&nbsp;0.0,&nbsp;0.0,&nbsp;0.0,&nbsp;0.0,&nbsp;0.0,&nbsp;0.0,&nbsp;0.0,&nbsp;0.0,&nbsp;0.0;</span></p>
-<p style=\"margin-left: 30px;\"><span style=\"font-family: Courier New; font-size: 10pt;\">0.0,&nbsp;9.499999999891639,&nbsp;0.0,&nbsp;0.0,&nbsp;0.0,&nbsp;0.0,&nbsp;0.0,&nbsp;0.0,&nbsp;0.0,&nbsp;0.0,&nbsp;0.0,&nbsp;</span></p>
-<p style=\"margin-left: 30px;\"><span style=\"font-family: Courier New; font-size: 10pt;\">&nbsp;&nbsp;-9.499999998154477;</span></p>
-<p style=\"margin-left: 30px;\"><span style=\"font-family: Courier New; font-size: 10pt;\">0.0,&nbsp;0.0,&nbsp;0.0,&nbsp;0.0,&nbsp;0.0,&nbsp;0.0,&nbsp;0.0,&nbsp;0.0,&nbsp;1.0000000001172937,&nbsp;0.0,&nbsp;0.0,&nbsp;0.0],&nbsp;</span></p>
-<p style=\"margin-left: 30px;\"><span style=\"font-family: Courier New; font-size: 10pt;\">[0.0,&nbsp;0.0,&nbsp;-0.01537148186514514,&nbsp;0.0;</span></p>
-<p style=\"margin-left: 30px;\"><span style=\"font-family: Courier New; font-size: 10pt;\">0.0,&nbsp;0.0,&nbsp;0.02120284503526193,&nbsp;0.0;</span></p>
-<p style=\"margin-left: 30px;\"><span style=\"font-family: Courier New; font-size: 10pt;\">0.0,&nbsp;0.0,&nbsp;0.21999546628848066,&nbsp;0.0;</span></p>
-<p style=\"margin-left: 30px;\"><span style=\"font-family: Courier New; font-size: 10pt;\">0.0,&nbsp;0.0,&nbsp;0.0,&nbsp;0.0;</span></p>
-<p style=\"margin-left: 30px;\"><span style=\"font-family: Courier New; font-size: 10pt;\">0.0,&nbsp;0.0,&nbsp;0.0,&nbsp;0.0;</span></p>
-<p style=\"margin-left: 30px;\"><span style=\"font-family: Courier New; font-size: 10pt;\">9.500000786033524,&nbsp;0.0,&nbsp;0.0,&nbsp;1.0;</span></p>
-<p style=\"margin-left: 30px;\"><span style=\"font-family: Courier New; font-size: 10pt;\">0.0,&nbsp;0.0,&nbsp;0.0,&nbsp;0.0],&nbsp;{&quot;uPSS&quot;,&nbsp;&quot;uPm&quot;,&nbsp;&quot;uPload&quot;,&nbsp;&quot;uvsAVR&quot;},&nbsp;{&quot;Vt&quot;,&nbsp;&quot;Q&quot;,&nbsp;&quot;P&quot;,&nbsp;&quot;w&quot;,&nbsp;</span></p>
-<p style=\"margin-left: 30px;\"><span style=\"font-family: Courier New; font-size: 10pt;\">&nbsp;&nbsp;&quot;delta&quot;,&nbsp;&quot;AVRin&quot;,&nbsp;&quot;AVRout&quot;},&nbsp;{&quot;Plant.G1.machine.delta&quot;,&nbsp;&quot;Plant.G1.machine.w&quot;,&nbsp;</span></p>
-<p style=\"margin-left: 30px;\"><span style=\"font-family: Courier New; font-size: 10pt;\">&nbsp;&nbsp;&quot;Plant.G1.machine.e1q&quot;,&nbsp;&quot;Plant.G1.machine.e1d&quot;,&nbsp;&quot;Plant.G1.machine.e2q&quot;,&nbsp;</span></p>
-<p style=\"margin-left: 30px;\"><span style=\"font-family: Courier New; font-size: 10pt;\">&nbsp;&nbsp;&quot;Plant.G1.machine.e2d&quot;,&nbsp;&quot;Plant.G1.avr.vm&quot;,&nbsp;&quot;Plant.G1.avr.vr&quot;,&nbsp;&quot;Plant.G1.avr.vf1&quot;,</span></p>
-<p style=\"margin-left: 30px;\"><span style=\"font-family: Courier New; font-size: 10pt;\">&nbsp;&nbsp;&nbsp;&quot;Plant.G1.pss.imLeadLag.TF.x_scaled[1]&quot;,&nbsp;&quot;Plant.G1.pss.imLeadLag1.TF.x_scaled[1]&quot;,</span></p>
-<p style=\"margin-left: 30px;\"><span style=\"font-family: Courier New; font-size: 10pt;\">&nbsp;&nbsp;&nbsp;&quot;Plant.G1.pss.derivativeLag.TF.x_scaled[1]&quot;},&nbsp;{0.9982708096504211,&nbsp;</span></p>
-<p style=\"margin-left: 30px;\"><span style=\"font-family: Courier New; font-size: 10pt;\">&nbsp;&nbsp;0.20306333899497986,&nbsp;0.9216165542602539,&nbsp;1.0,&nbsp;1.2989709377288818,&nbsp;</span></p>
-<p style=\"margin-left: 30px;\"><span style=\"font-family: Courier New; font-size: 10pt;\">&nbsp;&nbsp;-3.5569769352150615E-11,&nbsp;2.124945878982544}</span></p>
+<p><b><span style=\"font-family: Courier New; font-size: 10pt;\">ThreeMIB.Analysis.LinearAnalysis.CustomFunctions.LinearizeAndCompare();</span></b></p>
+<p><span style=\"font-family: Courier New; font-size: 10pt;\">DAE&nbsp;Mode&nbsp;is&nbsp;turned&nbsp;off.</span></p>
+<p><span style=\"font-family: Courier New; font-size: 10pt;\">Global&nbsp;optimization&nbsp;is&nbsp;disabled.</span></p>
+<p><span style=\"font-family: Courier New; font-size: 10pt;\">Warning: Script using obsolete flag Advanced.SparseActivate. Flag is now called Advanced.Translation.SparseActivate.</span></p>
+<p><span style=\"font-family: Courier New; font-size: 10pt;\">Sparse&nbsp;options&nbsp;disabled.</span></p>
+<p><span style=\"font-family: Courier New; font-size: 10pt;\">Linearization&nbsp;and&nbsp;Nonlinear&nbsp;Model&nbsp;Comparison&nbsp;is&nbsp;starting...</span></p>
+<p><span style=\"font-family: Courier New; font-size: 10pt;\">Declaring&nbsp;Modelica_LinearSystems2.StateSpace&nbsp;ss&nbsp;</span></p>
+<p><span style=\"font-family: Courier New; font-size: 10pt;\">&nbsp;=&nbsp;true</span></p>
+<p><span style=\"font-family: Courier New; font-size: 10pt;\">&nbsp;=&nbsp;true</span></p>
+<p><span style=\"font-family: Courier New; font-size: 10pt;\">Simulating&nbsp;nonlinear&nbsp;model</span></p>
+<p><span style=\"font-family: Courier New; font-size: 10pt;\">&nbsp;=&nbsp;true</span></p>
+<p><span style=\"font-family: Courier New; font-size: 10pt;\">&nbsp;=&nbsp;true</span></p>
+<p><span style=\"font-family: Courier New; font-size: 10pt;\">Redeclaring&nbsp;variable:&nbsp;Real&nbsp;y0&nbsp;[5,&nbsp;10003];</span></p>
+<p><span style=\"font-family: Courier New; font-size: 10pt;\">&nbsp;=&nbsp;true</span></p>
+<p><span style=\"font-family: Courier New; font-size: 10pt;\">y0&nbsp;before&nbsp;disturbance&nbsp;=</span></p>
+<p><span style=\"font-family: Courier New; font-size: 10pt;\">&nbsp;=&nbsp;&quot;</span></p>
+<p><span style=\"font-family: Courier New; font-size: 10pt;\">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;1.04009&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span></p>
+<p><span style=\"font-family: Courier New; font-size: 10pt;\">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;-1.84622e-05&nbsp;&nbsp;&nbsp;</span></p>
+<p><span style=\"font-family: Courier New; font-size: 10pt;\">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;1.69891&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span></p>
+<p><span style=\"font-family: Courier New; font-size: 10pt;\">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;-4.16656e-06&nbsp;&nbsp;&nbsp;</span></p>
+<p><span style=\"font-family: Courier New; font-size: 10pt;\">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;0.278821&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span></p>
+<p><span style=\"font-family: Courier New; font-size: 10pt;\">&quot;</span></p>
+<p><span style=\"font-family: Courier New; font-size: 10pt;\">Simulating&nbsp;linear&nbsp;model</span></p>
+<p><span style=\"font-family: Courier New; font-size: 10pt;\">&nbsp;=&nbsp;true</span></p>
+<p><span style=\"font-family: Courier New; font-size: 10pt;\">&nbsp;=&nbsp;true</span></p>
+<p><span style=\"font-family: Courier New; font-size: 10pt;\">&nbsp;=&nbsp;1</span></p>
+<p><span style=\"font-family: Courier New; font-size: 10pt;\">&nbsp;=&nbsp;1</span></p>
+<p><span style=\"font-family: Courier New; font-size: 10pt;\">&nbsp;=&nbsp;</span></p>
+<p><span style=\"font-family: Courier New; font-size: 10pt;\">[0.0,&nbsp;0.0,&nbsp;0.0,&nbsp;0.0,&nbsp;0.0,&nbsp;0.0,&nbsp;0.0,&nbsp;0.0,&nbsp;0.0,&nbsp;0.0,&nbsp;0.0,&nbsp;0.0,&nbsp;0.0,&nbsp;0.0,&nbsp;0.0,&nbsp;0.0,</span></p>
+<p><span style=\"font-family: Courier New; font-size: 10pt;\">&nbsp;&nbsp;&nbsp;0.0,&nbsp;0.0,&nbsp;0.0,&nbsp;0.0,&nbsp;0.0,&nbsp;0.0,&nbsp;0.0,&nbsp;0.0,&nbsp;0.0,&nbsp;0.0,&nbsp;0.0,&nbsp;0.0,&nbsp;0.0,&nbsp;0.0,&nbsp;0.0,&nbsp;</span></p>
+<p><span style=\"font-family: Courier New; font-size: 10pt;\">&nbsp;&nbsp;0.0,&nbsp;0.0,&nbsp;0.0,&nbsp;0.0,&nbsp;0.0,&nbsp;0.0;</span></p>
+<p><span style=\"font-family: Courier New; font-size: 10pt;\">0.0,&nbsp;0.0,&nbsp;0.0,&nbsp;0.0,&nbsp;0.0,&nbsp;0.0,&nbsp;0.0,&nbsp;0.0,&nbsp;0.0,&nbsp;0.0,&nbsp;0.0,&nbsp;0.0,&nbsp;0.0,&nbsp;0.0,&nbsp;0.0,&nbsp;0.0,&nbsp;</span></p>
+<p><span style=\"font-family: Courier New; font-size: 10pt;\">&nbsp;&nbsp;0.0,&nbsp;0.0,&nbsp;0.0,&nbsp;0.0,&nbsp;0.0,&nbsp;0.0,&nbsp;0.0,&nbsp;0.0,&nbsp;0.0,&nbsp;0.0,&nbsp;0.0,&nbsp;0.0,&nbsp;0.0,&nbsp;0.0,&nbsp;0.0,&nbsp;0.0,</span></p>
+<p><span style=\"font-family: Courier New; font-size: 10pt;\">&nbsp;&nbsp;&nbsp;0.0,&nbsp;0.0,&nbsp;0.0,&nbsp;0.0,&nbsp;0.0;</span></p>
+<p><span style=\"font-family: Courier New; font-size: 10pt;\">0.0,&nbsp;0.0,&nbsp;0.0,&nbsp;0.0,&nbsp;0.0,&nbsp;0.0,&nbsp;0.0,&nbsp;0.0,&nbsp;0.0,&nbsp;0.0,&nbsp;0.0,&nbsp;0.0,&nbsp;0.0,&nbsp;0.0,&nbsp;0.0,&nbsp;0.0,&nbsp;</span></p>
+<p><span style=\"font-family: Courier New; font-size: 10pt;\">&nbsp;&nbsp;0.0,&nbsp;0.0,&nbsp;0.0,&nbsp;0.0,&nbsp;0.0,&nbsp;0.0,&nbsp;0.0,&nbsp;0.0,&nbsp;0.0,&nbsp;0.0,&nbsp;0.0,&nbsp;0.0,&nbsp;0.0,&nbsp;0.0,&nbsp;0.0,&nbsp;0.0,</span></p>
+<p><span style=\"font-family: Courier New; font-size: 10pt;\">&nbsp;&nbsp;&nbsp;0.0,&nbsp;0.0,&nbsp;0.0,&nbsp;0.0,&nbsp;0.0;</span></p>
+<p><span style=\"font-family: Courier New; font-size: 10pt;\">0.0018522019131561652,&nbsp;0.0,&nbsp;-0.010667194591854822,&nbsp;-0.10017322096061068,&nbsp;</span></p>
+<p><span style=\"font-family: Courier New; font-size: 10pt;\">&nbsp;&nbsp;-0.17089257044803982,&nbsp;-0.015159942256269874,&nbsp;-0.10611959565930629,&nbsp;</span></p>
+<p><span style=\"font-family: Courier New; font-size: 10pt;\">&nbsp;&nbsp;0.12769042902574537,&nbsp;0.0,&nbsp;0.0,&nbsp;0.0,&nbsp;0.0,&nbsp;0.0,&nbsp;0.0,&nbsp;0.0,&nbsp;0.146541932792295,&nbsp;</span></p>
+<p><span style=\"font-family: Courier New; font-size: 10pt;\">&nbsp;&nbsp;0.0025283655757525974,&nbsp;0.01769855908431923,&nbsp;-0.1262567353853507,&nbsp;0.0,&nbsp;0.0,&nbsp;0.0,</span></p>
+<p><span style=\"font-family: Courier New; font-size: 10pt;\">&nbsp;&nbsp;&nbsp;0.0,&nbsp;0.0,&nbsp;0.0,&nbsp;0.0,&nbsp;0.02249843539079445,&nbsp;-0.0029950025975001896,&nbsp;</span></p>
+<p><span style=\"font-family: Courier New; font-size: 10pt;\">&nbsp;&nbsp;-0.00459111945990742,&nbsp;-0.009764211785586533,&nbsp;-0.01953079242986482,&nbsp;0.0,&nbsp;0.0,&nbsp;</span></p>
+<p><span style=\"font-family: Courier New; font-size: 10pt;\">&nbsp;&nbsp;0.0,&nbsp;0.0,&nbsp;0.0,&nbsp;0.0;</span></p>
+<p><span style=\"font-family: Courier New; font-size: 10pt;\">0.0,&nbsp;0.0,&nbsp;0.0,&nbsp;314.1592653589793,&nbsp;0.0,&nbsp;0.0,&nbsp;0.0,&nbsp;0.0,&nbsp;0.0,&nbsp;0.0,&nbsp;0.0,&nbsp;0.0,&nbsp;0.0,&nbsp;</span></p>
+<p><span style=\"font-family: Courier New; font-size: 10pt;\">&nbsp;&nbsp;0.0,&nbsp;0.0,&nbsp;0.0,&nbsp;0.0,&nbsp;0.0,&nbsp;0.0,&nbsp;0.0,&nbsp;0.0,&nbsp;0.0,&nbsp;0.0,&nbsp;0.0,&nbsp;0.0,&nbsp;0.0,&nbsp;0.0,&nbsp;0.0,&nbsp;0.0,</span></p>
+<p><span style=\"font-family: Courier New; font-size: 10pt;\">&nbsp;&nbsp;&nbsp;0.0,&nbsp;0.0,&nbsp;0.0,&nbsp;0.0,&nbsp;0.0,&nbsp;0.0,&nbsp;0.0,&nbsp;0.0;</span></p>
+<p><span style=\"font-family: Courier New; font-size: 10pt;\">0.001723386472377245,&nbsp;0.0,&nbsp;0.00023080311412112048,&nbsp;0.0,&nbsp;-0.010951723043568796,&nbsp;</span></p>
+<p><span style=\"font-family: Courier New; font-size: 10pt;\">&nbsp;&nbsp;-1.3673104628912238,&nbsp;0.8945130355436972,&nbsp;-0.04580632552920175,&nbsp;0.0,&nbsp;</span></p>
+<p><span style=\"font-family: Courier New; font-size: 10pt;\">&nbsp;&nbsp;0.19607843136188122,&nbsp;0.0,&nbsp;0.0,&nbsp;0.0,&nbsp;0.0,&nbsp;0.0,&nbsp;0.005227063506560059,&nbsp;</span></p>
+<p><span style=\"font-family: Courier New; font-size: 10pt;\">&nbsp;&nbsp;0.0018873336145837159,&nbsp;0.013211335216546117,&nbsp;-0.0016269057262953566,&nbsp;0.0,&nbsp;0.0,</span></p>
+<p><span style=\"font-family: Courier New; font-size: 10pt;\">&nbsp;&nbsp;&nbsp;0.0,&nbsp;0.0,&nbsp;0.0,&nbsp;0.0,&nbsp;0.0,&nbsp;0.004001273353690362,&nbsp;-0.0003301105696849787,&nbsp;</span></p>
+<p><span style=\"font-family: Courier New; font-size: 10pt;\">&nbsp;&nbsp;0.001102892298849089,&nbsp;0.002345587874577992,&nbsp;-0.0021526907018729756,&nbsp;0.0,&nbsp;0.0,&nbsp;</span></p>
+<p><span style=\"font-family: Courier New; font-size: 10pt;\">&nbsp;&nbsp;0.0,&nbsp;0.0,&nbsp;0.0,&nbsp;0.0;</span></p>
+<p><span style=\"font-family: Courier New; font-size: 10pt;\">0.17689098824341967,&nbsp;0.0,&nbsp;0.023689981200575885,&nbsp;0.0,&nbsp;-1.1241013795186858,&nbsp;</span></p>
+<p><span style=\"font-family: Courier New; font-size: 10pt;\">&nbsp;&nbsp;16.433040770620615,&nbsp;-18.302047953366735,&nbsp;-0.18364372645628768,&nbsp;0.0,&nbsp;0.0,&nbsp;0.0,&nbsp;</span></p>
+<p><span style=\"font-family: Courier New; font-size: 10pt;\">&nbsp;&nbsp;0.0,&nbsp;0.0,&nbsp;0.0,&nbsp;0.0,&nbsp;0.5365136761073426,&nbsp;0.19371876932206303,&nbsp;1.3560313834858146,</span></p>
+<p><span style=\"font-family: Courier New; font-size: 10pt;\">&nbsp;&nbsp;&nbsp;-0.16698807520976472,&nbsp;0.0,&nbsp;0.0,&nbsp;0.0,&nbsp;0.0,&nbsp;0.0,&nbsp;0.0,&nbsp;0.0,&nbsp;0.41069671600675856,</span></p>
+<p><span style=\"font-family: Courier New; font-size: 10pt;\">&nbsp;&nbsp;&nbsp;-0.033883014035672336,&nbsp;0.11320253172631389,&nbsp;0.24075468046413043,&nbsp;</span></p>
+<p><span style=\"font-family: Courier New; font-size: 10pt;\">&nbsp;&nbsp;-0.2209554253306233,&nbsp;0.0,&nbsp;0.0,&nbsp;0.0,&nbsp;0.0,&nbsp;0.0,&nbsp;0.0;</span></p>
+<p><span style=\"font-family: Courier New; font-size: 10pt;\">0.04613859287515668,&nbsp;0.0,&nbsp;0.35001008074845025,&nbsp;0.0,&nbsp;4.7191604980019015,&nbsp;</span></p>
+<p><span style=\"font-family: Courier New; font-size: 10pt;\">&nbsp;&nbsp;-0.14503847218583651,&nbsp;-1.0152693065515683,&nbsp;-18.451779967834725,&nbsp;0.0,&nbsp;0.0,&nbsp;0.0,</span></p>
+<p><span style=\"font-family: Courier New; font-size: 10pt;\">&nbsp;&nbsp;&nbsp;0.0,&nbsp;0.0,&nbsp;0.0,&nbsp;0.0,&nbsp;-4.299180608883913,&nbsp;0.0347789535955867,&nbsp;0.24345267708572338,</span></p>
+<p><span style=\"font-family: Courier New; font-size: 10pt;\">&nbsp;&nbsp;&nbsp;3.8784609809995656,&nbsp;0.0,&nbsp;0.0,&nbsp;0.0,&nbsp;0.0,&nbsp;0.0,&nbsp;0.0,&nbsp;0.0,&nbsp;-0.466118476048029,&nbsp;</span></p>
+<p><span style=\"font-family: Courier New; font-size: 10pt;\">&nbsp;&nbsp;0.07432930165169088,&nbsp;0.21148515216504882,&nbsp;0.4497782804140681,&nbsp;0.4847108127921336,</span></p>
+<p><span style=\"font-family: Courier New; font-size: 10pt;\">&nbsp;&nbsp;&nbsp;0.0,&nbsp;0.0,&nbsp;0.0,&nbsp;0.0,&nbsp;0.0,&nbsp;0.0;</span></p>
+<p><span style=\"font-family: Courier New; font-size: 10pt;\">-3.6628012090015325E-05,&nbsp;0.0,&nbsp;-1.50275992641539E-05,&nbsp;0.39147678142010733,&nbsp;</span></p>
+<p><span style=\"font-family: Courier New; font-size: 10pt;\">&nbsp;&nbsp;8.520102679226937E-05,&nbsp;-6.888083521774856E-05,&nbsp;-0.00048216584683387896,&nbsp;</span></p>
+<p><span style=\"font-family: Courier New; font-size: 10pt;\">&nbsp;&nbsp;-0.0001860137485533241,&nbsp;-0.0009999999999755198,&nbsp;0.0,&nbsp;-0.023566512714739956,&nbsp;</span></p>
+<p><span style=\"font-family: Courier New; font-size: 10pt;\">&nbsp;&nbsp;-0.0022863034733448563,&nbsp;-0.3914767814192084,&nbsp;0.0007543640876318953,&nbsp;0.0,&nbsp;</span></p>
+<p><span style=\"font-family: Courier New; font-size: 10pt;\">&nbsp;&nbsp;1.9592147017909902E-05,&nbsp;-3.9648825962139176E-05,&nbsp;-0.0002775417803072587,&nbsp;</span></p>
+<p><span style=\"font-family: Courier New; font-size: 10pt;\">&nbsp;&nbsp;-8.088485694272715E-05,&nbsp;0.0,&nbsp;0.0,&nbsp;0.0,&nbsp;0.0,&nbsp;0.0,&nbsp;0.0,&nbsp;0.0,&nbsp;-6.81651621711076E-05,</span></p>
+<p><span style=\"font-family: Courier New; font-size: 10pt;\">&nbsp;&nbsp;&nbsp;4.567602538506658E-06,&nbsp;-2.8797104315714E-05,&nbsp;-6.124454646789558E-05,&nbsp;</span></p>
+<p><span style=\"font-family: Courier New; font-size: 10pt;\">&nbsp;&nbsp;2.9785919339212488E-05,&nbsp;0.0,&nbsp;0.0,&nbsp;0.0,&nbsp;0.0,&nbsp;0.0,&nbsp;0.0;</span></p>
+<p><span style=\"font-family: Courier New; font-size: 10pt;\">-73.25602418002947,&nbsp;0.0,&nbsp;-30.05519852830714,&nbsp;782953.5628391054,&nbsp;170.40205358453915,</span></p>
+<p><span style=\"font-family: Courier New; font-size: 10pt;\">&nbsp;&nbsp;&nbsp;-137.76167043549745,&nbsp;-964.3316936677589,&nbsp;-372.027497106645,&nbsp;0.0,&nbsp;</span></p>
+<p><span style=\"font-family: Courier New; font-size: 10pt;\">&nbsp;&nbsp;-19.999999998911882,&nbsp;-47133.02543058999,&nbsp;-4572.606950020261,&nbsp;-782953.5628392503,</span></p>
+<p><span style=\"font-family: Courier New; font-size: 10pt;\">&nbsp;&nbsp;&nbsp;1508.7281758196705,&nbsp;0.0,&nbsp;39.184294035817565,&nbsp;-79.29765192427791,&nbsp;</span></p>
+<p><span style=\"font-family: Courier New; font-size: 10pt;\">&nbsp;&nbsp;-555.0835606145165,&nbsp;-161.76971388545056,&nbsp;0.0,&nbsp;0.0,&nbsp;0.0,&nbsp;0.0,&nbsp;0.0,&nbsp;0.0,&nbsp;0.0,&nbsp;</span></p>
+<p><span style=\"font-family: Courier New; font-size: 10pt;\">&nbsp;&nbsp;-136.3303243422122,&nbsp;9.135205077012136,&nbsp;-57.59420863142842,&nbsp;-122.48909293579072,</span></p>
+<p><span style=\"font-family: Courier New; font-size: 10pt;\">&nbsp;&nbsp;&nbsp;59.5718386784261,&nbsp;0.0,&nbsp;0.0,&nbsp;0.0,&nbsp;0.0,&nbsp;0.0,&nbsp;0.0;</span></p>
+<p><span style=\"font-family: Courier New; font-size: 10pt;\">0.0,&nbsp;0.0,&nbsp;0.0,&nbsp;1153.8461538461538,&nbsp;0.0,&nbsp;0.0,&nbsp;0.0,&nbsp;0.0,&nbsp;0.0,&nbsp;0.0,&nbsp;</span></p>
+<p><span style=\"font-family: Courier New; font-size: 10pt;\">&nbsp;&nbsp;-76.92307692307685,&nbsp;0.0,&nbsp;-1153.846153846154,&nbsp;0.0,&nbsp;0.0,&nbsp;0.0,&nbsp;0.0,&nbsp;0.0,&nbsp;0.0,&nbsp;0.0,</span></p>
+<p><span style=\"font-family: Courier New; font-size: 10pt;\">&nbsp;&nbsp;&nbsp;0.0,&nbsp;0.0,&nbsp;0.0,&nbsp;0.0,&nbsp;0.0,&nbsp;0.0,&nbsp;0.0,&nbsp;0.0,&nbsp;0.0,&nbsp;0.0,&nbsp;0.0,&nbsp;0.0,&nbsp;0.0,&nbsp;0.0,&nbsp;0.0,&nbsp;</span></p>
+<p><span style=\"font-family: Courier New; font-size: 10pt;\">&nbsp;&nbsp;0.0,&nbsp;0.0;</span></p>
+<p><span style=\"font-family: Courier New; font-size: 10pt;\">0.0,&nbsp;0.0,&nbsp;0.0,&nbsp;11893.491124260358,&nbsp;0.0,&nbsp;0.0,&nbsp;0.0,&nbsp;0.0,&nbsp;0.0,&nbsp;0.0,&nbsp;</span></p>
+<p><span style=\"font-family: Courier New; font-size: 10pt;\">&nbsp;&nbsp;-715.9763313609462,&nbsp;-76.92307692307693,&nbsp;-11893.491124260356,&nbsp;0.0,&nbsp;0.0,&nbsp;0.0,&nbsp;</span></p>
+<p><span style=\"font-family: Courier New; font-size: 10pt;\">&nbsp;&nbsp;0.0,&nbsp;0.0,&nbsp;0.0,&nbsp;0.0,&nbsp;0.0,&nbsp;0.0,&nbsp;0.0,&nbsp;0.0,&nbsp;0.0,&nbsp;0.0,&nbsp;0.0,&nbsp;0.0,&nbsp;0.0,&nbsp;0.0,&nbsp;0.0,&nbsp;0.0,</span></p>
+<p><span style=\"font-family: Courier New; font-size: 10pt;\">&nbsp;&nbsp;&nbsp;0.0,&nbsp;0.0,&nbsp;0.0,&nbsp;0.0,&nbsp;0.0;</span></p>
+<p><span style=\"font-family: Courier New; font-size: 10pt;\">0.0,&nbsp;0.0,&nbsp;0.0,&nbsp;0.33333333333333326,&nbsp;0.0,&nbsp;0.0,&nbsp;0.0,&nbsp;0.0,&nbsp;0.0,&nbsp;0.0,&nbsp;0.0,&nbsp;0.0,&nbsp;</span></p>
+<p><span style=\"font-family: Courier New; font-size: 10pt;\">&nbsp;&nbsp;-0.33333333333333337,&nbsp;0.0,&nbsp;0.0,&nbsp;0.0,&nbsp;0.0,&nbsp;0.0,&nbsp;0.0,&nbsp;0.0,&nbsp;0.0,&nbsp;0.0,&nbsp;0.0,&nbsp;0.0,&nbsp;</span></p>
+<p><span style=\"font-family: Courier New; font-size: 10pt;\">&nbsp;&nbsp;0.0,&nbsp;0.0,&nbsp;0.0,&nbsp;0.0,&nbsp;0.0,&nbsp;0.0,&nbsp;0.0,&nbsp;0.0,&nbsp;0.0,&nbsp;0.0,&nbsp;0.0,&nbsp;0.0,&nbsp;0.0;</span></p>
+<p><span style=\"font-family: Courier New; font-size: 10pt;\">0.0,&nbsp;0.0,&nbsp;0.0,&nbsp;1987.1917838539753,&nbsp;0.0,&nbsp;0.0,&nbsp;0.0,&nbsp;0.0,&nbsp;0.0,&nbsp;0.0,&nbsp;</span></p>
+<p><span style=\"font-family: Courier New; font-size: 10pt;\">&nbsp;&nbsp;-119.62696808275159,&nbsp;-11.605601381162487,&nbsp;-1987.1917838539746,&nbsp;</span></p>
+<p><span style=\"font-family: Courier New; font-size: 10pt;\">&nbsp;&nbsp;-1.2468827930174542,&nbsp;0.0,&nbsp;0.0,&nbsp;0.0,&nbsp;0.0,&nbsp;0.0,&nbsp;0.0,&nbsp;0.0,&nbsp;0.0,&nbsp;0.0,&nbsp;0.0,&nbsp;0.0,&nbsp;</span></p>
+<p><span style=\"font-family: Courier New; font-size: 10pt;\">&nbsp;&nbsp;0.0,&nbsp;0.0,&nbsp;0.0,&nbsp;0.0,&nbsp;0.0,&nbsp;0.0,&nbsp;0.0,&nbsp;0.0,&nbsp;0.0,&nbsp;0.0,&nbsp;0.0,&nbsp;0.0;</span></p>
+<p><span style=\"font-family: Courier New; font-size: 10pt;\">0.001852201925753179,&nbsp;0.0,&nbsp;-0.01066719457958393,&nbsp;0.0,&nbsp;0.14654193283322356,&nbsp;</span></p>
+<p><span style=\"font-family: Courier New; font-size: 10pt;\">&nbsp;&nbsp;0.0025283655863205666,&nbsp;0.017698559139406465,&nbsp;-0.12625673527618927,&nbsp;0.0,&nbsp;0.0,&nbsp;</span></p>
+<p><span style=\"font-family: Courier New; font-size: 10pt;\">&nbsp;&nbsp;0.0,&nbsp;0.0,&nbsp;0.0,&nbsp;0.0,&nbsp;-0.10017322096061206,&nbsp;-0.17089257032524724,&nbsp;</span></p>
+<p><span style=\"font-family: Courier New; font-size: 10pt;\">&nbsp;&nbsp;-0.015159942245701764,&nbsp;-0.10611959565930519,&nbsp;0.12769042902574726,&nbsp;0.0,&nbsp;0.0,&nbsp;</span></p>
+<p><span style=\"font-family: Courier New; font-size: 10pt;\">&nbsp;&nbsp;0.0,&nbsp;0.0,&nbsp;0.0,&nbsp;0.0,&nbsp;0.0,&nbsp;0.022498435546837864,&nbsp;-0.002995002377757383,&nbsp;</span></p>
+<p><span style=\"font-family: Courier New; font-size: 10pt;\">&nbsp;&nbsp;-0.004591119441267059,&nbsp;-0.00976421179649437,&nbsp;-0.01953079242986482,&nbsp;0.0,&nbsp;0.0,&nbsp;</span></p>
+<p><span style=\"font-family: Courier New; font-size: 10pt;\">&nbsp;&nbsp;0.0,&nbsp;0.0,&nbsp;0.0,&nbsp;0.0;</span></p>
+<p><span style=\"font-family: Courier New; font-size: 10pt;\">0.0,&nbsp;0.0,&nbsp;0.0,&nbsp;0.0,&nbsp;0.0,&nbsp;0.0,&nbsp;0.0,&nbsp;0.0,&nbsp;0.0,&nbsp;0.0,&nbsp;0.0,&nbsp;0.0,&nbsp;0.0,&nbsp;0.0,&nbsp;</span></p>
+<p><span style=\"font-family: Courier New; font-size: 10pt;\">&nbsp;&nbsp;314.1592653589794,&nbsp;0.0,&nbsp;0.0,&nbsp;0.0,&nbsp;0.0,&nbsp;0.0,&nbsp;0.0,&nbsp;0.0,&nbsp;0.0,&nbsp;0.0,&nbsp;0.0,&nbsp;0.0,&nbsp;0.0,</span></p>
+<p><span style=\"font-family: Courier New; font-size: 10pt;\">&nbsp;&nbsp;&nbsp;0.0,&nbsp;0.0,&nbsp;0.0,&nbsp;0.0,&nbsp;0.0,&nbsp;0.0,&nbsp;0.0,&nbsp;0.0,&nbsp;0.0,&nbsp;0.0;</span></p>
+<p><span style=\"font-family: Courier New; font-size: 10pt;\">0.001723386472377245,&nbsp;0.0,&nbsp;0.00023080315743014777,&nbsp;0.0,&nbsp;0.005227063362092979,&nbsp;</span></p>
+<p><span style=\"font-family: Courier New; font-size: 10pt;\">&nbsp;&nbsp;0.0018873336145837371,&nbsp;0.013211335177661277,&nbsp;-0.0016269057262953326,&nbsp;0.0,&nbsp;0.0,</span></p>
+<p><span style=\"font-family: Courier New; font-size: 10pt;\">&nbsp;&nbsp;&nbsp;0.0,&nbsp;0.0,&nbsp;0.0,&nbsp;0.0,&nbsp;0.0,&nbsp;-0.010951723043569075,&nbsp;-1.3673104628539097,&nbsp;</span></p>
+<p><span style=\"font-family: Courier New; font-size: 10pt;\">&nbsp;&nbsp;0.8945130355436879,&nbsp;-0.04580632552920243,&nbsp;0.0,&nbsp;0.1960784313618723,&nbsp;0.0,&nbsp;0.0,&nbsp;</span></p>
+<p><span style=\"font-family: Courier New; font-size: 10pt;\">&nbsp;&nbsp;0.0,&nbsp;0.0,&nbsp;0.0,&nbsp;0.004001273078319628,&nbsp;-0.0003301097941221497,&nbsp;0.001102892298849089,</span></p>
+<p><span style=\"font-family: Courier New; font-size: 10pt;\">&nbsp;&nbsp;&nbsp;0.0023455879130762423,&nbsp;-0.0021526907018729756,&nbsp;0.0,&nbsp;0.0,&nbsp;0.0,&nbsp;0.0,&nbsp;0.0,&nbsp;0.0;</span></p>
+<p><span style=\"font-family: Courier New; font-size: 10pt;\">0.17689098753483767,&nbsp;0.0,&nbsp;0.023689982235932303,&nbsp;0.0,&nbsp;0.5365136734211466,&nbsp;</span></p>
+<p><span style=\"font-family: Courier New; font-size: 10pt;\">&nbsp;&nbsp;0.1937187691239163,&nbsp;1.356031384208846,&nbsp;-0.1669880736747057,&nbsp;0.0,&nbsp;0.0,&nbsp;0.0,&nbsp;0.0,</span></p>
+<p><span style=\"font-family: Courier New; font-size: 10pt;\">&nbsp;&nbsp;&nbsp;0.0,&nbsp;0.0,&nbsp;0.0,&nbsp;-1.1241013791349743,&nbsp;16.433040770422277,&nbsp;-18.30204795295339,&nbsp;</span></p>
+<p><span style=\"font-family: Courier New; font-size: 10pt;\">&nbsp;&nbsp;-0.1836437264562904,&nbsp;0.0,&nbsp;0.0,&nbsp;0.0,&nbsp;0.0,&nbsp;0.0,&nbsp;0.0,&nbsp;0.0,&nbsp;0.41069671600675856,&nbsp;</span></p>
+<p><span style=\"font-family: Courier New; font-size: 10pt;\">&nbsp;&nbsp;-0.03388301403567232,&nbsp;0.11320253172631389,&nbsp;0.24075467985056456,&nbsp;</span></p>
+<p><span style=\"font-family: Courier New; font-size: 10pt;\">&nbsp;&nbsp;-0.2209554253306233,&nbsp;0.0,&nbsp;0.0,&nbsp;0.0,&nbsp;0.0,&nbsp;0.0,&nbsp;0.0;</span></p>
+<p><span style=\"font-family: Courier New; font-size: 10pt;\">0.04613859287515669,&nbsp;0.0,&nbsp;0.35001008074845025,&nbsp;0.0,&nbsp;-4.299180608883803,&nbsp;</span></p>
+<p><span style=\"font-family: Courier New; font-size: 10pt;\">&nbsp;&nbsp;0.03477895359558709,&nbsp;0.24345267603086757,&nbsp;3.878460978386646,&nbsp;0.0,&nbsp;0.0,&nbsp;0.0,&nbsp;</span></p>
+<p><span style=\"font-family: Courier New; font-size: 10pt;\">&nbsp;&nbsp;0.0,&nbsp;0.0,&nbsp;0.0,&nbsp;0.0,&nbsp;4.719160496042496,&nbsp;-0.14503847250202992,&nbsp;-1.0152693066504508,</span></p>
+<p><span style=\"font-family: Courier New; font-size: 10pt;\">&nbsp;&nbsp;&nbsp;-18.451779962282664,&nbsp;0.0,&nbsp;0.0,&nbsp;0.0,&nbsp;0.0,&nbsp;0.0,&nbsp;0.0,&nbsp;0.0,&nbsp;-0.46611848351819246,</span></p>
+<p><span style=\"font-family: Courier New; font-size: 10pt;\">&nbsp;&nbsp;&nbsp;0.07432929113208844,&nbsp;0.21148515171886997,&nbsp;0.44977827989188424,&nbsp;</span></p>
+<p><span style=\"font-family: Courier New; font-size: 10pt;\">&nbsp;&nbsp;0.4847108127921336,&nbsp;0.0,&nbsp;0.0,&nbsp;0.0,&nbsp;0.0,&nbsp;0.0,&nbsp;0.0;</span></p>
+<p><span style=\"font-family: Courier New; font-size: 10pt;\">-3.662801209001448E-05,&nbsp;0.0,&nbsp;-1.50275992641539E-05,&nbsp;0.0,&nbsp;1.959214628112648E-05,&nbsp;</span></p>
+<p><span style=\"font-family: Courier New; font-size: 10pt;\">&nbsp;&nbsp;-3.964882577191631E-05,&nbsp;-0.00027754178050557463,&nbsp;-8.088485694272596E-05,&nbsp;0.0,&nbsp;</span></p>
+<p><span style=\"font-family: Courier New; font-size: 10pt;\">&nbsp;&nbsp;0.0,&nbsp;0.0,&nbsp;0.0,&nbsp;0.0,&nbsp;0.0,&nbsp;0.39147678141664355,&nbsp;8.520102679227154E-05,&nbsp;</span></p>
+<p><span style=\"font-family: Courier New; font-size: 10pt;\">&nbsp;&nbsp;-6.888083521774779E-05,&nbsp;-0.0004821658470321885,&nbsp;-0.0001860137495357614,&nbsp;</span></p>
+<p><span style=\"font-family: Courier New; font-size: 10pt;\">&nbsp;&nbsp;-0.000999999999975571,&nbsp;0.0,&nbsp;-0.023566512711272504,&nbsp;-0.0022863034698759797,&nbsp;</span></p>
+<p><span style=\"font-family: Courier New; font-size: 10pt;\">&nbsp;&nbsp;-0.3914767814192058,&nbsp;0.0007543640911018983,&nbsp;0.0,&nbsp;-6.81651621711076E-05,&nbsp;</span></p>
+<p><span style=\"font-family: Courier New; font-size: 10pt;\">&nbsp;&nbsp;4.567606493885187E-06,&nbsp;-2.8797104315714E-05,&nbsp;-6.124454607521335E-05,&nbsp;</span></p>
+<p><span style=\"font-family: Courier New; font-size: 10pt;\">&nbsp;&nbsp;2.9785919989678307E-05,&nbsp;0.0,&nbsp;0.0,&nbsp;0.0,&nbsp;0.0,&nbsp;0.0,&nbsp;0.0;</span></p>
+<p><span style=\"font-family: Courier New; font-size: 10pt;\">-73.25602418002947,&nbsp;0.0,&nbsp;-30.05519852830714,&nbsp;0.0,&nbsp;39.1842925622537,&nbsp;</span></p>
+<p><span style=\"font-family: Courier New; font-size: 10pt;\">&nbsp;&nbsp;-79.29765154383294,&nbsp;-555.0835610111491,&nbsp;-161.76971388544817,&nbsp;0.0,&nbsp;0.0,&nbsp;0.0,&nbsp;</span></p>
+<p><span style=\"font-family: Courier New; font-size: 10pt;\">&nbsp;&nbsp;0.0,&nbsp;0.0,&nbsp;0.0,&nbsp;782953.5628346753,&nbsp;170.40205358454347,&nbsp;-137.76167043549592,&nbsp;</span></p>
+<p><span style=\"font-family: Courier New; font-size: 10pt;\">&nbsp;&nbsp;-964.3316940643757,&nbsp;-372.0274990715229,&nbsp;0.0,&nbsp;-19.999999998910972,&nbsp;</span></p>
+<p><span style=\"font-family: Courier New; font-size: 10pt;\">&nbsp;&nbsp;-47133.02542171337,&nbsp;-4572.606941139146,&nbsp;-782953.5628392451,&nbsp;1508.7281802605792,</span></p>
+<p><span style=\"font-family: Courier New; font-size: 10pt;\">&nbsp;&nbsp;&nbsp;0.0,&nbsp;-136.3303243422122,&nbsp;9.135212987753164,&nbsp;-57.59420863142842,&nbsp;</span></p>
+<p><span style=\"font-family: Courier New; font-size: 10pt;\">&nbsp;&nbsp;-122.4890921504264,&nbsp;59.57183997935995,&nbsp;0.0,&nbsp;0.0,&nbsp;0.0,&nbsp;0.0,&nbsp;0.0,&nbsp;0.0;</span></p>
+<p><span style=\"font-family: Courier New; font-size: 10pt;\">0.0,&nbsp;0.0,&nbsp;0.0,&nbsp;0.0,&nbsp;0.0,&nbsp;0.0,&nbsp;0.0,&nbsp;0.0,&nbsp;0.0,&nbsp;0.0,&nbsp;0.0,&nbsp;0.0,&nbsp;0.0,&nbsp;0.0,&nbsp;</span></p>
+<p><span style=\"font-family: Courier New; font-size: 10pt;\">&nbsp;&nbsp;1153.8461538461536,&nbsp;0.0,&nbsp;0.0,&nbsp;0.0,&nbsp;0.0,&nbsp;0.0,&nbsp;0.0,&nbsp;-76.9230769230769,&nbsp;0.0,&nbsp;</span></p>
+<p><span style=\"font-family: Courier New; font-size: 10pt;\">&nbsp;&nbsp;-1153.846153846154,&nbsp;0.0,&nbsp;0.0,&nbsp;0.0,&nbsp;0.0,&nbsp;0.0,&nbsp;0.0,&nbsp;0.0,&nbsp;0.0,&nbsp;0.0,&nbsp;0.0,&nbsp;0.0,&nbsp;0.0,</span></p>
+<p><span style=\"font-family: Courier New; font-size: 10pt;\">&nbsp;&nbsp;&nbsp;0.0;</span></p>
+<p><span style=\"font-family: Courier New; font-size: 10pt;\">0.0,&nbsp;0.0,&nbsp;0.0,&nbsp;0.0,&nbsp;0.0,&nbsp;0.0,&nbsp;0.0,&nbsp;0.0,&nbsp;0.0,&nbsp;0.0,&nbsp;0.0,&nbsp;0.0,&nbsp;0.0,&nbsp;0.0,&nbsp;</span></p>
+<p><span style=\"font-family: Courier New; font-size: 10pt;\">&nbsp;&nbsp;11893.491124260354,&nbsp;0.0,&nbsp;0.0,&nbsp;0.0,&nbsp;0.0,&nbsp;0.0,&nbsp;0.0,&nbsp;-715.9763313609451,&nbsp;</span></p>
+<p><span style=\"font-family: Courier New; font-size: 10pt;\">&nbsp;&nbsp;-76.92307692307713,&nbsp;-11893.491124260358,&nbsp;0.0,&nbsp;0.0,&nbsp;0.0,&nbsp;0.0,&nbsp;0.0,&nbsp;0.0,&nbsp;0.0,&nbsp;</span></p>
+<p><span style=\"font-family: Courier New; font-size: 10pt;\">&nbsp;&nbsp;0.0,&nbsp;0.0,&nbsp;0.0,&nbsp;0.0,&nbsp;0.0,&nbsp;0.0;</span></p>
+<p><span style=\"font-family: Courier New; font-size: 10pt;\">0.0,&nbsp;0.0,&nbsp;0.0,&nbsp;0.0,&nbsp;0.0,&nbsp;0.0,&nbsp;0.0,&nbsp;0.0,&nbsp;0.0,&nbsp;0.0,&nbsp;0.0,&nbsp;0.0,&nbsp;0.0,&nbsp;0.0,&nbsp;</span></p>
+<p><span style=\"font-family: Courier New; font-size: 10pt;\">&nbsp;&nbsp;0.33333333333333337,&nbsp;0.0,&nbsp;0.0,&nbsp;0.0,&nbsp;0.0,&nbsp;0.0,&nbsp;0.0,&nbsp;0.0,&nbsp;0.0,&nbsp;-0.3333333333333333,</span></p>
+<p><span style=\"font-family: Courier New; font-size: 10pt;\">&nbsp;&nbsp;&nbsp;0.0,&nbsp;0.0,&nbsp;0.0,&nbsp;0.0,&nbsp;0.0,&nbsp;0.0,&nbsp;0.0,&nbsp;0.0,&nbsp;0.0,&nbsp;0.0,&nbsp;0.0,&nbsp;0.0,&nbsp;0.0;</span></p>
+<p><span style=\"font-family: Courier New; font-size: 10pt;\">0.0,&nbsp;0.0,&nbsp;0.0,&nbsp;0.0,&nbsp;0.0,&nbsp;0.0,&nbsp;0.0,&nbsp;0.0,&nbsp;0.0,&nbsp;0.0,&nbsp;0.0,&nbsp;0.0,&nbsp;0.0,&nbsp;0.0,&nbsp;</span></p>
+<p><span style=\"font-family: Courier New; font-size: 10pt;\">&nbsp;&nbsp;1987.1917838539744,&nbsp;0.0,&nbsp;0.0,&nbsp;0.0,&nbsp;0.0,&nbsp;0.0,&nbsp;0.0,&nbsp;-119.62696808275143,&nbsp;</span></p>
+<p><span style=\"font-family: Courier New; font-size: 10pt;\">&nbsp;&nbsp;-11.6056013811625,&nbsp;-1987.1917838539748,&nbsp;-1.246882793017459,&nbsp;0.0,&nbsp;0.0,&nbsp;0.0,&nbsp;0.0,</span></p>
+<p><span style=\"font-family: Courier New; font-size: 10pt;\">&nbsp;&nbsp;&nbsp;0.0,&nbsp;0.0,&nbsp;0.0,&nbsp;0.0,&nbsp;0.0,&nbsp;0.0,&nbsp;0.0,&nbsp;0.0;</span></p>
+<p><span style=\"font-family: Courier New; font-size: 10pt;\">0.04214933631953328,&nbsp;0.0,&nbsp;-0.030337232568231343,&nbsp;0.0,&nbsp;0.0676746567566648,&nbsp;</span></p>
+<p><span style=\"font-family: Courier New; font-size: 10pt;\">&nbsp;&nbsp;0.004965236926265929,&nbsp;0.03475665839394035,&nbsp;-0.05222810581456046,&nbsp;0.0,&nbsp;0.0,&nbsp;0.0,</span></p>
+<p><span style=\"font-family: Courier New; font-size: 10pt;\">&nbsp;&nbsp;&nbsp;0.0,&nbsp;0.0,&nbsp;0.0,&nbsp;0.0,&nbsp;0.06767465675666653,&nbsp;0.004965236963235865,&nbsp;</span></p>
+<p><span style=\"font-family: Courier New; font-size: 10pt;\">&nbsp;&nbsp;0.03475665835539761,&nbsp;-0.05222810562362389,&nbsp;0.0,&nbsp;0.0,&nbsp;0.0,&nbsp;0.0,&nbsp;0.0,&nbsp;0.0,&nbsp;</span></p>
+<p><span style=\"font-family: Courier New; font-size: 10pt;\">&nbsp;&nbsp;-0.11646495724495634,&nbsp;-0.17749864971511978,&nbsp;0.015279516858496342,&nbsp;</span></p>
+<p><span style=\"font-family: Courier New; font-size: 10pt;\">&nbsp;&nbsp;-0.042901102180884866,&nbsp;-0.09124037231198018,&nbsp;0.09963966988643122,&nbsp;0.0,&nbsp;0.0,&nbsp;</span></p>
+<p><span style=\"font-family: Courier New; font-size: 10pt;\">&nbsp;&nbsp;0.0,&nbsp;0.0,&nbsp;0.0,&nbsp;0.0;</span></p>
+<p><span style=\"font-family: Courier New; font-size: 10pt;\">0.0,&nbsp;0.0,&nbsp;0.0,&nbsp;0.0,&nbsp;0.0,&nbsp;0.0,&nbsp;0.0,&nbsp;0.0,&nbsp;0.0,&nbsp;0.0,&nbsp;0.0,&nbsp;0.0,&nbsp;0.0,&nbsp;0.0,&nbsp;0.0,&nbsp;0.0,&nbsp;</span></p>
+<p><span style=\"font-family: Courier New; font-size: 10pt;\">&nbsp;&nbsp;0.0,&nbsp;0.0,&nbsp;0.0,&nbsp;0.0,&nbsp;0.0,&nbsp;0.0,&nbsp;0.0,&nbsp;0.0,&nbsp;0.0,&nbsp;314.1592653589793,&nbsp;0.0,&nbsp;0.0,&nbsp;0.0,</span></p>
+<p><span style=\"font-family: Courier New; font-size: 10pt;\">&nbsp;&nbsp;&nbsp;0.0,&nbsp;0.0,&nbsp;0.0,&nbsp;0.0,&nbsp;0.0,&nbsp;0.0,&nbsp;0.0,&nbsp;0.0;</span></p>
+<p><span style=\"font-family: Courier New; font-size: 10pt;\">-0.031526160968562075,&nbsp;0.0,&nbsp;0.047330118863375764,&nbsp;0.0,&nbsp;-0.07864519026200728,&nbsp;</span></p>
+<p><span style=\"font-family: Courier New; font-size: 10pt;\">&nbsp;&nbsp;-0.0025053880914924606,&nbsp;-0.017537717003433827,&nbsp;0.0659203501875078,&nbsp;0.0,&nbsp;0.0,&nbsp;</span></p>
+<p><span style=\"font-family: Courier New; font-size: 10pt;\">&nbsp;&nbsp;0.0,&nbsp;0.0,&nbsp;0.0,&nbsp;0.0,&nbsp;0.0,&nbsp;-0.07864519055672185,&nbsp;-0.0025053881675816043,&nbsp;</span></p>
+<p><span style=\"font-family: Courier New; font-size: 10pt;\">&nbsp;&nbsp;-0.017537716924108295,&nbsp;0.0659203494015598,&nbsp;0.0,&nbsp;0.0,&nbsp;0.0,&nbsp;0.0,&nbsp;0.0,&nbsp;0.0,&nbsp;0.0,&nbsp;</span></p>
+<p><span style=\"font-family: Courier New; font-size: 10pt;\">&nbsp;&nbsp;0.18881654325922764,&nbsp;-4.417105161615785,&nbsp;-1.9231460262932996,&nbsp;-4.090071126318779,</span></p>
+<p><span style=\"font-family: Courier New; font-size: 10pt;\">&nbsp;&nbsp;&nbsp;-1.1959569382278397,&nbsp;0.0,&nbsp;0.0,&nbsp;0.0,&nbsp;0.0,&nbsp;0.0,&nbsp;0.0;</span></p>
+<p><span style=\"font-family: Courier New; font-size: 10pt;\">0.0305847011737036,&nbsp;0.0,&nbsp;0.016578953564550768,&nbsp;0.0,&nbsp;0.005207338169465385,&nbsp;</span></p>
+<p><span style=\"font-family: Courier New; font-size: 10pt;\">&nbsp;&nbsp;0.005495691767152601,&nbsp;0.03846984291026136,&nbsp;0.004166334836980103,&nbsp;0.0,&nbsp;0.0,&nbsp;0.0,</span></p>
+<p><span style=\"font-family: Courier New; font-size: 10pt;\">&nbsp;&nbsp;&nbsp;0.0,&nbsp;0.0,&nbsp;0.0,&nbsp;0.0,&nbsp;0.005207338169465517,&nbsp;0.005495691767152539,&nbsp;</span></p>
+<p><span style=\"font-family: Courier New; font-size: 10pt;\">&nbsp;&nbsp;0.0384698427605905,&nbsp;0.004166334836980165,&nbsp;0.0,&nbsp;0.0,&nbsp;0.0,&nbsp;0.0,&nbsp;0.0,&nbsp;0.0,&nbsp;0.0,&nbsp;</span></p>
+<p><span style=\"font-family: Courier New; font-size: 10pt;\">&nbsp;&nbsp;-0.04099937746344413,&nbsp;-0.10021508530950253,&nbsp;-1.937024925603509,&nbsp;</span></p>
+<p><span style=\"font-family: Courier New; font-size: 10pt;\">&nbsp;&nbsp;-1.49141394141688,&nbsp;-0.6535152354631605,&nbsp;0.0,&nbsp;0.18867924527176064,&nbsp;0.0,&nbsp;0.0,&nbsp;</span></p>
+<p><span style=\"font-family: Courier New; font-size: 10pt;\">&nbsp;&nbsp;0.0,&nbsp;0.0;</span></p>
+<p><span style=\"font-family: Courier New; font-size: 10pt;\">1.9027238807134215,&nbsp;0.0,&nbsp;1.031403595721688,&nbsp;0.0,&nbsp;0.32395695690693554,&nbsp;</span></p>
+<p><span style=\"font-family: Courier New; font-size: 10pt;\">&nbsp;&nbsp;0.34189590235820194,&nbsp;2.393271323945332,&nbsp;0.259194433532559,&nbsp;0.0,&nbsp;0.0,&nbsp;0.0,&nbsp;0.0,</span></p>
+<p><span style=\"font-family: Courier New; font-size: 10pt;\">&nbsp;&nbsp;&nbsp;0.0,&nbsp;0.0,&nbsp;0.0,&nbsp;0.32395695306954053,&nbsp;0.34189590285357024,&nbsp;2.393271322912425,&nbsp;</span></p>
+<p><span style=\"font-family: Courier New; font-size: 10pt;\">&nbsp;&nbsp;0.25919443864941816,&nbsp;0.0,&nbsp;0.0,&nbsp;0.0,&nbsp;0.0,&nbsp;0.0,&nbsp;0.0,&nbsp;0.0,&nbsp;-2.550637783102256,&nbsp;</span></p>
+<p><span style=\"font-family: Courier New; font-size: 10pt;\">&nbsp;&nbsp;-0.17661933464972454,&nbsp;19.07466726374962,&nbsp;-24.573594978332814,&nbsp;-1.1517569665665899,</span></p>
+<p><span style=\"font-family: Courier New; font-size: 10pt;\">&nbsp;&nbsp;&nbsp;0.0,&nbsp;0.0,&nbsp;0.0,&nbsp;0.0,&nbsp;0.0,&nbsp;0.0;</span></p>
+<p><span style=\"font-family: Courier New; font-size: 10pt;\">-1.3640882268853216,&nbsp;0.0,&nbsp;2.0479010420177888,&nbsp;0.0,&nbsp;-3.4028557749971164,&nbsp;</span></p>
+<p><span style=\"font-family: Courier New; font-size: 10pt;\">&nbsp;&nbsp;-0.10840427077819684,&nbsp;-0.7588298902118102,&nbsp;2.852271578999606,&nbsp;0.0,&nbsp;0.0,&nbsp;0.0,&nbsp;</span></p>
+<p><span style=\"font-family: Courier New; font-size: 10pt;\">&nbsp;&nbsp;0.0,&nbsp;0.0,&nbsp;0.0,&nbsp;0.0,&nbsp;-3.4028557777880413,&nbsp;-0.10840427293981983,&nbsp;</span></p>
+<p><span style=\"font-family: Courier New; font-size: 10pt;\">&nbsp;&nbsp;-0.7588298879582414,&nbsp;2.852271571556949,&nbsp;0.0,&nbsp;0.0,&nbsp;0.0,&nbsp;0.0,&nbsp;0.0,&nbsp;0.0,&nbsp;0.0,&nbsp;</span></p>
+<p><span style=\"font-family: Courier New; font-size: 10pt;\">&nbsp;&nbsp;8.169799774330599,&nbsp;13.48885276980326,&nbsp;0.3074887986079922,&nbsp;0.6539550521004882,&nbsp;</span></p>
+<p><span style=\"font-family: Courier New; font-size: 10pt;\">&nbsp;&nbsp;-25.993947683773747,&nbsp;0.0,&nbsp;0.0,&nbsp;0.0,&nbsp;0.0,&nbsp;0.0,&nbsp;0.0;</span></p>
+<p><span style=\"font-family: Courier New; font-size: 10pt;\">-9.530122118497087E-05,&nbsp;0.0,&nbsp;-0.00010655272771021516,&nbsp;0.0,&nbsp;4.6215360925838035E-05,</span></p>
+<p><span style=\"font-family: Courier New; font-size: 10pt;\">&nbsp;&nbsp;&nbsp;-1.9816699346141237E-05,&nbsp;-0.00013871689576749253,&nbsp;-7.281378080435908E-05,&nbsp;0.0,</span></p>
+<p><span style=\"font-family: Courier New; font-size: 10pt;\">&nbsp;&nbsp;&nbsp;0.0,&nbsp;0.0,&nbsp;0.0,&nbsp;0.0,&nbsp;0.0,&nbsp;0.0,&nbsp;4.621536092583921E-05,&nbsp;-1.9816699346141017E-05,</span></p>
+<p><span style=\"font-family: Courier New; font-size: 10pt;\">&nbsp;&nbsp;&nbsp;-0.0001387168957674911,&nbsp;-7.281378080436016E-05,&nbsp;0.0,&nbsp;0.0,&nbsp;0.0,&nbsp;0.0,&nbsp;0.0,&nbsp;0.0,</span></p>
+<p><span style=\"font-family: Courier New; font-size: 10pt;\">&nbsp;&nbsp;&nbsp;0.39147678141803055,&nbsp;2.8704988458150026E-06,&nbsp;-1.878167343587408E-05,&nbsp;</span></p>
+<p><span style=\"font-family: Courier New; font-size: 10pt;\">&nbsp;&nbsp;-0.0001749515210600196,&nbsp;-0.0003720799959227689,&nbsp;-0.00012247768981803932,&nbsp;</span></p>
+<p><span style=\"font-family: Courier New; font-size: 10pt;\">&nbsp;&nbsp;-0.0009999999999983447,&nbsp;0.0,&nbsp;-0.023566512710976893,&nbsp;-0.0022863034731198475,&nbsp;</span></p>
+<p><span style=\"font-family: Courier New; font-size: 10pt;\">&nbsp;&nbsp;-0.39147678141781067,&nbsp;0.0007543640902812988;</span></p>
+<p><span style=\"font-family: Courier New; font-size: 10pt;\">-285.90366354584324,&nbsp;0.0,&nbsp;-319.6581831394671,&nbsp;0.0,&nbsp;138.64608277752623,&nbsp;</span></p>
+<p><span style=\"font-family: Courier New; font-size: 10pt;\">&nbsp;&nbsp;-59.4500980384297,&nbsp;-416.1506872945384,&nbsp;-218.44134245242108,&nbsp;0.0,&nbsp;0.0,&nbsp;0.0,&nbsp;0.0,</span></p>
+<p><span style=\"font-family: Courier New; font-size: 10pt;\">&nbsp;&nbsp;&nbsp;0.0,&nbsp;0.0,&nbsp;0.0,&nbsp;138.64608277752976,&nbsp;-59.45009803842903,&nbsp;-416.15068729453407,&nbsp;</span></p>
+<p><span style=\"font-family: Courier New; font-size: 10pt;\">&nbsp;&nbsp;-218.4413424524243,&nbsp;0.0,&nbsp;0.0,&nbsp;0.0,&nbsp;0.0,&nbsp;0.0,&nbsp;0.0,&nbsp;1174430.3442567335,&nbsp;</span></p>
+<p><span style=\"font-family: Courier New; font-size: 10pt;\">&nbsp;&nbsp;8.611496537529385,&nbsp;-56.34502030759961,&nbsp;-524.8545631733518,&nbsp;-1116.2399877683092,</span></p>
+<p><span style=\"font-family: Courier New; font-size: 10pt;\">&nbsp;&nbsp;&nbsp;-367.43306945411746,&nbsp;0.0,&nbsp;-19.999999998806622,&nbsp;-70699.53813501836,&nbsp;</span></p>
+<p><span style=\"font-family: Courier New; font-size: 10pt;\">&nbsp;&nbsp;-6858.910408677101,&nbsp;-1174430.3442502415,&nbsp;2263.092278904324;</span></p>
+<p><span style=\"font-family: Courier New; font-size: 10pt;\">0.0,&nbsp;0.0,&nbsp;0.0,&nbsp;0.0,&nbsp;0.0,&nbsp;0.0,&nbsp;0.0,&nbsp;0.0,&nbsp;0.0,&nbsp;0.0,&nbsp;0.0,&nbsp;0.0,&nbsp;0.0,&nbsp;0.0,&nbsp;0.0,&nbsp;0.0,&nbsp;</span></p>
+<p><span style=\"font-family: Courier New; font-size: 10pt;\">&nbsp;&nbsp;0.0,&nbsp;0.0,&nbsp;0.0,&nbsp;0.0,&nbsp;0.0,&nbsp;0.0,&nbsp;0.0,&nbsp;0.0,&nbsp;0.0,&nbsp;1153.8461538461536,&nbsp;0.0,&nbsp;0.0,&nbsp;0.0,</span></p>
+<p><span style=\"font-family: Courier New; font-size: 10pt;\">&nbsp;&nbsp;&nbsp;0.0,&nbsp;0.0,&nbsp;0.0,&nbsp;0.0,&nbsp;-76.9230769230768,&nbsp;0.0,&nbsp;-1153.846153846154,&nbsp;0.0;</span></p>
+<p><span style=\"font-family: Courier New; font-size: 10pt;\">0.0,&nbsp;0.0,&nbsp;0.0,&nbsp;0.0,&nbsp;0.0,&nbsp;0.0,&nbsp;0.0,&nbsp;0.0,&nbsp;0.0,&nbsp;0.0,&nbsp;0.0,&nbsp;0.0,&nbsp;0.0,&nbsp;0.0,&nbsp;0.0,&nbsp;0.0,&nbsp;</span></p>
+<p><span style=\"font-family: Courier New; font-size: 10pt;\">&nbsp;&nbsp;0.0,&nbsp;0.0,&nbsp;0.0,&nbsp;0.0,&nbsp;0.0,&nbsp;0.0,&nbsp;0.0,&nbsp;0.0,&nbsp;0.0,&nbsp;11893.491124260354,&nbsp;0.0,&nbsp;0.0,&nbsp;0.0,</span></p>
+<p><span style=\"font-family: Courier New; font-size: 10pt;\">&nbsp;&nbsp;&nbsp;0.0,&nbsp;0.0,&nbsp;0.0,&nbsp;0.0,&nbsp;-715.9763313609459,&nbsp;-76.92307692307703,&nbsp;-11893.491124260356,</span></p>
+<p><span style=\"font-family: Courier New; font-size: 10pt;\">&nbsp;&nbsp;&nbsp;0.0;</span></p>
+<p><span style=\"font-family: Courier New; font-size: 10pt;\">0.0,&nbsp;0.0,&nbsp;0.0,&nbsp;0.0,&nbsp;0.0,&nbsp;0.0,&nbsp;0.0,&nbsp;0.0,&nbsp;0.0,&nbsp;0.0,&nbsp;0.0,&nbsp;0.0,&nbsp;0.0,&nbsp;0.0,&nbsp;0.0,&nbsp;0.0,&nbsp;</span></p>
+<p><span style=\"font-family: Courier New; font-size: 10pt;\">&nbsp;&nbsp;0.0,&nbsp;0.0,&nbsp;0.0,&nbsp;0.0,&nbsp;0.0,&nbsp;0.0,&nbsp;0.0,&nbsp;0.0,&nbsp;0.0,&nbsp;0.3333333333333333,&nbsp;0.0,&nbsp;0.0,&nbsp;0.0,</span></p>
+<p><span style=\"font-family: Courier New; font-size: 10pt;\">&nbsp;&nbsp;&nbsp;0.0,&nbsp;0.0,&nbsp;0.0,&nbsp;0.0,&nbsp;0.0,&nbsp;0.0,&nbsp;-0.3333333333333333,&nbsp;0.0;</span></p>
+<p><span style=\"font-family: Courier New; font-size: 10pt;\">0.0,&nbsp;0.0,&nbsp;0.0,&nbsp;0.0,&nbsp;0.0,&nbsp;0.0,&nbsp;0.0,&nbsp;0.0,&nbsp;0.0,&nbsp;0.0,&nbsp;0.0,&nbsp;0.0,&nbsp;0.0,&nbsp;0.0,&nbsp;0.0,&nbsp;0.0,&nbsp;</span></p>
+<p><span style=\"font-family: Courier New; font-size: 10pt;\">&nbsp;&nbsp;0.0,&nbsp;0.0,&nbsp;0.0,&nbsp;0.0,&nbsp;0.0,&nbsp;0.0,&nbsp;0.0,&nbsp;0.0,&nbsp;0.0,&nbsp;1987.1917838539746,&nbsp;0.0,&nbsp;0.0,&nbsp;0.0,</span></p>
+<p><span style=\"font-family: Courier New; font-size: 10pt;\">&nbsp;&nbsp;&nbsp;0.0,&nbsp;0.0,&nbsp;0.0,&nbsp;0.0,&nbsp;-119.62696808275155,&nbsp;-11.6056013811625,&nbsp;-1987.1917838539748,</span></p>
+<p><span style=\"font-family: Courier New; font-size: 10pt;\">&nbsp;&nbsp;&nbsp;-1.246882793017456],&nbsp;</span></p>
+<p><span style=\"font-family: Courier New; font-size: 10pt;\">[0.0,&nbsp;0.0,&nbsp;0.0,&nbsp;0.0,&nbsp;0.0,&nbsp;0.0,&nbsp;0.0,&nbsp;0.0,&nbsp;0.0,&nbsp;0.0,&nbsp;0.0,&nbsp;0.0;</span></p>
+<p><span style=\"font-family: Courier New; font-size: 10pt;\">0.0,&nbsp;0.0,&nbsp;0.0,&nbsp;0.0,&nbsp;0.0,&nbsp;0.0,&nbsp;0.0,&nbsp;0.0,&nbsp;0.0,&nbsp;0.0,&nbsp;0.0,&nbsp;0.0;</span></p>
+<p><span style=\"font-family: Courier New; font-size: 10pt;\">0.0,&nbsp;0.0,&nbsp;0.0,&nbsp;0.0,&nbsp;0.0,&nbsp;0.0,&nbsp;0.0,&nbsp;0.0,&nbsp;0.0,&nbsp;0.0,&nbsp;0.0,&nbsp;0.0;</span></p>
+<p><span style=\"font-family: Courier New; font-size: 10pt;\">0.0,&nbsp;0.11111112030448567,&nbsp;0.0,&nbsp;0.0,&nbsp;0.0,&nbsp;0.0,&nbsp;0.0,&nbsp;0.0,&nbsp;0.0,&nbsp;-0.0029538717151290773,</span></p>
+<p><span style=\"font-family: Courier New; font-size: 10pt;\">&nbsp;&nbsp;&nbsp;-0.0005497947776057637,&nbsp;-3.207310960013869E-07;</span></p>
+<p><span style=\"font-family: Courier New; font-size: 10pt;\">0.0,&nbsp;0.0,&nbsp;0.0,&nbsp;0.0,&nbsp;0.0,&nbsp;0.0,&nbsp;0.0,&nbsp;0.0,&nbsp;0.0,&nbsp;0.0,&nbsp;0.0,&nbsp;0.0;</span></p>
+<p><span style=\"font-family: Courier New; font-size: 10pt;\">0.0,&nbsp;0.0,&nbsp;0.0,&nbsp;0.0,&nbsp;0.0,&nbsp;0.0,&nbsp;0.0,&nbsp;0.0,&nbsp;0.0,&nbsp;-0.00021538326677728037,&nbsp;</span></p>
+<p><span style=\"font-family: Courier New; font-size: 10pt;\">&nbsp;&nbsp;-0.00020014491153735967,&nbsp;-3.4830526254640395E-07;</span></p>
+<p><span style=\"font-family: Courier New; font-size: 10pt;\">0.0,&nbsp;0.0,&nbsp;0.0,&nbsp;0.0,&nbsp;0.0,&nbsp;0.0,&nbsp;0.0,&nbsp;0.0,&nbsp;0.0,&nbsp;-0.022106159495530558,&nbsp;</span></p>
+<p><span style=\"font-family: Courier New; font-size: 10pt;\">&nbsp;&nbsp;-0.020547452628250085,&nbsp;-3.5157062447014745E-05;</span></p>
+<p><span style=\"font-family: Courier New; font-size: 10pt;\">0.0,&nbsp;0.0,&nbsp;0.0,&nbsp;0.0,&nbsp;0.0,&nbsp;0.0,&nbsp;0.0,&nbsp;0.0,&nbsp;0.0,&nbsp;0.07998920674759442,&nbsp;</span></p>
+<p><span style=\"font-family: Courier New; font-size: 10pt;\">&nbsp;&nbsp;0.005182025021854112,&nbsp;-1.0629794916694238E-05;</span></p>
+<p><span style=\"font-family: Courier New; font-size: 10pt;\">0.39147678141879266,&nbsp;0.0,&nbsp;0.0009999999994742199,&nbsp;0.0,&nbsp;0.0,&nbsp;0.0,&nbsp;0.0,&nbsp;0.0,&nbsp;0.0,&nbsp;</span></p>
+<p><span style=\"font-family: Courier New; font-size: 10pt;\">&nbsp;&nbsp;2.052802372763525E-06,&nbsp;3.944178317342888E-06,&nbsp;7.327471922821363E-09;</span></p>
+<p><span style=\"font-family: Courier New; font-size: 10pt;\">782953.5628367523,&nbsp;0.0,&nbsp;2000.0000011677341,&nbsp;0.0,&nbsp;0.0,&nbsp;0.0,&nbsp;0.0,&nbsp;0.0,&nbsp;0.0,&nbsp;</span></p>
+<p><span style=\"font-family: Courier New; font-size: 10pt;\">&nbsp;&nbsp;4.105604745063829,&nbsp;7.888356634566661,&nbsp;0.014654943925052065;</span></p>
+<p><span style=\"font-family: Courier New; font-size: 10pt;\">1153.8461538461538,&nbsp;0.0,&nbsp;0.0,&nbsp;0.0,&nbsp;0.0,&nbsp;0.0,&nbsp;0.0,&nbsp;0.0,&nbsp;0.0,&nbsp;0.0,&nbsp;0.0,&nbsp;0.0;</span></p>
+<p><span style=\"font-family: Courier New; font-size: 10pt;\">11893.491124260356,&nbsp;0.0,&nbsp;0.0,&nbsp;0.0,&nbsp;0.0,&nbsp;0.0,&nbsp;0.0,&nbsp;0.0,&nbsp;0.0,&nbsp;0.0,&nbsp;0.0,&nbsp;0.0;</span></p>
+<p><span style=\"font-family: Courier New; font-size: 10pt;\">0.3333333333333333,&nbsp;0.0,&nbsp;0.0,&nbsp;0.0,&nbsp;0.0,&nbsp;0.0,&nbsp;0.0,&nbsp;0.0,&nbsp;0.0,&nbsp;0.0,&nbsp;0.0,&nbsp;0.0;</span></p>
+<p><span style=\"font-family: Courier New; font-size: 10pt;\">1987.1917838539744,&nbsp;0.0,&nbsp;0.0,&nbsp;0.0,&nbsp;0.0,&nbsp;0.0,&nbsp;0.0,&nbsp;0.0,&nbsp;0.0,&nbsp;0.0,&nbsp;0.0,&nbsp;0.0;</span></p>
+<p><span style=\"font-family: Courier New; font-size: 10pt;\">0.0,&nbsp;0.0,&nbsp;0.0,&nbsp;0.0,&nbsp;0.11111112030448567,&nbsp;0.0,&nbsp;0.0,&nbsp;0.0,&nbsp;0.0,&nbsp;-0.002953834707694919,</span></p>
+<p><span style=\"font-family: Courier New; font-size: 10pt;\">&nbsp;&nbsp;&nbsp;-0.0005498071134171498,&nbsp;-3.207310960013869E-07;</span></p>
+<p><span style=\"font-family: Courier New; font-size: 10pt;\">0.0,&nbsp;0.0,&nbsp;0.0,&nbsp;0.0,&nbsp;0.0,&nbsp;0.0,&nbsp;0.0,&nbsp;0.0,&nbsp;0.0,&nbsp;0.0,&nbsp;0.0,&nbsp;0.0;</span></p>
+<p><span style=\"font-family: Courier New; font-size: 10pt;\">0.0,&nbsp;0.0,&nbsp;0.0,&nbsp;0.0,&nbsp;0.0,&nbsp;0.0,&nbsp;0.0,&nbsp;0.0,&nbsp;0.0,&nbsp;-0.00021533972861873828,&nbsp;</span></p>
+<p><span style=\"font-family: Courier New; font-size: 10pt;\">&nbsp;&nbsp;-0.00020018844969507457,&nbsp;-3.4830526254640395E-07;</span></p>
+<p><span style=\"font-family: Courier New; font-size: 10pt;\">0.0,&nbsp;0.0,&nbsp;0.0,&nbsp;0.0,&nbsp;0.0,&nbsp;0.0,&nbsp;0.0,&nbsp;0.0,&nbsp;0.0,&nbsp;-0.022106159495531387,&nbsp;</span></p>
+<p><span style=\"font-family: Courier New; font-size: 10pt;\">&nbsp;&nbsp;-0.0205473369800178,&nbsp;-3.527271067764362E-05;</span></p>
+<p><span style=\"font-family: Courier New; font-size: 10pt;\">0.0,&nbsp;0.0,&nbsp;0.0,&nbsp;0.0,&nbsp;0.0,&nbsp;0.0,&nbsp;0.0,&nbsp;0.0,&nbsp;0.0,&nbsp;0.07998861620343238,&nbsp;</span></p>
+<p><span style=\"font-family: Courier New; font-size: 10pt;\">&nbsp;&nbsp;0.005182025021854112,&nbsp;-1.0629794916694238E-05;</span></p>
+<p><span style=\"font-family: Courier New; font-size: 10pt;\">0.0,&nbsp;0.0,&nbsp;0.0,&nbsp;0.39147678141879266,&nbsp;0.0,&nbsp;0.0010000000029434153,&nbsp;0.0,&nbsp;0.0,&nbsp;0.0,&nbsp;</span></p>
+<p><span style=\"font-family: Courier New; font-size: 10pt;\">&nbsp;&nbsp;2.052802372763525E-06,&nbsp;3.944400362397799E-06,&nbsp;7.327471922821363E-09;</span></p>
+<p><span style=\"font-family: Courier New; font-size: 10pt;\">0.0,&nbsp;0.0,&nbsp;0.0,&nbsp;782953.5628367523,&nbsp;0.0,&nbsp;2000.0000056086262,&nbsp;0.0,&nbsp;0.0,&nbsp;0.0,&nbsp;</span></p>
+<p><span style=\"font-family: Courier New; font-size: 10pt;\">&nbsp;&nbsp;4.105604745063829,&nbsp;7.888800723776511,&nbsp;0.014654943925052065;</span></p>
+<p><span style=\"font-family: Courier New; font-size: 10pt;\">0.0,&nbsp;0.0,&nbsp;0.0,&nbsp;1153.846153846154,&nbsp;0.0,&nbsp;0.0,&nbsp;0.0,&nbsp;0.0,&nbsp;0.0,&nbsp;0.0,&nbsp;0.0,&nbsp;0.0;</span></p>
+<p><span style=\"font-family: Courier New; font-size: 10pt;\">0.0,&nbsp;0.0,&nbsp;0.0,&nbsp;11893.491124260358,&nbsp;0.0,&nbsp;0.0,&nbsp;0.0,&nbsp;0.0,&nbsp;0.0,&nbsp;0.0,&nbsp;0.0,&nbsp;0.0;</span></p>
+<p><span style=\"font-family: Courier New; font-size: 10pt;\">0.0,&nbsp;0.0,&nbsp;0.0,&nbsp;0.33333333333333337,&nbsp;0.0,&nbsp;0.0,&nbsp;0.0,&nbsp;0.0,&nbsp;0.0,&nbsp;0.0,&nbsp;0.0,&nbsp;0.0;</span></p>
+<p><span style=\"font-family: Courier New; font-size: 10pt;\">0.0,&nbsp;0.0,&nbsp;0.0,&nbsp;1987.1917838539748,&nbsp;0.0,&nbsp;0.0,&nbsp;0.0,&nbsp;0.0,&nbsp;0.0,&nbsp;0.0,&nbsp;0.0,&nbsp;0.0;</span></p>
+<p><span style=\"font-family: Courier New; font-size: 10pt;\">0.0,&nbsp;0.0,&nbsp;0.0,&nbsp;0.0,&nbsp;0.0,&nbsp;0.0,&nbsp;0.0,&nbsp;0.12956725612080472,&nbsp;0.0,&nbsp;-0.0015965893201110469,</span></p>
+<p><span style=\"font-family: Courier New; font-size: 10pt;\">&nbsp;&nbsp;&nbsp;-0.005999131398092748,&nbsp;-8.285675851047767E-06;</span></p>
+<p><span style=\"font-family: Courier New; font-size: 10pt;\">0.0,&nbsp;0.0,&nbsp;0.0,&nbsp;0.0,&nbsp;0.0,&nbsp;0.0,&nbsp;0.0,&nbsp;0.0,&nbsp;0.0,&nbsp;0.0,&nbsp;0.0,&nbsp;0.0;</span></p>
+<p><span style=\"font-family: Courier New; font-size: 10pt;\">0.0,&nbsp;0.0,&nbsp;0.0,&nbsp;0.0,&nbsp;0.0,&nbsp;0.0,&nbsp;0.0,&nbsp;0.0,&nbsp;0.0,&nbsp;0.0016555645743210334,&nbsp;</span></p>
+<p><span style=\"font-family: Courier New; font-size: 10pt;\">&nbsp;&nbsp;0.005242473122279989,&nbsp;5.950795412156275E-06;</span></p>
+<p><span style=\"font-family: Courier New; font-size: 10pt;\">0.0,&nbsp;0.0,&nbsp;0.0,&nbsp;0.0,&nbsp;0.0,&nbsp;0.0,&nbsp;0.0,&nbsp;0.0,&nbsp;0.0,&nbsp;-0.0004358777489887465,&nbsp;</span></p>
+<p><span style=\"font-family: Courier New; font-size: 10pt;\">&nbsp;&nbsp;-0.0031699590541606677,&nbsp;-6.032910021166483E-06;</span></p>
+<p><span style=\"font-family: Courier New; font-size: 10pt;\">0.0,&nbsp;0.0,&nbsp;0.0,&nbsp;0.0,&nbsp;0.0,&nbsp;0.0,&nbsp;0.0,&nbsp;0.0,&nbsp;0.0,&nbsp;-0.027116619135310927,&nbsp;</span></p>
+<p><span style=\"font-family: Courier New; font-size: 10pt;\">&nbsp;&nbsp;-0.19720856891947136,&nbsp;-0.00038337388819087437;</span></p>
+<p><span style=\"font-family: Courier New; font-size: 10pt;\">0.0,&nbsp;0.0,&nbsp;0.0,&nbsp;0.0,&nbsp;0.0,&nbsp;0.0,&nbsp;0.0,&nbsp;0.0,&nbsp;0.0,&nbsp;0.07163377635174221,&nbsp;</span></p>
+<p><span style=\"font-family: Courier New; font-size: 10pt;\">&nbsp;&nbsp;0.22683538549189786,&nbsp;0.0002640985073730792;</span></p>
+<p><span style=\"font-family: Courier New; font-size: 10pt;\">0.0,&nbsp;0.0,&nbsp;0.0,&nbsp;0.0,&nbsp;0.0,&nbsp;0.0,&nbsp;0.3914767814187902,&nbsp;0.0,&nbsp;0.0009999999994717383,&nbsp;</span></p>
+<p><span style=\"font-family: Courier New; font-size: 10pt;\">&nbsp;&nbsp;3.306244150922453E-07,&nbsp;8.194334096659344E-06,&nbsp;1.9539925127523637E-08;</span></p>
+<p><span style=\"font-family: Courier New; font-size: 10pt;\">0.0,&nbsp;0.0,&nbsp;0.0,&nbsp;0.0,&nbsp;0.0,&nbsp;0.0,&nbsp;1174430.3442640102,&nbsp;0.0,&nbsp;2999.9999995311555,&nbsp;</span></p>
+<p><span style=\"font-family: Courier New; font-size: 10pt;\">&nbsp;&nbsp;0.9918643684159177,&nbsp;24.583002300460066,&nbsp;0.05861977570020826;</span></p>
+<p><span style=\"font-family: Courier New; font-size: 10pt;\">0.0,&nbsp;0.0,&nbsp;0.0,&nbsp;0.0,&nbsp;0.0,&nbsp;0.0,&nbsp;1153.8461538461538,&nbsp;0.0,&nbsp;0.0,&nbsp;0.0,&nbsp;0.0,&nbsp;0.0;</span></p>
+<p><span style=\"font-family: Courier New; font-size: 10pt;\">0.0,&nbsp;0.0,&nbsp;0.0,&nbsp;0.0,&nbsp;0.0,&nbsp;0.0,&nbsp;11893.491124260356,&nbsp;0.0,&nbsp;0.0,&nbsp;0.0,&nbsp;0.0,&nbsp;0.0;</span></p>
+<p><span style=\"font-family: Courier New; font-size: 10pt;\">0.0,&nbsp;0.0,&nbsp;0.0,&nbsp;0.0,&nbsp;0.0,&nbsp;0.0,&nbsp;0.33333333333333337,&nbsp;0.0,&nbsp;0.0,&nbsp;0.0,&nbsp;0.0,&nbsp;0.0;</span></p>
+<p><span style=\"font-family: Courier New; font-size: 10pt;\">0.0,&nbsp;0.0,&nbsp;0.0,&nbsp;0.0,&nbsp;0.0,&nbsp;0.0,&nbsp;1987.1917838539744,&nbsp;0.0,&nbsp;0.0,&nbsp;0.0,&nbsp;0.0,&nbsp;0.0],&nbsp;</span></p>
+<p><span style=\"font-family: Courier New; font-size: 10pt;\">[0.03662801209001474,&nbsp;0.0,&nbsp;0.015027599264153571,&nbsp;0.0,&nbsp;-0.08520102679226957,&nbsp;</span></p>
+<p><span style=\"font-family: Courier New; font-size: 10pt;\">&nbsp;&nbsp;0.06888083521774872,&nbsp;0.4821658468338795,&nbsp;0.18601374855332248,&nbsp;0.0,&nbsp;0.0,&nbsp;0.0,&nbsp;</span></p>
+<p><span style=\"font-family: Courier New; font-size: 10pt;\">&nbsp;&nbsp;0.0,&nbsp;0.0,&nbsp;0.0,&nbsp;0.0,&nbsp;-0.019592147017908783,&nbsp;0.03964882596213896,&nbsp;</span></p>
+<p><span style=\"font-family: Courier New; font-size: 10pt;\">&nbsp;&nbsp;0.27754178030725823,&nbsp;0.08088485694272528,&nbsp;0.0,&nbsp;0.0,&nbsp;0.0,&nbsp;0.0,&nbsp;0.0,&nbsp;0.0,&nbsp;0.0,&nbsp;</span></p>
+<p><span style=\"font-family: Courier New; font-size: 10pt;\">&nbsp;&nbsp;0.0681651621711061,&nbsp;-0.004567602538506068,&nbsp;0.02879710431571421,&nbsp;</span></p>
+<p><span style=\"font-family: Courier New; font-size: 10pt;\">&nbsp;&nbsp;0.06124454646789536,&nbsp;-0.029785919339213048,&nbsp;0.0,&nbsp;0.0,&nbsp;0.0,&nbsp;0.0,&nbsp;0.0,&nbsp;0.0;</span></p>
+<p><span style=\"font-family: Courier New; font-size: 10pt;\">0.0,&nbsp;0.0,&nbsp;0.0,&nbsp;391.476781419233,&nbsp;0.0,&nbsp;0.0,&nbsp;0.0,&nbsp;0.0,&nbsp;0.0,&nbsp;0.0,&nbsp;-23.566512712302064,</span></p>
+<p><span style=\"font-family: Courier New; font-size: 10pt;\">&nbsp;&nbsp;&nbsp;-2.2863034720890076,&nbsp;-391.47678141923296,&nbsp;0.7543640897755619,&nbsp;0.0,&nbsp;0.0,&nbsp;0.0,&nbsp;</span></p>
+<p><span style=\"font-family: Courier New; font-size: 10pt;\">&nbsp;&nbsp;0.0,&nbsp;0.0,&nbsp;0.0,&nbsp;0.0,&nbsp;0.0,&nbsp;0.0,&nbsp;0.0,&nbsp;0.0,&nbsp;0.0,&nbsp;0.0,&nbsp;0.0,&nbsp;0.0,&nbsp;0.0,&nbsp;0.0,&nbsp;0.0,&nbsp;0.0,</span></p>
+<p><span style=\"font-family: Courier New; font-size: 10pt;\">&nbsp;&nbsp;&nbsp;0.0,&nbsp;0.0,&nbsp;0.0,&nbsp;0.0;</span></p>
+<p><span style=\"font-family: Courier New; font-size: 10pt;\">0.0,&nbsp;0.0,&nbsp;0.0,&nbsp;0.0,&nbsp;0.0,&nbsp;0.0,&nbsp;0.0,&nbsp;0.0,&nbsp;0.0,&nbsp;0.9999999999455941,&nbsp;0.0,&nbsp;0.0,&nbsp;0.0,&nbsp;</span></p>
+<p><span style=\"font-family: Courier New; font-size: 10pt;\">&nbsp;&nbsp;0.0,&nbsp;0.0,&nbsp;0.0,&nbsp;0.0,&nbsp;0.0,&nbsp;0.0,&nbsp;0.0,&nbsp;0.0,&nbsp;0.0,&nbsp;0.0,&nbsp;0.0,&nbsp;0.0,&nbsp;0.0,&nbsp;0.0,&nbsp;0.0,&nbsp;0.0,</span></p>
+<p><span style=\"font-family: Courier New; font-size: 10pt;\">&nbsp;&nbsp;&nbsp;0.0,&nbsp;0.0,&nbsp;0.0,&nbsp;0.0,&nbsp;0.0,&nbsp;0.0,&nbsp;0.0,&nbsp;0.0;</span></p>
+<p><span style=\"font-family: Courier New; font-size: 10pt;\">0.0,&nbsp;0.0,&nbsp;0.0,&nbsp;1.0,&nbsp;0.0,&nbsp;0.0,&nbsp;0.0,&nbsp;0.0,&nbsp;0.0,&nbsp;0.0,&nbsp;0.0,&nbsp;0.0,&nbsp;0.0,&nbsp;0.0,&nbsp;0.0,&nbsp;0.0,&nbsp;</span></p>
+<p><span style=\"font-family: Courier New; font-size: 10pt;\">&nbsp;&nbsp;0.0,&nbsp;0.0,&nbsp;0.0,&nbsp;0.0,&nbsp;0.0,&nbsp;0.0,&nbsp;0.0,&nbsp;0.0,&nbsp;0.0,&nbsp;0.0,&nbsp;0.0,&nbsp;0.0,&nbsp;0.0,&nbsp;0.0,&nbsp;0.0,&nbsp;0.0,</span></p>
+<p><span style=\"font-family: Courier New; font-size: 10pt;\">&nbsp;&nbsp;&nbsp;0.0,&nbsp;0.0,&nbsp;0.0,&nbsp;0.0,&nbsp;0.0;</span></p>
+<p><span style=\"font-family: Courier New; font-size: 10pt;\">0.0,&nbsp;0.0,&nbsp;0.0,&nbsp;0.0,&nbsp;0.999999999887137,&nbsp;0.0,&nbsp;0.0,&nbsp;0.0,&nbsp;0.0,&nbsp;0.0,&nbsp;0.0,&nbsp;0.0,&nbsp;0.0,&nbsp;</span></p>
+<p><span style=\"font-family: Courier New; font-size: 10pt;\">&nbsp;&nbsp;0.0,&nbsp;0.0,&nbsp;0.0,&nbsp;0.0,&nbsp;0.0,&nbsp;0.0,&nbsp;0.0,&nbsp;0.0,&nbsp;0.0,&nbsp;0.0,&nbsp;0.0,&nbsp;0.0,&nbsp;0.0,&nbsp;0.0,&nbsp;0.0,&nbsp;0.0,</span></p>
+<p><span style=\"font-family: Courier New; font-size: 10pt;\">&nbsp;&nbsp;&nbsp;0.0,&nbsp;0.0,&nbsp;0.0,&nbsp;0.0,&nbsp;0.0,&nbsp;0.0,&nbsp;0.0,&nbsp;0.0],&nbsp;</span></p>
+<p><span style=\"font-family: Courier New; font-size: 10pt;\">[0.0,&nbsp;0.0,&nbsp;0.0,&nbsp;0.0,&nbsp;0.0,&nbsp;0.0,&nbsp;0.0,&nbsp;0.0,&nbsp;0.0,&nbsp;-0.0020528023725319144,&nbsp;</span></p>
+<p><span style=\"font-family: Courier New; font-size: 10pt;\">&nbsp;&nbsp;-0.003944178317283331,&nbsp;-7.327471962526032E-06;</span></p>
+<p><span style=\"font-family: Courier New; font-size: 10pt;\">391.4767814192329,&nbsp;0.0,&nbsp;1.0000000000000022,&nbsp;0.0,&nbsp;0.0,&nbsp;0.0,&nbsp;0.0,&nbsp;0.0,&nbsp;0.0,&nbsp;0.0,&nbsp;</span></p>
+<p><span style=\"font-family: Courier New; font-size: 10pt;\">&nbsp;&nbsp;0.0,&nbsp;0.0;</span></p>
+<p><span style=\"font-family: Courier New; font-size: 10pt;\">0.0,&nbsp;0.0,&nbsp;0.0,&nbsp;0.0,&nbsp;0.0,&nbsp;0.0,&nbsp;0.0,&nbsp;0.0,&nbsp;0.0,&nbsp;0.0,&nbsp;0.0,&nbsp;0.0;</span></p>
+<p><span style=\"font-family: Courier New; font-size: 10pt;\">0.0,&nbsp;0.0,&nbsp;0.0,&nbsp;0.0,&nbsp;0.0,&nbsp;0.0,&nbsp;0.0,&nbsp;0.0,&nbsp;0.0,&nbsp;0.0,&nbsp;0.0,&nbsp;0.0;</span></p>
+<p><span style=\"font-family: Courier New; font-size: 10pt;\">0.0,&nbsp;0.0,&nbsp;0.0,&nbsp;0.0,&nbsp;0.0,&nbsp;0.0,&nbsp;0.0,&nbsp;0.0,&nbsp;0.0,&nbsp;0.0,&nbsp;0.0,&nbsp;0.0],&nbsp;{&quot;uPSS1&quot;,&nbsp;&quot;uPm1&quot;,&nbsp;</span></p>
+<p><span style=\"font-family: Courier New; font-size: 10pt;\">&nbsp;&nbsp;&quot;uvs1&quot;,&nbsp;&quot;uPSS2&quot;,&nbsp;&quot;uPm2&quot;,&nbsp;&quot;uvs2&quot;,&nbsp;&quot;uPSS3&quot;,&nbsp;&quot;uPm3&quot;,&nbsp;&quot;uvs3&quot;,&nbsp;&quot;uPload1&quot;,&nbsp;&quot;uPload2&quot;,</span></p>
+<p><span style=\"font-family: Courier New; font-size: 10pt;\">&nbsp;&nbsp;&nbsp;&quot;uPload3&quot;},&nbsp;{&quot;Vt&quot;,&nbsp;&quot;SCRXin&quot;,&nbsp;&quot;SCRXout&quot;,&nbsp;&quot;SPEED&quot;,&nbsp;&quot;ANGLE&quot;},&nbsp;{&quot;Plant.infiniteBus.gENCLS.delta&quot;,</span></p>
+<p><span style=\"font-family: Courier New; font-size: 10pt;\">&nbsp;&nbsp;&nbsp;&quot;Plant.infiniteBus.gENCLS.omega&quot;,&nbsp;&quot;Plant.infiniteBus.gENCLS.eq&quot;,&nbsp;</span></p>
+<p><span style=\"font-family: Courier New; font-size: 10pt;\">&nbsp;&nbsp;&quot;Plant.G1.gENSAE.w&quot;,&nbsp;&quot;Plant.G1.gENSAE.delta&quot;,&nbsp;&quot;Plant.G1.gENSAE.Epq&quot;,&nbsp;</span></p>
+<p><span style=\"font-family: Courier New; font-size: 10pt;\">&nbsp;&nbsp;&quot;Plant.G1.gENSAE.PSIkd&quot;,&nbsp;&quot;Plant.G1.gENSAE.PSIppq&quot;,&nbsp;&quot;Plant.G1.sCRX.imLeadLag.TF.x_scaled[1]&quot;,</span></p>
+<p><span style=\"font-family: Courier New; font-size: 10pt;\">&nbsp;&nbsp;&nbsp;&quot;Plant.G1.sCRX.simpleLagLim.state&quot;,&nbsp;&quot;Plant.G1.pSSTypeIIExtraLeadLag.imLeadLag1.TF.x_scaled[1]&quot;,</span></p>
+<p><span style=\"font-family: Courier New; font-size: 10pt;\">&nbsp;&nbsp;&nbsp;&quot;Plant.G1.pSSTypeIIExtraLeadLag.imLeadLag2.TF.x_scaled[1]&quot;,&nbsp;&quot;Plant.G1.pSSTypeIIExtraLeadLag.derivativeLag.TF.x_scaled[1]&quot;,</span></p>
+<p><span style=\"font-family: Courier New; font-size: 10pt;\">&nbsp;&nbsp;&nbsp;&quot;Plant.G1.pSSTypeIIExtraLeadLag.imleadLag3.TF.x_scaled[1]&quot;,&nbsp;&quot;Plant.G2.gENSAE.w&quot;,</span></p>
+<p><span style=\"font-family: Courier New; font-size: 10pt;\">&nbsp;&nbsp;&nbsp;&quot;Plant.G2.gENSAE.delta&quot;,&nbsp;&quot;Plant.G2.gENSAE.Epq&quot;,&nbsp;&quot;Plant.G2.gENSAE.PSIkd&quot;,&nbsp;</span></p>
+<p><span style=\"font-family: Courier New; font-size: 10pt;\">&nbsp;&nbsp;&quot;Plant.G2.gENSAE.PSIppq&quot;,&nbsp;&quot;Plant.G2.sCRX.imLeadLag.TF.x_scaled[1]&quot;,&nbsp;</span></p>
+<p><span style=\"font-family: Courier New; font-size: 10pt;\">&nbsp;&nbsp;&quot;Plant.G2.sCRX.simpleLagLim.state&quot;,&nbsp;&quot;Plant.G2.pSSTypeIIExtraLeadLag.imLeadLag1.TF.x_scaled[1]&quot;,</span></p>
+<p><span style=\"font-family: Courier New; font-size: 10pt;\">&nbsp;&nbsp;&nbsp;&quot;Plant.G2.pSSTypeIIExtraLeadLag.imLeadLag2.TF.x_scaled[1]&quot;,&nbsp;&quot;Plant.G2.pSSTypeIIExtraLeadLag.derivativeLag.TF.x_scaled[1]&quot;,</span></p>
+<p><span style=\"font-family: Courier New; font-size: 10pt;\">&nbsp;&nbsp;&nbsp;&quot;Plant.G2.pSSTypeIIExtraLeadLag.imleadLag3.TF.x_scaled[1]&quot;,&nbsp;&quot;Plant.G3.gENROE.w&quot;,</span></p>
+<p><span style=\"font-family: Courier New; font-size: 10pt;\">&nbsp;&nbsp;&nbsp;&quot;Plant.G3.gENROE.delta&quot;,&nbsp;&quot;Plant.G3.gENROE.Epd&quot;,&nbsp;&quot;Plant.G3.gENROE.Epq&quot;,&nbsp;</span></p>
+<p><span style=\"font-family: Courier New; font-size: 10pt;\">&nbsp;&nbsp;&quot;Plant.G3.gENROE.PSIkd&quot;,&nbsp;&quot;Plant.G3.gENROE.PSIkq&quot;,&nbsp;&quot;Plant.G3.sCRX.imLeadLag.TF.x_scaled[1]&quot;,</span></p>
+<p><span style=\"font-family: Courier New; font-size: 10pt;\">&nbsp;&nbsp;&nbsp;&quot;Plant.G3.sCRX.simpleLagLim.state&quot;,&nbsp;&quot;Plant.G3.pSSTypeIIExtraLeadLag.imLeadLag1.TF.x_scaled[1]&quot;,</span></p>
+<p><span style=\"font-family: Courier New; font-size: 10pt;\">&nbsp;&nbsp;&nbsp;&quot;Plant.G3.pSSTypeIIExtraLeadLag.imLeadLag2.TF.x_scaled[1]&quot;,&nbsp;&quot;Plant.G3.pSSTypeIIExtraLeadLag.derivativeLag.TF.x_scaled[1]&quot;,</span></p>
+<p><span style=\"font-family: Courier New; font-size: 10pt;\">&nbsp;&nbsp;&nbsp;&quot;Plant.G3.pSSTypeIIExtraLeadLag.imleadLag3.TF.x_scaled[1]&quot;},&nbsp;{</span></p>
+<p><span style=\"font-family: Courier New; font-size: 10pt;\">&nbsp;&nbsp;1.0400943756103516,&nbsp;-1.8462231309968047E-05,&nbsp;1.6989123821258545,&nbsp;</span></p>
+<p><span style=\"font-family: Courier New; font-size: 10pt;\">&nbsp;&nbsp;-4.1665584831207525E-06,&nbsp;0.27882149815559387}</span></p>
 </html>"),    preferredView="info",
         __Dymola_Commands(file="../../../../Downloads/test.mos" "test"));
     end LinearizeAndCompare;
