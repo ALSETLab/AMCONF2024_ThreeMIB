@@ -281,6 +281,11 @@ package LinearAnalysis
         resultFile="res_lin");
 
     // Plot commands
+    removePlots(false);
+    Advanced.FilesToKeep :=10;
+    createPlot(id=1, position={105, 105, 894, 548}, y={"Vt"}, range={0.0, 120.0, 1.0392000000000001, 1.0408000000000002}, erase=false, grid=true, filename="res_nl.mat", colors={{28,108,200}}, timeUnit="s", displayUnits={"1"});
+    createPlot(id=1, position={105, 105, 894, 548}, y={"Vt"}, range={0.0, 120.0, 1.0392000000000001, 1.0408000000000002}, erase=false, grid=true, filename="res_lin.mat", colors={{238,46,47}}, timeUnit="s");
+
 
 
       annotation(__Dymola_interactive=true, Documentation(info="<html>
@@ -411,7 +416,8 @@ package LinearAnalysis
 <p style=\"margin-left: 30px;\"><span style=\"font-family: Courier New; font-size: 10pt;\">&nbsp;&nbsp;&nbsp;&quot;Plant.G1.pss.derivativeLag.TF.x_scaled[1]&quot;},&nbsp;{0.9982708096504211,&nbsp;</span></p>
 <p style=\"margin-left: 30px;\"><span style=\"font-family: Courier New; font-size: 10pt;\">&nbsp;&nbsp;0.20306333899497986,&nbsp;0.9216165542602539,&nbsp;1.0,&nbsp;1.2989709377288818,&nbsp;</span></p>
 <p style=\"margin-left: 30px;\"><span style=\"font-family: Courier New; font-size: 10pt;\">&nbsp;&nbsp;-3.5569769352150615E-11,&nbsp;2.124945878982544}</span></p>
-</html>"),    preferredView="info");
+</html>"),    preferredView="info",
+        __Dymola_Commands(file="../../../../Downloads/test.mos" "test"));
     end LinearizeAndCompare;
 
     annotation (Documentation(info="<html>
