@@ -277,15 +277,11 @@ package LinearAnalysis
         stopTime=tsim,
         numberOfIntervals=numberOfIntervalsin, method = methodin, fixedstepsize=fixedstepsizein,
         resultFile="res_lin");
-        // Plot
-    removePlots(true);
-    createPlot(id=1, position={-2, 1, 584, 782}, y={"Vt"}, range={0.0, 20.0, 0.998, 1.002}, grid=true, filename="res_nl.mat", colors={{28,108,200}}, displayUnits={"1"});
-    createPlot(id=1, position={-2, 1, 584, 782}, y={"Q"}, range={0.0, 20.0, 0.18, 0.21}, grid=true, subPlot=102, colors={{28,108,200}}, displayUnits={"1"});
-    createPlot(id=1, position={-2, 1, 584, 782}, y={"P"}, range={0.0, 20.0, 0.86, 0.94}, grid=true, subPlot=103, colors={{28,108,200}}, displayUnits={"1"});
 
-    createPlot(id=1, position={-2, 1, 584, 782}, y={"Vt"}, range={0.0, 20.0, 0.998, 1.002}, erase=false, grid=true, filename="res_lin.mat", colors={{238,46,47}});
-    createPlot(id=1, position={-2, 1, 584, 782}, y={"Q"}, range={0.0, 20.0, 0.18, 0.21}, erase=false, grid=true, subPlot=102, colors={{238,46,47}});
-    createPlot(id=1, position={-2, 1, 584, 782}, y={"P"}, range={0.0, 20.0, 0.86, 0.94}, erase=false, grid=true, subPlot=103, colors={{238,46,47}});
+    // Plot commands
+    removePlots(false);
+    createPlot(id=1, position={105, 105, 894, 548}, y={"Vt", "Vt"}, range={0.0, 40.0, 1.0, 1.8}, grid=true, colors={{28,108,200}, {238,46,47}}, timeUnit="s", displayUnits={"1", ""});
+
 
       annotation(__Dymola_interactive=true, Documentation(info="<html>
 <p>This function can linearize the model at initialization or at a user provided point in time. Once the model is linearized, linear model and the nonlinear models are simulated.</p>
@@ -469,24 +465,35 @@ package LinearAnalysis
           transformation(extent={{-330,-336},{-282,-288}}),
           iconTransformation(extent={{-326,-330},{-288,-292}})));
   equation
-    connect(Plant.ANGLE, ANGLE) annotation (Line(points={{164.32,42.0743},{192,42.0743},{192,257},{275,257}},  color={0,0,127}));
-    connect(Plant.SPEED, SPEED) annotation (Line(points={{164.965,15.1686},{216,15.1686},{216,139},{277,139}}, color={0,0,127}));
+    connect(Plant.ANGLE, ANGLE) annotation (Line(points={{164.32,42.0743},{192,
+            42.0743},{192,257},{275,257}},                                                                     color={0,0,127}));
+    connect(Plant.SPEED, SPEED) annotation (Line(points={{164.965,15.1686},{216,
+            15.1686},{216,139},{277,139}},                                                                     color={0,0,127}));
     connect(Plant.Vt, Vt) annotation (Line(points={{164.32,-11},{232,-11},{232,1},{283,1}},              color={0,0,127}));
-    connect(Plant.SCRXin, SCRXin) annotation (Line(points={{165.61,-39.7486},{214,-39.7486},{214,-125},{283,-125}},  color={0,0,127}));
-    connect(Plant.SCRXout, SCRXout) annotation (Line(points={{166.255,-67.3914},{166.255,-104},{190,-104},{190,-267},{281,-267}},
-                                                                                                                              color={0,0,127}));
-    connect(uPload1, Plant.uPload1) annotation (Line(points={{-310,296},{-218,296},{-218,95.5171},{-117.545,95.5171}}, color={0,0,127}));
+    connect(Plant.SCRXin, SCRXin) annotation (Line(points={{165.61,-39.7486},{
+            214,-39.7486},{214,-125},{283,-125}},                                                                    color={0,0,127}));
+    connect(Plant.SCRXout, SCRXout) annotation (Line(points={{166.255,-67.3914},
+            {166.255,-104},{190,-104},{190,-267},{281,-267}},                                                                 color={0,0,127}));
+    connect(uPload1, Plant.uPload1) annotation (Line(points={{-310,296},{-218,
+            296},{-218,95.5171},{-117.545,95.5171}},                                                                   color={0,0,127}));
     connect(uPSS1, Plant.uPSS1) annotation (Line(points={{-306,234},{-232,234},{-232,76.72},{-116.9,76.72}},       color={0,0,127}));
-    connect(uPm1, Plant.uPm1) annotation (Line(points={{-305,177},{-244,177},{-244,54.6057},{-116.9,54.6057}},   color={0,0,127}));
-    connect(uvs1, Plant.uvs1) annotation (Line(points={{-305,119},{-252,119},{-252,32.4914},{-116.9,32.4914}},   color={0,0,127}));
-    connect(uPSS2, Plant.uPSS2) annotation (Line(points={{-309,55},{-248,55},{-248,11.8514},{-116.9,11.8514}},   color={0,0,127}));
+    connect(uPm1, Plant.uPm1) annotation (Line(points={{-305,177},{-244,177},{
+            -244,54.6057},{-116.9,54.6057}},                                                                     color={0,0,127}));
+    connect(uvs1, Plant.uvs1) annotation (Line(points={{-305,119},{-252,119},{
+            -252,32.4914},{-116.9,32.4914}},                                                                     color={0,0,127}));
+    connect(uPSS2, Plant.uPSS2) annotation (Line(points={{-309,55},{-248,55},{
+            -248,11.8514},{-116.9,11.8514}},                                                                     color={0,0,127}));
     connect(uPm2, Plant.uPm2) annotation (Line(points={{-310,0},{-240,0},{-240,-11},{-116.9,-11}},             color={0,0,127}));
     connect(uvs2, Plant.uvs2) annotation (Line(points={{-306,-54},{-248,-54},{-248,-31.64},{-116.9,-31.64}},       color={0,0,127}));
-    connect(uPSS3, Plant.uPSS3) annotation (Line(points={{-304,-106},{-242,-106},{-242,-50.8057},{-116.9,-50.8057}},   color={0,0,127}));
-    connect(uPm3, Plant.uPm3) annotation (Line(points={{-308,-156},{-240,-156},{-240,-71.4457},{-116.9,-71.4457}},   color={0,0,127}));
-    connect(uvs3, Plant.uvs3) annotation (Line(points={{-304,-206},{-268,-206},{-268,-208},{-230,-208},{-230,-92.0857},{-116.9,-92.0857}},   color={0,0,127}));
+    connect(uPSS3, Plant.uPSS3) annotation (Line(points={{-304,-106},{-242,-106},
+            {-242,-50.8057},{-116.9,-50.8057}},                                                                        color={0,0,127}));
+    connect(uPm3, Plant.uPm3) annotation (Line(points={{-308,-156},{-240,-156},
+            {-240,-71.4457},{-116.9,-71.4457}},                                                                      color={0,0,127}));
+    connect(uvs3, Plant.uvs3) annotation (Line(points={{-304,-206},{-268,-206},
+            {-268,-208},{-230,-208},{-230,-92.0857},{-116.9,-92.0857}},                                                                      color={0,0,127}));
     connect(uPload2, Plant.uPload2) annotation (Line(points={{-306,-256},{-266,-256},{-266,-254},{-216,-254},{-216,-111.62},{-117.545,-111.62}},   color={0,0,127}));
-    connect(uPload3, Plant.uPload3) annotation (Line(points={{-306,-312},{-256,-312},{-256,-310},{-117.545,-310},{-117.545,-130.049}}, color={0,0,127}));
+    connect(uPload3, Plant.uPload3) annotation (Line(points={{-306,-312},{-256,
+            -312},{-256,-310},{-117.545,-310},{-117.545,-130.049}},                                                                    color={0,0,127}));
     annotation (Icon(coordinateSystem(preserveAspectRatio=false, extent={{-280,-340},{240,320}}), graphics={Rectangle(
             extent={{-276,320},{238,-340}},
             lineColor={28,108,200},
@@ -598,22 +605,32 @@ package LinearAnalysis
       startTime=0) annotation (Placement(transformation(extent={{-190,-146},{-180,-136}})));
   equation
     connect(Plant.Vt, Vt) annotation (Line(points={{40.32,-4},{96,-4},{96,0},{118,0}},               color={0,0,127}));
-    connect(Plant.SCRXin, SCRXin) annotation (Line(points={{40.86,-16.0343},{94,-16.0343},{94,-66},{116,-66}},   color={0,0,127}));
-    connect(Plant.SCRXout, SCRXout) annotation (Line(points={{41.13,-27.6057},{92,-27.6057},{92,-114},{114,-114}},   color={0,0,127}));
-    connect(Plant.ANGLE, ANGLE) annotation (Line(points={{40.32,18.2171},{94,18.2171},{94,81},{115,81}},   color={0,0,127}));
+    connect(Plant.SCRXin, SCRXin) annotation (Line(points={{40.86,-16.0343},{94,
+            -16.0343},{94,-66},{116,-66}},                                                                       color={0,0,127}));
+    connect(Plant.SCRXout, SCRXout) annotation (Line(points={{41.13,-27.6057},{
+            92,-27.6057},{92,-114},{114,-114}},                                                                      color={0,0,127}));
+    connect(Plant.ANGLE, ANGLE) annotation (Line(points={{40.32,18.2171},{94,
+            18.2171},{94,81},{115,81}},                                                                    color={0,0,127}));
     connect(Plant.SPEED, SPEED) annotation (Line(points={{40.59,6.95429},{96,6.95429},{96,42},{116,42}},   color={0,0,127}));
-    connect(Ploadchange1.y, Plant.uPload1) annotation (Line(points={{-181.5,89},{-136,89},{-136,40.5886},{-77.67,40.5886}},   color={0,0,127}));
+    connect(Ploadchange1.y, Plant.uPload1) annotation (Line(points={{-181.5,89},
+            {-136,89},{-136,40.5886},{-77.67,40.5886}},                                                                       color={0,0,127}));
     connect(PSSchange1.y, Plant.uPSS1) annotation (Line(points={{-179.4,64},{-136,64},{-136,32.72},{-77.4,32.72}},        color={0,0,127}));
-    connect(Pmchange1.y, Plant.uPm1) annotation (Line(points={{-181.5,41},{-152,41},{-152,23.4629},{-77.4,23.4629}},    color={0,0,127}));
-    connect(sCRXRchange1.y, Plant.uvs1) annotation (Line(points={{-181.5,21},{-154,21},{-154,14.2057},{-77.4,14.2057}},    color={0,0,127}));
+    connect(Pmchange1.y, Plant.uPm1) annotation (Line(points={{-181.5,41},{-152,
+            41},{-152,23.4629},{-77.4,23.4629}},                                                                        color={0,0,127}));
+    connect(sCRXRchange1.y, Plant.uvs1) annotation (Line(points={{-181.5,21},{
+            -154,21},{-154,14.2057},{-77.4,14.2057}},                                                                      color={0,0,127}));
     connect(PSSchange2.y, Plant.uPSS2) annotation (Line(points={{-181.5,1},{-160,1},{-160,5.56571},{-77.4,5.56571}},    color={0,0,127}));
     connect(Pmchange2.y, Plant.uPm2) annotation (Line(points={{-181.5,-19},{-158,-19},{-158,-4},{-77.4,-4}},                color={0,0,127}));
     connect(sCRXRchange2.y, Plant.uvs2) annotation (Line(points={{-181.5,-41},{-152,-41},{-152,-12.64},{-77.4,-12.64}},        color={0,0,127}));
-    connect(PSSchange3.y, Plant.uPSS3) annotation (Line(points={{-181.5,-61},{-144,-61},{-144,-20.6629},{-77.4,-20.6629}},    color={0,0,127}));
-    connect(Pmchange3.y, Plant.uPm3) annotation (Line(points={{-181.5,-83},{-136,-83},{-136,-29.3029},{-77.4,-29.3029}},    color={0,0,127}));
-    connect(sCRXRchange3.y, Plant.uvs3) annotation (Line(points={{-181.5,-101},{-128,-101},{-128,-37.9429},{-77.4,-37.9429}},    color={0,0,127}));
+    connect(PSSchange3.y, Plant.uPSS3) annotation (Line(points={{-181.5,-61},{
+            -144,-61},{-144,-20.6629},{-77.4,-20.6629}},                                                                      color={0,0,127}));
+    connect(Pmchange3.y, Plant.uPm3) annotation (Line(points={{-181.5,-83},{
+            -136,-83},{-136,-29.3029},{-77.4,-29.3029}},                                                                    color={0,0,127}));
+    connect(sCRXRchange3.y, Plant.uvs3) annotation (Line(points={{-181.5,-101},
+            {-128,-101},{-128,-37.9429},{-77.4,-37.9429}},                                                                       color={0,0,127}));
     connect(Ploadchange2.y, Plant.uPload2) annotation (Line(points={{-181.5,-121},{-120,-121},{-120,-46.12},{-77.67,-46.12}},       color={0,0,127}));
-    connect(Ploadchange3.y, Plant.uPload3) annotation (Line(points={{-179.5,-141},{-77.67,-141},{-77.67,-53.8343}},     color={0,0,127}));
+    connect(Ploadchange3.y, Plant.uPload3) annotation (Line(points={{-179.5,
+            -141},{-77.67,-141},{-77.67,-53.8343}},                                                                     color={0,0,127}));
     annotation (Icon(coordinateSystem(preserveAspectRatio=false, extent={{-200,-160},{100,100}})),
                                                                    Diagram(
           coordinateSystem(preserveAspectRatio=false, extent={{-200,-160},{100,100}})),
@@ -627,6 +644,125 @@ package LinearAnalysis
 </html>"),  preferredView="diagram");
   end NonlinModel_for_NonlinExperiment;
 
+  model LinearModelGeneral
+    "Generic linear model for simulation, is simulated by running the function \"LinearizeAndCompare\"."
+    extends ThreeMIB.Utilities.Icons.FunctionDependentExample;
+    extends ThreeMIB.Interfaces.OutputInterface;
+    // The following definitions are very important to couple the linear model
+    // to the linearization of the nonlinear model and the simulation
+    parameter Real[:] y0=vector(DataFiles.readMATmatrix("MyData.mat", "y0_beforedist")) annotation (Evaluate=false);
+    // The following has to be imported in order to be able to interpret and manipulate the StateSpace types
+    import Modelica_LinearSystems2.StateSpace;
+    parameter StateSpace ss=StateSpace.Import.fromFile("MyData.mat", "ABCD");
+    parameter Integer ny=size(ss.C, 1);
+    inner Modelica_LinearSystems2.Controller.SampleClock sampleClock
+      annotation (Placement(transformation(extent={{60,60},{80,80}})));
+    Modelica.Blocks.Routing.DeMultiplex5   demultiplex2_2
+      annotation (Placement(transformation(extent={{48,-20},{88,20}})));
+    Modelica.Blocks.Math.Add addy[ny]
+      annotation (Placement(transformation(extent={{6,-10},{26,10}})));
+    Modelica.Blocks.Sources.Constant y0_initial[ny](k=y0)      annotation (
+        Placement(transformation(
+          extent={{-10,-10},{10,10}},
+          rotation=90,
+          origin={0,-32})));
+    Modelica_LinearSystems2.Controller.StateSpace stateSpace(system=ss)
+      annotation (Placement(transformation(extent={{-40,-10},{-20,10}})));
+    Modelica.Blocks.Sources.Constant uVec[12](each k=0)
+      annotation (Placement(transformation(extent={{-98,-10},{-78,10}})));
+  equation
+    connect(addy.y, demultiplex2_2.u)
+      annotation (Line(points={{27,0},{44,0}},                 color={0,0,127}));
+    connect(y0_initial.y, addy.u2)
+      annotation (Line(points={{0,-21},{0,-6},{4,-6}},   color={0,0,127}));
+    connect(stateSpace.y, addy.u1)
+      annotation (Line(points={{-19,0},{-8,0},{-8,6},{4,6}},
+                                               color={0,0,127}));
+    connect(demultiplex2_2.y1[1], ANGLE) annotation (Line(points={{90,16},{108,16},
+            {108,20},{126,20},{126,147},{231,147}}, color={0,0,127}));
+    connect(demultiplex2_2.y2[1], SPEED) annotation (Line(points={{90,8},{148,8},{
+            148,82},{233,82},{233,75}}, color={0,0,127}));
+    connect(demultiplex2_2.y3[1], Vt)
+      annotation (Line(points={{90,0},{234,0}}, color={0,0,127}));
+    connect(demultiplex2_2.y4[1], SCRXin) annotation (Line(points={{90,-8},{124,-8},
+            {124,-10},{182,-10},{182,-81},{235,-81}}, color={0,0,127}));
+    connect(demultiplex2_2.y5[1], SCRXout) annotation (Line(points={{90,-16},{132,
+            -16},{132,-24},{152,-24},{152,-152},{233,-152},{233,-167}}, color={0,0,
+            127}));
+    connect(uVec.y, stateSpace.u)
+      annotation (Line(points={{-77,0},{-42,0}}, color={0,0,127}));
+    annotation (
+      Icon(coordinateSystem(preserveAspectRatio=false, extent={{-200,-200},{200,
+              200}})),
+      Diagram(coordinateSystem(preserveAspectRatio=false, extent={{-140,-160},{200,
+              160}}),                                      graphics={
+          Text(
+            extent={{-58,34},{-44,14}},
+            lineColor={238,46,47},
+            fillPattern=FillPattern.VerticalCylinder,
+            fillColor={255,0,0},
+            textString="du",
+            fontSize=24),
+          Text(
+            extent={{-12,20},{-2,4}},
+            lineColor={238,46,47},
+            fillPattern=FillPattern.VerticalCylinder,
+            fillColor={255,0,0},
+            textString="dy",
+            fontSize=24),
+          Text(
+            extent={{-38,-18},{-22,-38}},
+            lineColor={238,46,47},
+            fillPattern=FillPattern.VerticalCylinder,
+            fillColor={255,0,0},
+            textString="y0",
+            fontSize=24),
+          Text(
+            extent={{30,20},{40,4}},
+            lineColor={238,46,47},
+            fillPattern=FillPattern.VerticalCylinder,
+            fillColor={255,0,0},
+            fontSize=24,
+            textString="y"),
+          Text(
+            extent={{-92,90},{-12,70}},
+            lineColor={85,170,255},
+            fillPattern=FillPattern.HorizontalCylinder,
+            fillColor={28,108,200},
+            horizontalAlignment=TextAlignment.Left,
+            textString="Note: the addy[] and y0_initial[] blocks 
+are defined with ny, where ny is 
+an integer of the size of the output matrix. 
+This is visible in the Text layer only."),
+          Text(
+            extent={{-82,-52},{78,-72}},
+            lineColor={85,170,255},
+            fillPattern=FillPattern.HorizontalCylinder,
+            fillColor={28,108,200},
+            horizontalAlignment=TextAlignment.Left,
+            textString="Notice the change in the order of the outputs w.r.t. the nonlinear model.
+They have to be rearranged based on the order provided by the linearization function."),
+          Line(
+            points={{-4,68},{24,48},{18,18}},
+            color={0,0,255},
+            thickness=0.5,
+            arrow={Arrow.None,Arrow.Filled},
+            smooth=Smooth.Bezier),   Text(
+            extent={{-120,-120},{80,-140}},
+            textColor={238,46,47},
+            horizontalAlignment=TextAlignment.Left,
+            textString="Note: 
+Click on \"Documentation\" to see the intended usage of this block.
+This model can only be run by excecuting the function \"LinearizeAndCompare\".")}),
+      experiment(
+        StopTime=15),
+      Documentation(info="<html>
+<p>This is a generic linear model who&apos;s </p>
+<p>DO NOT try to run this model on it&apos;s own! </p>
+<p>Models with this icon will not simulate on their own, instead they work together with a function that populates certain parameters in the model and perform other operations.</p>
+<p><br>See the associated function to run: &quot;LinearizeAndCompare&quot;.</p>
+</html>"),  preferredView="diagram");
+  end LinearModelGeneral;
   annotation(preferredView = "info", Icon(graphics={Rectangle(
           extent={{-100,100},{100,-100}},
           lineColor={0,140,72},

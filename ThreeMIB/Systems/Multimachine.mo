@@ -75,7 +75,8 @@ equation
   connect(generator1EXPSS.pwPin, B1.p) annotation (Line(points={{-135,44},{-102,44}}, color={0,0,255}));
   connect(generator2EXPSS.pwPin, B2.p) annotation (Line(points={{-135,0},{-102,0}}, color={0,0,255}));
   connect(generator3EXPSS.pwPin, B3.p) annotation (Line(points={{-133,-44},{-102,-44}}, color={0,0,255}));
-  connect(pwFault.p, B6.p) annotation (Line(points={{13,-68.8333},{13,-44},{30,-44}}, color={0,0,255}));
+  connect(pwFault.p, B6.p) annotation (Line(points={{13,-68.8333},{13,-44},{30,
+          -44}},                                                                      color={0,0,255}));
   annotation (Icon(coordinateSystem(extent={{-180,-100},{80,100}}), graphics={Rectangle(
           extent={{-180,100},{100,-100}},
           lineColor={28,108,200},

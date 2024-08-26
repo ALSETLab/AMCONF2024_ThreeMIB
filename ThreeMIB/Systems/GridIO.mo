@@ -126,7 +126,8 @@ equation
   connect(G3.pwPin, B3.p) annotation (Line(points={{-117.2,-44},{-106,-44}},             color={0,0,255}));
   connect(uPSS1, G1.uPSS) annotation (Line(points={{-192,160},{-142,160},{-142,48.8},{-135.6,48.8}}, color={0,0,127}));
   connect(uPm1, G1.upm) annotation (Line(points={{-192,128},{-144,128},{-144,39.2},{-135.6,39.2}}, color={0,0,127}));
-  connect(pwFault.p, B6.p) annotation (Line(points={{20.8333,-7},{16,-7},{16,-44},{30,-44}}, color={0,0,255}));
+  connect(pwFault.p, B6.p) annotation (Line(points={{20.8333,-7},{16,-7},{16,
+          -44},{30,-44}},                                                                    color={0,0,255}));
   connect(uPm2, G2.upm) annotation (Line(points={{-192,20},{-170,20},{-170,-4.8},{-135.6,-4.8}}, color={0,0,127}));
   connect(uvs2, G2.uVsCRX) annotation (Line(points={{-193,-15},{-126,-15},{-126,-9.6}}, color={0,0,127}));
   connect(uPSS2, G2.uPSS) annotation (Line(points={{-192,54},{-168,54},{-168,4.8},{-135.6,4.8}}, color={0,0,127}));

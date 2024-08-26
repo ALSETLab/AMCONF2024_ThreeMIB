@@ -20,19 +20,19 @@ model GridIOsiso "Single input single output variant of GridIO"
     annotation (Placement(transformation(extent={{-102,-18},{-66,18}}),  iconTransformation(extent={{-180,-20},{-140,20}})));
   // allow replaceable records for power flow data
   replaceable record Bus =
-        OpenIPSL.Examples.Tutorial.Example_5.PFData.BusData.PFBus00000 constrainedby OpenIPSL.Examples.Tutorial.Example_5.PFData.BusData.BusTemplate
+        ThreeMIB.PF_Data.Bus_Data.PF_Bus_00000 constrainedby ThreeMIB.PF_Data.Bus_Data.Bus_Template
                                                               "Power flow results for buses"                     annotation (
       choicesAllMatching=true,Dialog(group="Power Flow Data", tab="Power Flow Scenario"));
   replaceable record Load =
-        OpenIPSL.Examples.Tutorial.Example_5.PFData.LoadData.PFLoad00000 constrainedby OpenIPSL.Examples.Tutorial.Example_5.PFData.LoadData.LoadTemplate
+         ThreeMIB.PF_Data.Loads_Data.PF_Loads_00000 constrainedby  ThreeMIB.PF_Data.Loads_Data.Loads_Template
       "Power flow results for loads"                                                                                     annotation (
       choicesAllMatching=true,Dialog(group="Power Flow Data", tab="Power Flow Scenario"));
   replaceable record Trafo =
-        OpenIPSL.Examples.Tutorial.Example_5.PFData.TrafoData.PFTrafo00000 constrainedby OpenIPSL.Examples.Tutorial.Example_5.PFData.TrafoData.TrafoTemplate
+         ThreeMIB.PF_Data.Trafos_Data.PF_Trafos_00000 constrainedby ThreeMIB.PF_Data.Trafos_Data.Trafos_Template
       "Power flow results for transformers"                                                                                   annotation (
       choicesAllMatching=true,Dialog(group="Power Flow Data", tab="Power Flow Scenario"));
   replaceable record Machine =
-        OpenIPSL.Examples.Tutorial.Example_5.PFData.MachineData.PFMachine00000 constrainedby OpenIPSL.Examples.Tutorial.Example_5.PFData.MachineData.MachineTemplate
+        ThreeMIB.PF_Data.Machines_Data.PF_Machines_00000 constrainedby ThreeMIB.PF_Data.Machines_Data.Machines_Template
       "Power flow results for machines"
     annotation (choicesAllMatching=true,Dialog(group="Power Flow Data", tab="Power Flow Scenario"));
 equation
@@ -40,12 +40,12 @@ equation
           6.74286},{-22,6.74286}},                                                                       color={0,140,72},
       thickness=1));
 
-  connect(zeros.y, GridIO.uPload1) annotation (Line(points={{-39,20},{-34,20},{-34,16.5143},{-22.1,16.5143}},
-                                         color={0,0,127}));
+  connect(zeros.y, GridIO.uPload1) annotation (Line(points={{-39,20},{-34,20},{
+          -34,16.5143},{-22.1,16.5143}}, color={0,0,127}));
   connect(GridIO.uPSS1, zeros.y) annotation (Line(points={{-22,13.6},{-34,13.6},
           {-34,20},{-39,20}}, color={0,0,127}));
-  connect(GridIO.uPm1, zeros.y) annotation (Line(points={{-22,10.1714},{-34,10.1714},{-34,20},{-39,20}},
-                                       color={0,0,127}));
+  connect(GridIO.uPm1, zeros.y) annotation (Line(points={{-22,10.1714},{-34,
+          10.1714},{-34,20},{-39,20}}, color={0,0,127}));
   connect(GridIO.uPSS2, zeros.y) annotation (Line(points={{-22,3.54286},{-34,
           3.54286},{-34,20},{-39,20}}, color={0,0,127}));
   connect(GridIO.uPm2, zeros.y) annotation (Line(points={{-22,0},{-34,0},{-34,
@@ -56,12 +56,12 @@ equation
           -6.17143},{-34,20},{-39,20}}, color={0,0,127}));
   connect(GridIO.uPm3, zeros.y) annotation (Line(points={{-22,-9.37143},{-34,
           -9.37143},{-34,20},{-39,20}}, color={0,0,127}));
-  connect(GridIO.uvs3, zeros.y) annotation (Line(points={{-22,-12.5714},{-34,-12.5714},{-34,20},{-39,20}},
-                                        color={0,0,127}));
+  connect(GridIO.uvs3, zeros.y) annotation (Line(points={{-22,-12.5714},{-34,
+          -12.5714},{-34,20},{-39,20}}, color={0,0,127}));
   connect(GridIO.uPload2, zeros.y) annotation (Line(points={{-22.1,-15.6},{-34,
           -15.6},{-34,20},{-39,20}}, color={0,0,127}));
-  connect(GridIO.uPload3, zeros.y) annotation (Line(points={{-22.1,-18.4571},{-34,-18.4571},{-34,20},{-39,20}},
-                                            color={0,0,127}));
+  connect(GridIO.uPload3, zeros.y) annotation (Line(points={{-22.1,-18.4571},{
+          -34,-18.4571},{-34,20},{-39,20}}, color={0,0,127}));
   connect(GridIO.Vt, Vt)
     annotation (Line(points={{21.6,0},{48,0}}, color={0,0,127}));
   annotation (Icon(coordinateSystem(extent={{-140,-80},{60,80}}),
