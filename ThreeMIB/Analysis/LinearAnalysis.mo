@@ -18,8 +18,8 @@ package LinearAnalysis
       output String outputNames[:] "Modelica names of outputs";
       output String stateNames[:] "Modelica names of states";
       // Declare reconfigurable inputs
-      input Modelica.Units.SI.Time tlin=40 "t for model linearization";
-      input Modelica.Units.SI.Time tsim=40 "Simulation time";
+      input Modelica.Units.SI.Time tlin=60 "t for model linearization";
+      input Modelica.Units.SI.Time tsim=60 "Simulation time";
       input String pathToNonlinearPlantModel = "ThreeMIB.Analysis.LinearAnalysis.NonlinModel_for_Linearization" "Nonlinear model for linearization";
       input String pathToNonlinearExperiment = "ThreeMIB.Analysis.LinearAnalysis.NonlinModel_for_NonlinExperiment" "Nonlinear Model for simulation";
     algorithm
@@ -184,8 +184,8 @@ package LinearAnalysis
       output Real y0out[:] "Initial value of the output variables";
       // INPUTS TO THE FUNCTION
       // Declare reconfigurable simulation parameters
-      input Modelica.Units.SI.Time tlin=30.5 "t for model linearization";
-      input Modelica.Units.SI.Time tsim=40 "Simulation time";
+      input Modelica.Units.SI.Time tlin=40 "t for model linearization";
+      input Modelica.Units.SI.Time tsim=120 "Simulation time";
       input Real numberOfIntervalsin=10000 "No. of intervals";
       input String methodin = "DASSL" "Solver";
       input Real fixedstepsizein= 1e-6 "Time step - needed only for fixed time step solvers";
@@ -207,6 +207,8 @@ package LinearAnalysis
       input String pathToLinearExperiment = "ThreeMIB.Analysis.LinearAnalysis.LinearModelGeneral" "Linear model for simulation";
 
     algorithm
+      // Keep simulation output files
+      Advanced.Plot.FilesToKeep :=10;
       // Make sure DAE mode is off!
       Advanced.Define.DAEsolver := false;
       Modelica.Utilities.Streams.print("DAE Mode is turned off.");
@@ -279,8 +281,6 @@ package LinearAnalysis
         resultFile="res_lin");
 
     // Plot commands
-    removePlots(false);
-    createPlot(id=1, position={105, 105, 894, 548}, y={"Vt", "Vt"}, range={0.0, 40.0, 1.0, 1.8}, grid=true, colors={{28,108,200}, {238,46,47}}, timeUnit="s", displayUnits={"1", ""});
 
 
       annotation(__Dymola_interactive=true, Documentation(info="<html>
@@ -678,19 +678,18 @@ package LinearAnalysis
     connect(stateSpace.y, addy.u1)
       annotation (Line(points={{-19,0},{-8,0},{-8,6},{4,6}},
                                                color={0,0,127}));
-    connect(demultiplex2_2.y1[1], ANGLE) annotation (Line(points={{90,16},{108,16},
-            {108,20},{126,20},{126,147},{231,147}}, color={0,0,127}));
-    connect(demultiplex2_2.y2[1], SPEED) annotation (Line(points={{90,8},{148,8},{
-            148,82},{233,82},{233,75}}, color={0,0,127}));
-    connect(demultiplex2_2.y3[1], Vt)
-      annotation (Line(points={{90,0},{234,0}}, color={0,0,127}));
-    connect(demultiplex2_2.y4[1], SCRXin) annotation (Line(points={{90,-8},{124,-8},
-            {124,-10},{182,-10},{182,-81},{235,-81}}, color={0,0,127}));
-    connect(demultiplex2_2.y5[1], SCRXout) annotation (Line(points={{90,-16},{132,
-            -16},{132,-24},{152,-24},{152,-152},{233,-152},{233,-167}}, color={0,0,
-            127}));
     connect(uVec.y, stateSpace.u)
       annotation (Line(points={{-77,0},{-42,0}}, color={0,0,127}));
+    connect(demultiplex2_2.y1[1], Vt) annotation (Line(points={{90,16},{156,16},
+            {156,0},{234,0}}, color={0,0,127}));
+    connect(demultiplex2_2.y2[1], SCRXin) annotation (Line(points={{90,8},{140,
+            8},{140,-56},{178,-56},{178,-81},{235,-81}}, color={0,0,127}));
+    connect(demultiplex2_2.y3[1], SCRXout) annotation (Line(points={{90,0},{126,
+            0},{126,-156},{233,-156},{233,-167}}, color={0,0,127}));
+    connect(demultiplex2_2.y4[1], SPEED) annotation (Line(points={{90,-8},{162,
+            -8},{162,75},{233,75}}, color={0,0,127}));
+    connect(demultiplex2_2.y5[1], ANGLE) annotation (Line(points={{90,-16},{148,
+            -16},{148,147},{231,147}}, color={0,0,127}));
     annotation (
       Icon(coordinateSystem(preserveAspectRatio=false, extent={{-200,-200},{200,
               200}})),
